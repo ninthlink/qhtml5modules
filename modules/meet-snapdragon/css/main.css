@@ -859,7 +859,7 @@ height: 100px;
         list-style: none;
         text-align: left;
         opacity: 0;
-        left: -300px;
+        left: 300px;
     }
     #delivers .graphic-position ul li {
         display: inline-block;

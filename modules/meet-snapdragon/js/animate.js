@@ -122,7 +122,7 @@ $(document).ready(function() {
 		$('#delivers .graphic-position ul').delay(500).animate({
 			left: "0px",
 			opacity: "1"
-		}, 1500, 'easeInOutCirc' );
+		}, 900, 'easeInOutBounce' );
 	}, {
 		offset: offsetDefault
 	});

@@ -68,7 +68,7 @@
 				<section id="difference" class="bg-grey">
 					<div class="inner">
 						<div class="text-position">
-							<h2 class="txtr">Learn how Snapdragon devices<br /><span class="thick">can make a difference</span></h2>
+							<h2 class="txtr">Learn how Qualcomm Snapdragon devices<br /><span class="thick">can make a difference</span></h2>
 							<ul class="txtb">
 								<li id="parallax1">Who is Qualcomm?</li>
 								<li id="parallax2">The role of the processor in a smartphone</li>
@@ -86,7 +86,7 @@
 					<div class="inner">
 						<div class="text-position">
 							<h2 class="txtw">You are here. <span class="thick">Earth.</span></h2>
-							<p class="txtg">We are shipping <span class="thick">22 MSM chips every second!</span> Since we started we have shipped more than <span class="thick">15 billion chips.</span> That's 2 for each person on <span class="thick">planet earth.</span></p>
+							<p class="txtg">Qualcomm is shipping <span class="thick">22 MSM chips every second!</span> Since we started we have shipped more than <span class="thick">15 billion chips.</span> That's 2 for each person on <span class="thick">planet earth.</span></p>
 						</div>
 						<div class="graphic-position">
 							<div class="earth"><img src="img/earth.png" /></div>
@@ -119,7 +119,7 @@
 					<div class="inner">
 						<div class="text-position center">
 							<h2 class="txtb"><span class="thick">Every smartphone</span> has a processor</h2>
-							<p class="txtb">Speed and perfromance have a lot to do with the built-in processor.</p>
+							<p class="txtb">be sure to select a processor with superior features</p>
 						</div>
 						<div class="graphic-position center multi-col">
 							<div class="scrollx">
@@ -182,7 +182,7 @@
 							</div>
 							<div id="process_news" class="four-row">
 								<div class="sprite"></div>
-								<p>news &amp; entertainment</p>
+								<p>gaming</p>
 							</div>
 							<div id="process_shopping" class="four-row">
 								<div class="sprite"></div>
