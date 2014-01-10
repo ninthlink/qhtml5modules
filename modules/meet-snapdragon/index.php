@@ -3,7 +3,7 @@
  * Qualcomm HTML5 Modules
  * Meet Qualcomm® Snapdragon™ Processors
  *
- * v0.2
+ * v0.2.3
  */
 ?>
 <!doctype html>
@@ -278,7 +278,7 @@
 				</section>
 
 				<?php // Slide #10 ?>
-				<section id="multiple-tasks" class="bg-white">
+				<section id="multiple-tasks" class="bg-grey-grad">
 					<div class="inner">
 						<div class="text-position center">
 							<h2 class="txtr">One processor. <span class="thick">Multiple tasks.</span></h2>
@@ -329,7 +329,7 @@
 				*/ ?>
 
 				<?php // Slide #13 ?>
-				<section id="modem-performance" class="bg-white">
+				<section id="modem-performance" class="bg-grey-grad">
 					<div class="inner">
 						<div class="text-position center">
 							<h2 class="txtb">Modem <span class="thick">performance</span></h2>

@@ -292,7 +292,7 @@ $(document).ready(function() {
 		};
 		slidein(100);
 	}, {
-		offset: offsetDefault,
+		offset: '50%',
 		triggerOnce: true,
 	});
 
