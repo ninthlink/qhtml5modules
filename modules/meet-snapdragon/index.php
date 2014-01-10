@@ -1,9 +1,11 @@
 <?php
-
-
+/*
+ * Qualcomm HTML5 Modules
+ * Meet Qualcomm® Snapdragon™ Processors
+ *
+ * v0.2
+ */
 ?>
-
-
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -17,20 +19,17 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width">
 
-		<link rel="stylesheet" href="css/normalize.min.css">
-		<link rel="stylesheet" href="fonts/stylesheet.css">
 		<link rel="stylesheet" href="css/main.css">
 
-		<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="../_common/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><?php /* load CDN or local backup */ ?>
+		<script>window.jQuery || document.write('<script src="../_common/js/jquery-1.10.1.min.js"><\/script>')</script>
 
-		<script src="js/main.js"></script>
-		<script src="js/spin.min.js"></script>
-		<script src="js/jquery.scrollorama.js"></script>
-		<script src="js/waypoints.min.js"></script>
-		<script src="js/swiper.min.js"></script>
+		<script src="../_common/js/spin.min.js"></script>
+		<script src="../_common/js/jquery.scrollorama.js"></script>
+		<script src="../_common/js/waypoints.min.js"></script>
+		<script src="../_common/js/swiper.min.js"></script>
 
 	</head>
 

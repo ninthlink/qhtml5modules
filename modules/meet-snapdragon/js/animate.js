@@ -159,7 +159,7 @@ $(document).ready(function() {
 				}, 150, 'easeInOutElastic' );
 			});
 		});
-	}, { 
+	}, {
 		offset: offsetDefault,
 		triggerOnce: true,
 	});
