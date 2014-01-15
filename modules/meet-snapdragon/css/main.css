@@ -299,7 +299,7 @@ height: 100px;
 /* text and fonts */
 .thick {
     font-family: 'Qualcomm-Semibold';
-    font-weight: 700;
+    font-weight: 400;
 }
 .center {
     text-align: center;
@@ -536,6 +536,7 @@ height: 100px;
         position: relative;
         font-size: 70px;
         font-family: 'Qualcomm-Semibold';
+				font-weight: 400;
         top: 50%;
         margin-top: -14px;
         left: 50%;
