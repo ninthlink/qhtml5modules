@@ -214,11 +214,38 @@ $(document).ready(function() {
 			});
 		});
 	};
-
+	
+	var qchips = $('#qchips');
+	var qchipl = qchips.children('.left');
+	var qchipm = qchips.children('.mid');
+	var qchipr = qchips.children('.right');
+	
+	var qchipscroll = function() {
+		var onn = $('#qchips .onn');
+		onn.clone().removeClass('onn').appendTo(qchipl);
+		var nex = qchipr.children(':first');
+		nex.clone().css({'margin-left':0,'left':'266px'}).appendTo(qchipm);
+		qchipl.children(':first').animate({
+			'margin-left': '-240px'
+		}, 900, function() {
+			qchipl.children(':first').appendTo(qchipr).css('margin-left','10px');
+		});
+		qchipr.children(':first').animate({
+			'margin-left': '-240px'
+		}, 900, function() {
+			$(this).remove();
+		});
+		qchipm.children().animate({
+			'left': '-=248px'
+		},900, function() {
+			onn.remove();
+			qchipm.children().addClass('onn').removeAttr('style');
+		});
+		setTimeout(qchipscroll, 2000);
+	};
+	
 	$('#multiple-tasks').waypoint(function(){
-		if ( $('#multiple-tasks #grey-scroll').css('left') == "585px" ) {
-			slide(1);
-		}
+		qchipscroll();
 	}, { 
 		offset: offsetDefault,
 		triggerOnce: true,

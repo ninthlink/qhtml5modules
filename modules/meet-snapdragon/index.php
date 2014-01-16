@@ -278,32 +278,32 @@
 				</section>
 
 				<?php // Slide #10 ?>
-				<section id="multiple-tasks" class="bg-grey-grad">
+				<section id="multiple-tasks" class="bg-white">
 					<div class="inner">
 						<div class="text-position center">
 							<h2 class="txtr">One processor. <span class="thick">Multiple tasks.</span></h2>
 							<p class="txtb">Snapdragon processors use multiple mobile engines - each dedicated to a specific task.</p>
 						</div>
-						<div class="graphic-position center">
-							<div id="grey-scroll">
-								<img src="img/cpu-box.png" />
-								<img src="img/gpu-box.png" />
-								<img src="img/nav-box.png" />
-								<img src="img/media-box.png" />
-								<img src="img/power-box.png" />
-							</div>
-							<div id="frame">
-								<div id="red-scroll">
-									<img src="img/cpu-box-red.png" />
-									<img src="img/gpu-box-red.png" />
-									<img src="img/nav-box-red.png" />
-									<img src="img/media-box-red.png" />
-									<img src="img/power-box-red.png" />
-								</div>
-								<img src="img/scroll-frame.png" />
-							</div>
-						</div>
 					</div>
+          <div id="qchips">
+            <ul class="left">
+              <li class="sen"><span class="img"></span>Sensors</li>
+              <li class="dsp"><span class="img"></span>DSP</li>
+              <li class="cpu"><span class="img"></span>CPU</li>
+              <li class="gpu"><span class="img"></span>GPU</li>
+              <li class="nav"><span class="img"></span>Navigation</li>
+            </ul>
+            <ul class="mid">
+              <li class="mm onn"><span class="img"></span>Multimedia</li>
+            </ul>
+            <ul class="right">
+              <li class="pwr"><span class="img"></span>Power<br />Management</li>
+              <li class="dis"><span class="img"></span>Display</li>
+              <li class="cam"><span class="img"></span>Camera</li>
+              <li class="sec"><span class="img"></span>Security</li>
+              <li class="con"><span class="img"></span>Connectivity</li>
+            </ul>
+          </div>
 				</section>
 
 				<?php /*
@@ -326,8 +326,8 @@
 						</div>
 					</div>
 				</section>
-				*/ ?>
 
+				*/ ?>
 				<?php // Slide #13 ?>
 				<section id="modem-performance" class="bg-grey-grad">
 					<div class="inner">

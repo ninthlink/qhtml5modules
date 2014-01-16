@@ -344,8 +344,8 @@ height: 100px;
     #single-chip,
     #single-chip .inner { min-height: 490px; }
 
-    #multiple-tasks,
-    #multiple-tasks .inner { min-height: 759px; }
+    #multiple-tasks { min-height: 759px; }
+    #multiple-tasks .inner { min-height: 319px; }
 
     #cpu-performance,
     #cpu-performance .inner { min-height: 1078px; }
@@ -398,8 +398,8 @@ height: 100px;
     #single-chip,
     #single-chip .inner { min-height: 490px; }
 
-    #multiple-tasks,
-    #multiple-tasks .inner { min-height: 759px; }
+    #multiple-tasks { min-height: 759px; }
+    #multiple-tasks .inner { min-height: 319px; }
 
     #cpu-performance,
     #cpu-performance .inner { min-height: 1078px; }
@@ -859,6 +859,7 @@ height: 100px;
         margin-top: 30px;
         list-style: none;
         text-align: left;
+				font-family: "Qualcomm-Regular", sans-serif;
         opacity: 0;
         left: 300px;
     }
@@ -1039,7 +1040,109 @@ height: 100px;
 /* end single chip */
 
 /* multiple tasks section */
-    #multiple-tasks .graphic-position {
+		#qchips {
+			background: url(../img/scroll-frame.png) no-repeat 50% 0;
+			float: left;
+			width: 100%;
+			height: 296px;
+			position: relative;
+			overflow: hidden;
+		}
+		#qchips ul {
+			float: left;
+			width: 1500px;
+			height: 200px;
+			position: absolute;
+			top: 50px;
+			left: 50%;
+			z-index: 1;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			overflow: hidden;
+		}
+		#qchips ul.left {
+			margin-left: -1414px;
+		}
+		#qchips ul.mid {
+			margin-left: -133px;
+			width: 266px;
+			z-index: 2;
+		}
+		#qchips ul.right {
+			margin-left: 162px;
+		}
+		#qchips ul li {
+			background: #ccc;
+			color: #fff;
+			float: left;
+			font-family: "Qualcomm-Regular", sans-serif;
+			font-size: 25px;
+			line-height: 25px;
+			list-style: none;
+			margin: 0 10px;
+			padding: 0;
+			position: relative;
+			text-align: center;
+			width: 230px;
+			height: 200px;
+			overflow: hidden;
+		}
+		#qchips ul.mid li {
+			background: #e12629;
+			margin: 0;
+			position: absolute;
+			top: 0;
+			left: 18px;
+		}
+		#qchips .img {
+			display: block;
+			width: 91px;
+			height: 116px;
+			margin: 11px auto 15px;
+			background: url(../img/qcboxes.png) no-repeat -86px 0;
+		}
+		#qchips .sen .img {
+			width: 86px;
+			background-position: 0 0;
+		}
+		#qchips .cpu .img {
+			background-position: -177px 0;
+		}
+		#qchips .gpu .img {
+			background-position: -268px 0;
+		}
+		#qchips .nav .img {
+			width: 69px;
+			background-position: -359px 0;
+		}
+		#qchips .mm .img {
+			width: 84px;
+			background-position: -428px 0;
+		}
+		#qchips .pwr .img {
+			width: 61px;
+			margin: 7px auto 6px;
+			background-position: -512px 0;
+		}
+		#qchips .dis .img {
+			width: 87px;
+			background-position: -573px 0;
+		}
+		#qchips .cam .img {
+			width: 80px;
+			background-position: -660px 0;
+		}
+		#qchips .sec .img {
+			width: 76px;
+			background-position: -740px 0;
+		}
+		#qchips .con .img {
+			width: 73px;
+			background-position: -816px 0;
+		}
+    /*
+		#multiple-tasks .graphic-position {
         position: relative;
         margin-top: 20px;
         width: 1400px;
@@ -1047,12 +1150,20 @@ height: 100px;
         left: 50%;
         margin-left: -700px;
     }
-    #multiple-tasks .graphic-position #grey-scroll {
+    #multiple-tasks .graphic-position #grey-scroll,
+    #multiple-tasks .graphic-position #red-scroll {
         position: absolute;
-        width: 1400px;
+        width: 2850px;
         left: 585px;
-        margin-top: 46px;
+        margin-top: 50px;
     }
+		#multiple-tasks .graphic-position #red-scroll {
+			left: 39px;
+		}
+		.graphic-position #red-scroll .qcbox {
+			background: #e12629;
+			margin: 0 55px;
+		}
     #multiple-tasks .graphic-position #grey-scroll img {
         float: left;
         margin-right: 46px;
@@ -1071,7 +1182,7 @@ height: 100px;
         width: 1400px;
         margin-top: 46px;
         left: 39px;
-    }
+    }*/
     #multiple-tasks .graphic-position #red-scroll img {
         float: left;
         margin-right: 46px;
