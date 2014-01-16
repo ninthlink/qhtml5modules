@@ -898,7 +898,7 @@ height: 100px;
 
 /* mobile power */
 		#mobile-power {
-			background: url(../img/extraordinary.jpg) no-repeat 0 0;
+			background: url(../img/extraordinary.jpg) no-repeat 50% 100%;
 			background-size: cover;
 		}
 		#mobile-power .text-position {
