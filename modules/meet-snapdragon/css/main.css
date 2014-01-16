@@ -138,11 +138,11 @@ section {
 }
 
 h1 { 
-font-size: 2.9em;
-font-weight: 400;
-line-height: .9em;
-letter-spacing: 2px;
-margin: 0;
+	font-size: 2.7em;
+	font-weight: 400;
+	line-height: .9em;
+	letter-spacing: 1px;
+	margin: 0;
 }
 h2 { margin: 0; }
 sup {
@@ -472,33 +472,36 @@ height: 100px;
 
 /* header area - responsive all sizes */
     header h1 { 
-        padding-top: 7%;
+        padding-top: 6%;
         width: 100%;
     }
     header .header-graphic {
         position: relative;
-        margin-top: 13%;
+        margin-top: 7%;
         width: 100%;
         text-align: center;
     }
-    #header-tablet {
+    #header-device {
         margin-left: -3.75%;
-        width: 58%;
+        width: 33.5%;
+				height: auto;
     }
     #gear1 {
         position: absolute;
-        top: -3.5%;
-        left: 57%;
-        width: 12.4%;
+        top: 16.4%;
+        left: 56.25%;
+        width: 8.3%;
+				height: auto;
         -webkit-animation:spin 14s linear infinite;
         -moz-animation:spin 14s linear infinite;
         animation:spin 14s linear infinite;
     }
     #gear2 {
         position: absolute;
-        top: -15%;
-        left: 68%;
-        width: 7.8%;
+        top: 7.4%;
+        left: 63.5%;
+        width: 5.3%;
+				height: auto;
         -webkit-animation:spinreverse 10s linear infinite;
         -moz-animation:spinreverse 10s linear infinite;
         animation:spinreverse 10s linear infinite;
@@ -512,7 +515,7 @@ height: 100px;
     }
     #loading .text-position {
         max-width: 460px;
-        float: left;
+        float: right;
     }
     #loading .graphic-position {
         position: relative;
@@ -545,11 +548,12 @@ height: 100px;
     @media only screen and (min-width: 960px) {
         #loading .text-position {
             padding-top: 136px;
+						max-width: 600px;
         }
         #loading .graphic-position {
             left: 0;
             margin-top: 135px;
-            margin-left: 160px;
+            margin-left: 0;
             clear: none;
         }
     }
@@ -615,30 +619,30 @@ height: 100px;
     #earth .graphic-position .ring {
         opacity: 0;
     }
-    .wrapper1 .pie {
+    .pie {
         position: absolute;
         top:95px;
         left:95px;
         height:160px;
         width:160px;
         border-radius: 200px;
-        border: 20px solid #e12529;
+        border: 20px solid #d61f2e;
         background-color: transparent;
     }
-    .wrapper1 .spinner {
+    .pie.spinner {
         clip:rect(0px,260px,260px,100px);
         -webkit-animation: rota 15s linear infinite;
         -moz-animation: rota 15s linear infinite;
         animation: rota 15s linear infinite;
     }
-    .wrapper1 .filler {
+    .pie.filler {
         opacity: 0;
         clip:rect(0px,100px,260px,0px);
         -webkit-animation: fill 15s steps(1, end) infinite;
         -moz-animation: fill 15s steps(1, end) infinite;
         animation: fill 15s steps(1, end) infinite;
     }
-    .wrapper1 .mask {
+    .ring .mask {
         position: absolute;
         background-color: #000;
         width:102px;
@@ -651,109 +655,109 @@ height: 100px;
         animation: mask 15s steps(1, end) infinite;
     }
     .wrapper2 .pie {
-        position: absolute;
         top:70px;
         left:70px;
         height:210px;
         width:210px;
-        border-radius: 200px;
-        border: 20px solid #e12529;
-        background-color: transparent;
+        border-color: #cc1e20;
     }
-    .wrapper2 .spinner {
+    .wrapper2 .pie.spinner {
         clip:rect(0px,400px,400px,120px);
+				/*
         -webkit-animation: rota 9s linear infinite;
         -moz-animation: rota 9s linear infinite;
         animation: rota 9s linear infinite;
+				*/
     }
-    .wrapper2 .filler {
-        opacity: 0;
+    .wrapper2 .pie.filler {
         clip:rect(0px,125px,400px,0px);
+				/*
+        opacity: 0;
         -webkit-animation: fill 9s steps(1, end) infinite;
         -moz-animation: fill 9s steps(1, end) infinite;
         animation: fill 9s steps(1, end) infinite;
+				*/
     }
-    .wrapper2 .mask {
-        position: absolute;
-        background-color: #000;
+    .ring.wrapper2 .mask {
         width:126px;
         height:254px;
-        left:195px;
         top:68px;
         border-radius: 0 200px 200px 0;
+				/*
         -webkit-animation: mask 9s steps(1, end) infinite;
         -moz-animation: mask 9s steps(1, end) infinite;
         animation: mask 9s steps(1, end) infinite;
+				*/
     }
     .wrapper3 .pie {
-        position: absolute;
         top:45px;
         left:45px;
         height:260px;
         width:260px;
-        border-radius: 200px;
-        border: 20px solid #e12529;
-        background-color: transparent;
+        border-color: #a5181a;
     }
-    .wrapper3 .spinner {
+    .wrapper3 .pie.spinner {
         clip:rect(0px,400px,400px,140px);
+				/*
         -webkit-animation: rota 13s linear infinite;
         -moz-animation: rota 13s linear infinite;
         animation: rota 13s linear infinite;
+				*/
     }
-    .wrapper3 .filler {
-        opacity: 0;
+    .wrapper3 .pie.filler {
         clip:rect(0px,150px,400px,0px);
+				/*
+        opacity: 0;
         -webkit-animation: fill 13s steps(1, end) infinite;
         -moz-animation: fill 13s steps(1, end) infinite;
         animation: fill 13s steps(1, end) infinite;
+				*/
     }
-    .wrapper3 .mask {
-        position: absolute;
-        background-color: #000;
+    .ring.wrapper3 .mask {
         width:152px;
         height:304px;
-        left:195px;
         top:44px;
         border-radius: 0 200px 200px 0;
+				/*
         -webkit-animation: mask 13s steps(1, end) infinite;
         -moz-animation: mask 13s steps(1, end) infinite;
         animation: mask 13s steps(1, end) infinite;
+				*/
     }
     .wrapper4 .pie {
-        position: absolute;
         top:20px;
         left:20px;
         height:310px;
         width:310px;
-        border-radius: 200px;
-        border: 20px solid #e12529;
-        background-color: transparent;
+				border-color: #851415;
     }
-    .wrapper4 .spinner {
+    .wrapper4 .pie.spinner {
         clip:rect(0px,400px,400px,160px);
+				/*
         -webkit-animation: rota 17s linear infinite;
         -moz-animation: rota 17s linear infinite;
         animation: rota 17s linear infinite;
+				*/
     }
-    .wrapper4 .filler {
-        opacity: 0;
+    .wrapper4 .pie.filler {
         clip:rect(0px,175px,400px,0px);
+				/*
+        opacity: 0;
         -webkit-animation: fill 17s steps(1, end) infinite;
         -moz-animation: fill 17s steps(1, end) infinite;
         animation: fill 17s steps(1, end) infinite;
+				*/
     }
-    .wrapper4 .mask {
-        position: absolute;
-        background-color: #000;
+    .ring.wrapper4 .mask {
         width:182px;
         height:354px;
-        left:195px;
         top:18px;
         border-radius: 0 200px 200px 0;
+				/*
         -webkit-animation: mask 17s steps(1, end) infinite;
         -moz-animation: mask 17s steps(1, end) infinite;
         animation: mask 17s steps(1, end) infinite;
+				*/
     }
 /* end earth */
 
@@ -893,6 +897,20 @@ height: 100px;
 /* end delivers */
 
 /* mobile power */
+		#mobile-power {
+			background: url(../img/extraordinary.jpg) no-repeat 0 0;
+			background-size: cover;
+		}
+		#mobile-power .text-position {
+			padding-top: 6%;
+		}
+		#mobile-power h5 {
+			margin-top: 0.5em;
+			font-weight: 400;
+			font-size: 1em;
+		}
+		
+		/* :(
     #mobile-power .graphic-position {
         position: relative;
         width: 370px;
@@ -1048,6 +1066,18 @@ height: 100px;
 			position: relative;
 			overflow: hidden;
 		}
+		#qffx {
+			background: #fff url(../img/scroll-frame.png) no-repeat 0 0;
+			float: left;
+			width: 21px;
+			height: 296px;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -164px;
+			z-index: 5;
+			border-left: 10px solid #fff;
+		}
 		#qchips ul {
 			float: left;
 			width: 1500px;
@@ -1103,8 +1133,8 @@ height: 100px;
 			background: url(../img/qcboxes.png) no-repeat -86px 0;
 		}
 		#qchips .sen .img {
-			width: 86px;
-			background-position: 0 0;
+			width: 121px;
+			background-position: 35px 0;
 		}
 		#qchips .cpu .img {
 			background-position: -177px 0;

@@ -40,9 +40,9 @@
 			<?php // Slide #1 ?>
 			<header class="bg-red-grad">
 				<div class="inner">
-					<h1 class="center txtw">Meet Qualcomm<sup>&reg;</sup><br /><span class="thick">Snapdragon<sup>&trade;</sup> Processors</span></h1>
+					<h1 class="center txtw">Meet Qualcomm<sup>&reg;</sup><br /><span class="thick">Snapdragon</span><sup>&trade;</sup> <span class="thick">Processors</span></h1>
 					<div class="header-graphic">
-						<img id="header-tablet" src="img/header-tablet.png" />
+						<img id="header-device" src="img/header-phone.png" />
 						<img id="gear1" src="img/gear1.png" />
 						<img id="gear2" src="img/gear2.png" />
 					</div>
@@ -54,12 +54,12 @@
 				<?php // Slide #2 ?>
 				<section id="loading" class="bg-white">
 					<div class="inner">
-						<div class="text-position">
-							<h3 class="txtb">Have you ever <span class="thick">waited</span> for an app or website to load on your smartphone?</h3>
-						</div>
 						<div class="graphic-position">
 							<div id="spinner"></div>
 							<div id="spinner-inner" class="txtr">?</div>
+						</div>
+						<div class="text-position">
+							<h3 class="txtb">Have you ever <span class="thick">waited</span> for an app or website to load on your smartphone?</h3>
 						</div>
 					</div>
 				</section>
@@ -125,15 +125,15 @@
 							<div class="scrollx">
 								<div id="speed_performance" class="three-row">
 									<div class="sprite"></div>
-									<p>Speed &amp; Performance</p>
+									<p class="thick">Speed &amp; Performance</p>
 								</div>
 								<div id="reliable_connectivity" class="three-row">
 									<div class="sprite"></div>
-									<p>Reliable Connectivity</p>
+									<p class="thick">Reliable Connectivity</p>
 								</div>
 								<div id="long_battery_life" class="three-row last">
 									<div class="sprite"></div>
-									<p>Long battery life</p>
+									<p class="thick">Long battery life</p>
 								</div>
 							</div>
 							<span class="stretch"></span>
@@ -237,12 +237,13 @@
 				</section>
 
 				<?php // Slide #8 ?>
-				<section id="mobile-power" class="bg-white">
+				<section id="mobile-power">
 					<div class="inner">
-						<div class="text-position">
-							<h2 class="txtr">Extraordinary <span class="thick">mobile power</span></h2>
-							<p class="txtb">Snapdragon processors pack a huge amount<br /> of mobile power into a tiny system on a chip.</p>
+						<div class="text-position center">
+							<h2 class="txtw">Extraordinary <span class="thick">mobile power</span></h2>
+							<h5 class="txtw">Snapdragon processors pack a huge amount of mobile power into a tiny system on a chip.</h5>
 						</div>
+            <?php /*
 						<div class="graphic-position">
 							<div id="meter">
 							    <div id="rev-inner">
@@ -257,6 +258,7 @@
 							</div>
 							<img id="chip3" src="img/chip135x132.png" />
 						</div>
+						*/ ?>
 					</div>
 				</section>
 
@@ -303,6 +305,7 @@
               <li class="sec"><span class="img"></span>Security</li>
               <li class="con"><span class="img"></span>Connectivity</li>
             </ul>
+            <div id="qffx"></div>
           </div>
 				</section>
 
