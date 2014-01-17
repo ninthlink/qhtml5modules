@@ -383,7 +383,7 @@
 						</div>
 
 						<div id="butter-video">
-            	<iframe id="buttervid" src="//player.vimeo.com/video/77088565?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;api=1&amp;player_id=buttervid" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            	<iframe id="buttervid" src="//player.vimeo.com/video/77088565?title=0&amp;byline=0&amp;portrait=0&amp;color=e12629&amp;api=1&amp;player_id=buttervid" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 						</div>
 
 					</div>

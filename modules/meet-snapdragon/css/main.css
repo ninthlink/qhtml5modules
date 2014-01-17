@@ -357,7 +357,7 @@ height: 100px;
     #modem-performance .inner { min-height: 521px; }
 
     #thermal-performance,
-    #thermal-performance .inner { min-height: 612px; }
+    #thermal-performance .inner { min-height: 540px; }
 
     /*
     #features,
@@ -411,7 +411,7 @@ height: 100px;
     #modem-performance .inner { min-height: 521px; }
 
     #thermal-performance,
-    #thermal-performance .inner { min-height: 612px; }
+    #thermal-performance .inner { min-height: 540px; }
 
     /*
     #features,
@@ -1374,6 +1374,10 @@ height: 100px;
         left: 540px;
         opacity: 0;
     }
+		#thermal-performance .graphic-position img {
+			width: 100%;
+			height: auto;
+		}
     #thermal-performance .video-box {
         position: absolute;
         width: 320px;

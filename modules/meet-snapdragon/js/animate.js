@@ -316,6 +316,11 @@ $(document).ready(function() {
 				jQuery('#butter-video').show().siblings().hide();
 				bplayer.api('play');
 			});
+			
+			bplayer.addEvent('finish', function(data) {
+				bplayer.api('unload');
+				alert('done');
+			});
 		};
 		$f(document.getElementById('buttervid')).addEvent('ready', bready);
 
