@@ -373,18 +373,17 @@
 							<h2 class="txtw">Better thermal <span class="thick">performance.</span><br />Less wasted energy.</h2>
 						</div>
 						<div class="graphic-position">
-							<img id="thermal-phone" src="img/thermal-phones.png" />
+							<img id="thermal-phone" src="img/butter_test.jpg" />
 						</div>
 						<div class="video-box">
 							<div class="video-button">
 								<div id="play-video" class="sprite"></div>
 								<p>Watch Butter Test</p>
 							</div>
-							<div id="butter-video"></div>
 						</div>
 
 						<div id="butter-video">
-							<content />
+            	<iframe id="buttervid" src="//player.vimeo.com/video/77088565?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;api=1&amp;player_id=buttervid" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 						</div>
 
 					</div>
@@ -445,7 +444,7 @@
 			</footer>
 	 
 		</div>
-
+		<script type="text/javascript" src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
 		<script src="js/animate.js"></script>
 
 	</body>

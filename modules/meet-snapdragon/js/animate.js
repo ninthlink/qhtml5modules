@@ -302,9 +302,22 @@ $(document).ready(function() {
 		$('#thermal-performance .graphic-position').animate({
 			opacity: "1",
 		}, 1200, 'easeInOutBounce' );
+		
+		
+		
 	}, {
 		offset: offsetDefault
 	});
+	
+		var bready = function(player_id) {
+			var bplayer = $f(player_id);
+			
+			$('#thermal-performance .video-button').unbind('click').click(function() {
+				jQuery('#butter-video').show().siblings().hide();
+				bplayer.api('play');
+			});
+		};
+		$f(document.getElementById('buttervid')).addEvent('ready', bready);
 
 	// #15 "Features" :: text slides in looped "n" times
 	$('#features').waypoint(function(){

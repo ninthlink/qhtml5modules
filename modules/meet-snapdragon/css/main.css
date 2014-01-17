@@ -1365,19 +1365,19 @@ height: 100px;
 
 /* thermal performance */
     #thermal-performance .text-position {
-        top: 90px;
+        top: 50px;
         max-width: 400px;
     }
     #thermal-performance .graphic-position {
         position: absolute;
-        top: 100px;
+        top: 150px;
         left: 540px;
         opacity: 0;
     }
     #thermal-performance .video-box {
         position: absolute;
         width: 320px;
-        top: 396px;
+        top: 329px;
         left: 8%;
         cursor: pointer;
     }
