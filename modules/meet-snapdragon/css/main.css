@@ -1399,6 +1399,11 @@ height: 100px;
         color: #fff;
     }
     #butter-video { display: none; }
+		iframe#buttervid {
+			float: left;
+			width: 940px;
+			height: 540px;
+		}
 /* end thermal performance */
 
 /* features slide - responsive */

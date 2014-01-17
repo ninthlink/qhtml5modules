@@ -318,8 +318,7 @@ $(document).ready(function() {
 			});
 			
 			bplayer.addEvent('finish', function(data) {
-				bplayer.api('unload');
-				alert('done');
+				jQuery('#butter-video').hide().siblings().show();
 			});
 		};
 		$f(document.getElementById('buttervid')).addEvent('ready', bready);
