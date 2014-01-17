@@ -320,17 +320,28 @@
 					</div>
 				</section>
 
-				<?php // Slide #12 ?>
+				<?php */ // Slide #12 ?>
 				<section id="gpu-performance" class="bg-grey-rdl">
 					<div class="inner">
 						<div class="text-position center">
-							<h2 class="txtr">Graphics <span class="thick">performance</span> leadership</h2>
-							<p class="txtb">Snapdragon 800 has up to <span class="thick">50% higher performance</span> than Snapdragon 600</p>
+							<h2 class="txtb">Enhanced graphic <span class="thick">performance</span></h2>
+							<h3 class="txtb"><span class="thick">Snapdragon 600</span> up to <span class="thick txtr">29X faster performance*</span><br />
+              <span class="thick">Snapdragon 800</span> up to <span class="thick txtr">43X faster performance*</span></h3>
 						</div>
+            <div class="graphic-position">
+            	<ul>
+              <li class="a200"><span class="fill"></span><span class="name">Adreno 200</span></li>
+              <li class="a205"><span class="fill"></span><span class="name">Adreno 205</span></li>
+              <li class="a220"><span class="fill"></span><span class="name">Adreno 220</span></li>
+              <li class="a225"><span class="fill"></span><span class="name">Adreno 225</span></li>
+              <li class="a320 txtw"><span class="fill"></span><span class="name">Adreno 320 / <span class="thick">Snapdragon 600</span></span></li>
+              <li class="a330 txtw"><span class="fill"></span><span class="name">Adreno 330 / <span class="thick">Snapdragon 800</span></span></li>
+              </ul>
+              <p class="center">* Than Adreno 200. Source - QCT Data.</p>
+            </div>
 					</div>
 				</section>
-
-				*/ ?>
+        
 				<?php // Slide #13 ?>
 				<section id="modem-performance" class="bg-grey-grad">
 					<div class="inner">

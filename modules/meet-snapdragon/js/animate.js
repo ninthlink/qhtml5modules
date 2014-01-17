@@ -260,6 +260,28 @@ $(document).ready(function() {
 	// #11 "CPU Performance" ::
 
 	// #12 "GPU Performance" ::
+	var gpuwidths = [ 3.3, 6.4, 12.5, 16.2, 78.8, 100 ];
+	var gpustep = function(count) {
+		if ( count < gpuwidths.length ) {
+			$('#gpu-performance li:eq('+count+')').each(function() {
+				$(this).fadeIn(200)
+					.children('.fill').animate({
+						width: gpuwidths[count] + '%'
+					}, 500, function() {
+						newcount = count + 1;
+						gpustep(newcount);
+					});
+			});
+		}
+		if ( count == gpuwidths.length ) {
+			$('#gpu-performance p').fadeIn(3000);
+		}
+	};
+	$('#gpu-performance').waypoint(function(){
+		gpustep(0);
+	}, {
+		offset: offsetDefault
+	});
 
 	// #13 "Modem Performance" :: slide in side text from outside frame (arrows rotate via CSS)
 	$('#modem-performance').waypoint(function(){

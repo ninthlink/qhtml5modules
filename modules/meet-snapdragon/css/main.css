@@ -351,7 +351,7 @@ height: 100px;
     #cpu-performance .inner { min-height: 1078px; }
 
     #gpu-performance,
-    #gpu-performance .inner { min-height: 736px; }
+    #gpu-performance .inner { min-height: 914px; }
 
     #modem-performance,
     #modem-performance .inner { min-height: 521px; }
@@ -405,7 +405,7 @@ height: 100px;
     #cpu-performance .inner { min-height: 1078px; }
 
     #gpu-performance,
-    #gpu-performance .inner { min-height: 736px; }
+    #gpu-performance .inner { min-height: 914px; }
 
     #modem-performance,
     #modem-performance .inner { min-height: 521px; }
@@ -1238,6 +1238,79 @@ height: 100px;
         letter-spacing: 0;
     }
 /* end cpu performance */
+
+/* gpu performance section */
+		#gpu-performance .text-position {
+			padding-top: 5%;
+		}
+		#gpu-performance .text-position h3 {
+			font-size: 0.94em;
+		}
+		#gpu-performance ul {
+			float: left;
+			width: 100%;
+			margin: 0 0 41px;
+			padding: 0;
+		}
+		#gpu-performance li {
+			background: #fff;
+			box-shadow: 0 0 2px rgba(0,0,0,0.6);
+			display: block;
+			list-style: none;
+			margin: 0 auto 10px;
+			width: 95%;
+			padding: 5px;
+			height: 66px;
+			position: relative;
+		}
+		
+		@media only screen and (min-width: 480px) {
+			#gpu-performance .text-position h3 {
+				font-size: 1.1em;
+			}
+		}
+		@media only screen and (min-width: 800px) {
+			#gpu-performance .text-position h3 {
+				font-size: 1.4em;
+			}
+			#gpu-performance li {
+				width: 83.3%;
+			}
+		}
+		@media only screen and (min-width: 960px) {
+			#gpu-performance li {
+				width: 62.5%;
+			}
+		}
+		#gpu-performance .fill {
+			float: left;
+			height: 66px;
+			background: #ccc;
+		}
+		#gpu-performance .name {
+			float: left;
+			height: 66px;
+			line-height: 66px;
+			font-family: "Qualcomm-Regular";
+			margin-left: 26px;
+		}
+		#gpu-performance .txtw .fill {
+			background-color: #e12629;
+		}
+		#gpu-performance .txtw .name {
+			position: absolute;
+			right: 6%;
+			top: 4px;
+		}
+		#gpu-performance .txtw.a320 .name {
+			right: 25%;
+		}
+		html.js #gpu-performance li,
+		html.js #gpu-performance p {
+			display: none;
+		}
+
+/* end gpu performance */
 
 /* modem performance */
     #modem-performance .graphic-position { margin-top: 60px; margin-bottom: 40px; }
