@@ -416,7 +416,16 @@
 						</div>
 					</div>
 				</section>
-
+				<?php // quiz CTA ?>
+        <section id="proceed" class="bg-black">
+        	<div class="inner">
+          	<div class="text-position center">
+            	<div class="video-button">
+								<h2><a href="assessment.html" class="txtw">Proceed to <span class="thick">Assessment</span> <span class="sprite play"></span></a></h2>
+							</div>
+            </div>
+          </div>
+        </section>
 				<?php // Slide #16 ?>
 				<section id="legal" class="bg-red">
 					<div class="inner">

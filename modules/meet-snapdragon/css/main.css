@@ -1381,7 +1381,7 @@ height: 100px;
         left: 8%;
         cursor: pointer;
     }
-    #play-video {
+    .sprite#play-video, .sprite.play {
         width: 66px;
         height: 66px;
         float: left;
@@ -1476,6 +1476,20 @@ height: 100px;
     }
     */
 /* end features */
+
+/* CTA */
+#proceed .text-position.center {
+	padding: 5.5% 5%;
+}
+#proceed .sprite.play {
+	display: inline-block;
+	float: none;
+	vertical-align: middle;
+}
+#proceed a {
+	text-decoration: none;
+}
+/* end CTA */
 
 /* legal section */
     #legal .text-position p { font-size: 0.7em }
