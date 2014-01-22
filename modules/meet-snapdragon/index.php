@@ -432,9 +432,10 @@
 		</div>
 		<script type="text/javascript" src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
 		<script src="js/animate.js"></script>
+    <?php /*
 <script type="text/javascript"> 
-/*browser-update.org*/
-var $buoop = {vs:{i:10,f:5,o:12,s:5,n:9}}; 
+//browser-update.org
+var $buoop = {vs:{i:10,f:5,o:12,s:5,n:9},reminder:0}; 
 $buoop.ol = window.onload; 
 window.onload=function(){ 
  try {if ($buoop.ol) $buoop.ol();}catch (e) {} 
@@ -443,6 +444,8 @@ window.onload=function(){
  e.setAttribute("src", "//browser-update.org/update.js"); 
  document.body.appendChild(e); 
 } 
-</script> 
+</script>
+*/ ?>
+<script type="text/javascript" src="http://updateyourbrowser.net/uyb.js"> </script> 
 	</body>
 </html>
