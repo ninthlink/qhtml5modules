@@ -3,7 +3,7 @@
  * Qualcomm HTML5 Modules
  * Meet Qualcomm® Snapdragon™ Processors
  *
- * v0.3.8
+ * v0.3.9
  */
 ?>
 <!doctype html>
@@ -432,6 +432,17 @@
 		</div>
 		<script type="text/javascript" src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
 		<script src="js/animate.js"></script>
-
+<script type="text/javascript"> 
+/*browser-update.org*/
+var $buoop = {vs:{i:10,f:5,o:12,s:5,n:9}}; 
+$buoop.ol = window.onload; 
+window.onload=function(){ 
+ try {if ($buoop.ol) $buoop.ol();}catch (e) {} 
+ var e = document.createElement("script"); 
+ e.setAttribute("type", "text/javascript"); 
+ e.setAttribute("src", "//browser-update.org/update.js"); 
+ document.body.appendChild(e); 
+} 
+</script> 
 	</body>
 </html>
