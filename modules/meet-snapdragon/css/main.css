@@ -1541,6 +1541,7 @@ height: 100px;
     #legal #logo { margin: 80px; }
 /* end legal */
 
+body .buorg { line-height: 16px }
 
 /* ==========================================================================
    Helper classes
