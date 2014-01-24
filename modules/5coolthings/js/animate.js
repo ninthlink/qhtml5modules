@@ -34,31 +34,27 @@ $(document).ready(function() {
 		$(this).addClass('fade-in');
 	});
 
-	// #1 "talking" :: cycle through chat bubbles
-	var phonechat = $('#talking .phone');
-	var phonebubble;
-	var phonechatbubbles = function() {
-		var tdelay = 500;
-		if ( phonechat.hasClass('b2') ) {
-			phonechat.removeClass('b2');
-		} else if ( phonechat.hasClass('b1') ) {
-			phonechat.removeClass('b1').addClass('b2');
-			tdelay = 1500;
-		} else {
-			phonechat.addClass('b1');
-		}
-		clearTimeout(phonebubble);
-		phonebubble = setTimeout(phonechatbubbles, tdelay);
-	};
-	$('#talking').waypoint(function() {
-		clearTimeout(phonebubble);
-		phonechatbubbles();
+	// #1 "talking"
+	$('#talking').each(function() {
+		$(this).waypoint(function() {
+			$(this).find('h3').fadeIn(500, function() {
+				$('#talking .graphic-position').fadeIn(500, function() {
+					$('#talking h3').children('.thick, sup').show(500);
+					$('#talking .phone').addClass('chat');
+				});
+			});
+		}).find('.graphic-position, h3, h3 .thick, h3 sup').hide();
 	});
 	
 	// #2 battery charge
 	$('#charge').waypoint(function() {
-		$('#charge .battery').addClass('charging');
-	});
+		$(this).find('h3').fadeIn(500, function() {
+			$('#charge .graphic-position').fadeIn(500, function() {
+				$('#charge h3').children().show(500);
+				$('#charge .battery').addClass('charging');
+			});
+		});
+	}).find('.graphic-position, h3, h3 > span').hide();
 	
 	// #3 satellite signal
 	var satellite = $('#satellites .satellite');
@@ -70,50 +66,35 @@ $(document).ready(function() {
 		if ( signalcount > 5 ) {
 			signalcount = 0;
 		}
-		satellite.attr('class', 'satellite s'+ signalcount);
+		satellite.attr('class', 'satellite slidedown s'+ signalcount);
 		
 		clearTimeout(satellitesignals);
 		satellitesignals = setTimeout(satellitesignal, sdelay);
 	};
 	$('#satellites').waypoint(function() {
-		clearTimeout(satellitesignals);
-		satellitesignal();
-	});
-
-	// #9 "Single Chip" :: slide phone to side (large screen) or bottom (small screen), then pop in icons and fade in text
-	$('#single-chip').waypoint(function(){
-		if ( $('#single-chip .inner').width() >= 960 ) {
-			$('#single-chip .graphic-position').animate({
-				left: "68px",
-			}, 600, 'easeInOutSine');
-		}
-		else {
-			var h = $('#single-chip').height;
-			$('#single-chip').animate({
-				height: "+=300px",
-			}, 600, 'easeInOutSine');
-			$('#single-chip .graphic-position').animate({
-				top: "400px",
-			}, 600, 'easeInOutSine');	
-		}
-
-		$('#single-chip .text-position').fadeTo( 2000, 1, 'easeInOutCubic' );
-	
-		$('#pop-lines').delay(600).animate({
-			width: "76px",
-		}, 150, 'easeInOutElastic', function() {
-			$('#pop-chip').delay(10).animate({
-				width: "101px",
-			}, 150, 'easeInOutElastic', function() { 
-				$('#pop-power').delay(150).animate({
-					width: "53px",
-				}, 150, 'easeInOutElastic' );
-			});
+		$(this).find('h3').fadeIn(500, function() {
+			clearTimeout(satellitesignals);
+			satellite.addClass('slidedown');
+			satellitesignals = setTimeout(satellitesignal, 800);
 		});
-	}, {
-		offset: offsetDefault,
-		triggerOnce: true,
-	});
+	}).find('h3').hide();
+	
+	// #4 cool :: snow fall
+	$('#cool').waypoint(function() {
+		$(this).find('.snow').addClass('fall');
+		$(this).find('h3').fadeIn(1000, function() {
+			$(this).children('.thick, sup').fadeIn(500);
+		});
+	}).find('h3').hide().children('.thick,sup').hide();
+	
+	// #5 high performance :: text & phone slide
+	$('#high-performance').waypoint(function() {
+		$(this).find('.phone').addClass('meter');
+		$(this).find('h3').fadeIn(500, function() {
+			$(this).children('.l2').fadeIn(1000);
+		});
+	}).find('h3').hide().children('.l2').hide();
+	
 	// #16 "Legal" :: No animations in footer area
 
 	// ALL :: slide section to top at specific interval

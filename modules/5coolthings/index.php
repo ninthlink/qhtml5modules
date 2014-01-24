@@ -3,7 +3,7 @@
  * Qualcomm HTML5 Modules
  * 5 Cool Thing
  *
- * v0.2
+ * v0.1
  */
 ?>
 <!doctype html>
@@ -56,7 +56,7 @@
 				<section id="talking" class="bg-grey-grad block">
 					<div class="inner">
 						<div class="graphic-position">
-							<div class="phone chat"></div>
+							<div class="phone"></div>
 						</div>
 						<div class="text-position">
 							<h3 class="center">Can make your phone do <br />things <span class="thick">by talking to it</span> <sup class="sup">1</sup></h3>
@@ -75,7 +75,7 @@
               </div>
 						</div>
 						<div class="text-position">
-							<h3 class="center">Can charge devices up to <span class="thick">75% faster</span> <sup class="sup">2</sup></h3>
+							<h3 class="center">Can charge devices <span>up to <span class="thick">75% faster</span> <sup class="sup">2</sup></span></h3>
 						</div>
 
 						<span class="stretch"></span>
@@ -104,7 +104,7 @@
 				<section id="cool" class="bg-grey-grad block">
 					<div class="inner">
 						<div class="graphic-position">
-							<div class="snowflakes">
+							<div class="snow">
               	<div class="s1"></div>
               	<div class="s2"></div>
               </div>
@@ -121,14 +121,12 @@
 				<section id="high-performance" class="bg-grey-grad block">
 					<div class="inner">
 						<div class="graphic-position">
-							<div class="phone meter">
-							    <div class="rev-inner">
-							        <div class="pin"></div>
-							    </div>
+							<div class="phone">
+							  <div class="pin"></div>
 							</div>
 						</div>
 						<div class="text-position">
-							<h3 class="center">High performance <span class="thick">graphics</span><br />with <span class="thick">lower power</span> usage <sup class="sup">5</sup></h3>
+							<h3 class="center">High performance <span class="thick">graphics</span><br /><span class="l2">with <span class="thick">lower power</span> usage <sup class="sup">5</sup></span></h3>
 						</div>
 
 						<span class="stretch"></span>

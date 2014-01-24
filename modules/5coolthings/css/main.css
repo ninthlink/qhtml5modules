@@ -260,7 +260,7 @@ sup {
 /* text and fonts */
 .thick {
     font-family: 'Qualcomm-Semibold';
-    font-weight: 700;
+    font-weight: 400;
 }
 .thin {
     font-family: 'Qualcomm-Light';
@@ -368,9 +368,9 @@ sup {
 			position: relative;
 			top: 30px;
 				
-			-webkit-animation:highfive 0.5s ease-in-out 1.5s backwards;
-			-moz-animation:highfive 0.5s ease-in-out 1.5s backwards;
-			animation:highfive 0.5s ease-in-out 4s backwards;
+			-webkit-animation:highfive 0.5s ease-in 1.5s backwards;
+			-moz-animation:highfive 0.5s ease-in 1.5s backwards;
+			animation:highfive 0.5s ease-in 1.5s backwards;
 		}
 		header h1 .cool {
 			float: left;
@@ -392,9 +392,9 @@ sup {
         width: 34%;
         text-align: center;
 				
-			-webkit-animation:headergraphic 0.5s ease-in-out 1s backwards;
-			-moz-animation:headergraphic 0.5s ease-in-out 1s backwards;
-			animation:headergraphic 0.5s ease-in-out 1s backwards;
+			-webkit-animation:headergraphic 0.5s ease-in-out 0.5s backwards;
+			-moz-animation:headergraphic 0.5s ease-in-out 0.5s backwards;
+			animation:headergraphic 0.5s ease-in-out 0.5s backwards;
     }
     #header-tablet {
         width: 100%;
@@ -438,20 +438,19 @@ sup {
         left: 50%;
 				margin: 130px 0 60px -107px;
     }
-    .phone.chat {
+    #talking .phone {
 				background: url(../img/phone-chat.png) no-repeat 100% 0;
         display: block;
 				width: 100%;
 				height: 100%;
     }
-		.js .phone.chat {
-			background-position: 0 0;
+		.js #talking .phone {
+				background-position: 0 0;
 		}
-		.js .phone.chat.b1 {
-			background-position: -215px 0;
-		}
-		.js .phone.chat.b2 {
-			background-position: 100% 0;
+		.js #talking .phone.chat {
+        -webkit-animation:chat 2s step-end infinite backwards;
+        -moz-animation:chat 2s step-end infinite backwards;
+        animation:chat 2s step-end infinite backwards;
 		}
     @media only screen and (min-width: 960px) {
         #talking .graphic-position {
@@ -490,9 +489,11 @@ sup {
 			background-position: 100% -150%;
 		}
 		.js .battery.charging .fill {
-			-webkit-animation:charge 2s ease-in-out infinite alternate;
-			-moz-animation:charge 2s ease-in-out infinite alternate;
-			animation:charge 2s ease-in-out infinite alternate;
+			border-top-right-radius: 5px;
+			border-top-left-radius: 5px;
+			-webkit-animation:charge 2.5s ease-in-out infinite alternate;
+			-moz-animation:charge 2.5s ease-in-out infinite alternate;
+			animation:charge 2.5s ease-in-out infinite alternate;
 		}
     @media only screen and (min-width: 960px) {
         #charge .graphic-position {
@@ -502,7 +503,7 @@ sup {
         }
     }
 /* end battery charge */
-/*  2: battery charge */
+/*  3: satellite(s) */
     #satellites .graphic-position {
         position: relative;
         width: 172px;
@@ -515,8 +516,19 @@ sup {
         display: block;
 				width: 100%;
 				height: 100%;
-				position: relative;
+				position: absolute;
+				top: 0;
+				left: 0;
     }
+		.js .satellite {
+			display: none;
+		}
+		.js .satellite.slidedown {
+			display: block;
+			-webkit-animation:slidedown 0.5s ease-in backwards;
+			-moz-animation:slidedown 0.5s ease-in backwards;
+			animation:slidedown 0.5s ease-in backwards;
+		}
 		.satellite div {
 			display: block;
 			width: 59px;
@@ -562,6 +574,104 @@ sup {
         }
     }
 /* end satellite */
+/* 4: snow */
+    #cool .graphic-position {
+        position: relative;
+        width: 280px;
+        height: 350px;
+        left: 50%;
+				margin: 0 0 0 -175px;
+    }
+		.snow div {
+			background: url(../img/snow.png) no-repeat 0 0;
+			background-size: contain;
+			position: absolute;
+			top: 28%;
+			left: 35%;
+			width: 115px;
+			height: 123px;
+		}
+		.js .snow div {
+			display: none;
+		}
+		.js .snow.fall div {
+			display: block;
+		}
+		.js .snow.fall div.s1 {
+			-webkit-animation: snowfall 4s ease-out infinite backwards, snowfade 2s linear infinite backwards alternate;
+			-moz-animation: snowfall 4s ease-out infinite backwards, snowfade 2s linear infinite backwards alternate;
+			animation: snowfall 4s ease-out infinite backwards, snowfade 2s linear infinite backwards alternate;
+		}
+		.snow div.s2 {
+			left: 21%;
+			top: 55%;
+			width: 74px;
+			height: 79px;
+		}
+		.js .snow.fall div.s2 {
+			-webkit-animation: snowfall2 3s ease-out infinite 0.5s backwards, snowfade 1.5s linear infinite 0.5s backwards alternate;
+			-moz-animation: snowfall2 3s ease-out infinite 0.5s backwards, snowfade 1.5s linear infinite 0.5s backwards alternate;
+			animation: snowfall2 3s ease-out infinite 0.5s backwards, snowfade 1.5s linear infinite 0.5s backwards alternate;
+		}
+    @media only screen and (min-width: 960px) {
+        #cool .graphic-position {
+						position: absolute;
+            left: 0;
+            margin-left: 0;
+        }
+    }
+
+/* end snow */
+/* 5: high performance */
+	
+	#high-performance .graphic-position {
+			position: relative;
+			width: 140px;
+			height: 173px;
+			left: 50%;
+			margin: 100px 0 60px -70px;
+	}
+	#high-performance .phone {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		background: url(../img/phone-meter.png) no-repeat 0 0;
+	}
+	.js #high-performance .phone {
+		display: none;
+	}
+	.js #high-performance .phone.meter {
+		display: block;
+		
+		-webkit-animation:highphone 0.5s linear backwards;
+		-moz-animation:highphone 0.5s linear backwards;
+		animation:highphone 0.5s linear backwards;
+	}
+	#high-performance .phone.meter .pin {
+		display: block;
+		width: 34px;
+		height: 106px;
+		position: absolute;
+		left: 53px;
+		top: 62px;
+		background: url(../img/meter.png) no-repeat 0 0;
+		
+		-webkit-transform: rotate(-70deg);
+		-moz-transform: rotate(-70deg);
+		transform: rotate(-70deg);
+			 
+		-webkit-animation:meter 2s ease-in-out infinite 0.5s alternate;
+		-moz-animation:meter 2s ease-in-out infinite 0.5s alternate;
+		animation:meter 2s ease-in-out infinite 0.5s alternate;
+	}
+  @media only screen and (min-width: 960px) {
+		#high-performance .graphic-position {
+			position: absolute;
+			left: 0;
+			margin-left: 0;
+		}
+	}
+/* end high performance */
 /* mobile power? */
     #pin {
         position: absolute;
@@ -696,16 +806,16 @@ sup {
 
 		/* big 5 movement */
     @-moz-keyframes highfive {
-			0% { top: -300px; }
-			100% { top: 30px; }
+			0% { opacity: 0; top: -300px; }
+			100% { opacity: 1; top: 30px; }
 		}
     @-webkit-keyframes highfive {
-			0% { top: -300px; }
-			100% { top: 30px; }
+			0% { opacity: 0; top: -300px; }
+			100% { opacity: 1; top: 30px; }
 		}
     @keyframes highfive {
-			0% { top: -300px; }
-			100% { top: 30px; }
+			0% { opacity: 0; top: -300px; }
+			100% { opacity: 1; top: 30px; }
 		}
 
 		/* headertxt movement */
@@ -731,25 +841,103 @@ sup {
     @-webkit-keyframes spinreverse { 100% { -webkit-transform: rotate(-360deg); } }
     @keyframes spinreverse { 100% { transform: rotate(-360deg); } }
 		
+		
+		/* phone chat */
+    @-moz-keyframes chat {
+			0% { background-position: 0 0; }
+			25% { background-position: -215px 0; }
+			50% { background-position: 100% 0; }
+		}
+    @-webkit-keyframes chat {
+			0% { background-position: 0 0; }
+			25% { background-position: -215px 0; }
+			50% { background-position: 100% 0; }
+		}
+    @keyframes chat {
+			0% { background-position: 0 0; }
+			25% { background-position: -215px 0; }
+			50% { background-position: 100% 0; }
+		}
+		
 		/* battery fill */
     @-moz-keyframes charge {
 			0% { background-position: 100% -150%; }
-			20% { background-position: 100% -150%; }
-			80% { background-position: 100% 0; }
-			100% { background-position: 100% 0; }
+			10% { background-position: 100% -150%; }
+			90% { background-position: 100% 100%; }
+			100% { background-position: 100% 100%; }
 		}
     @-webkit-keyframes charge {
 			0% { background-position: 100% -150%; }
-			20% { background-position: 100% -150%; }
-			80% { background-position: 100% 0; }
-			100% { background-position: 100% 0; }
+			10% { background-position: 100% -150%; }
+			90% { background-position: 100% 100%; }
+			100% { background-position: 100% 100%; }
 		}
     @keyframes charge {
 			0% { background-position: 100% -150%; }
-			20% { background-position: 100% -150%; }
-			80% { background-position: 100% 0; }
-			100% { background-position: 100% 0; }
+			10% { background-position: 100% -150%; }
+			90% { background-position: 100% 100%; }
+			100% { background-position: 100% 100%; }
 		}
+		
+		/* snowfall */
+		@-moz-keyframes snowfall {
+        0%   { top: 0%; }
+        50%   { top: 28%; }
+        100% { top: 70%; }
+		}
+		@-webkit-keyframes snowfall {
+        0%   { top: 0%; }
+        50%   { top: 28%; }
+        100% { top: 70%; }
+		}
+		@keyframes snowfall {
+        0%   { top: 0%; }
+        50%   { top: 28%; }
+        100% { top: 70%; }
+		}
+		@-moz-keyframes snowfall2 {
+        0%   { top: 0%; }
+        50%   { top: 55%; }
+        100% { top: 80%; }
+		}
+		@-webkit-keyframes snowfall2 {
+        0%   { top: 0%; }
+        50%   { top: 55%; }
+        100% { top: 80%; }
+		}
+		@keyframes snowfall2 {
+        0%   { top: 0%; }
+        50%   { top: 55%; }
+        100% { top: 80%; }
+		}
+		
+		@-moz-keyframes snowfade {
+        0%   { opacity: 0; }
+        100% { opacity: 1; }
+		}
+		@-webkit-keyframes snowfade {
+        0%   { opacity: 0; }
+        100% { opacity: 1; }
+		}
+		@keyframes snowfade {
+        0%   { opacity: 0; }
+        100% { opacity: 1; }
+		}
+		
+		
+    /* slidedown */
+    @-moz-keyframes slidedown {
+        0%   { top: -200%; opacity: 0; }
+        100% { top: 0%; opacity: 1; }
+    }
+    @-webkit-keyframes slidedown {
+        0%   { top: -200%; opacity: 0; }
+        100% { top: 0%; opacity: 1; }
+    }
+    @keyframes slidedown {
+        0%   { top: -200%; opacity: 0; }
+        100% { top: 0%; opacity: 1; }
+    }
 		
     /* slide left text */
     @-webkit-keyframes slide {
@@ -773,7 +961,44 @@ sup {
         28%  { left: 0; opacity: 0; }
         100% { left: 600; opacity: 0; }
     }
-
+		/* high-performance phone movement */
+    @-moz-keyframes highphone {
+			0% { opacity: 0; top: -100%; }
+			100% { opacity: 1; top: 0%; }
+		}
+    @-webkit-keyframes highphone {
+			0% { opacity: 0; top: -100%; }
+			100% { opacity: 1; top: 0%; }
+		}
+    @keyframes highphone {
+			0% { opacity: 0; top: -100%; }
+			100% { opacity: 1; top: 0%; }
+		}
+		/* phone meter : rotate from -70 to 70 */
+    @-webkit-keyframes meter {
+        0% { -webkit-transform: rotate(-70deg); }
+        10% { -webkit-transform: rotate(-70deg); }
+        70% { -webkit-transform: rotate(70deg); }
+        80% { -webkit-transform: rotate(65deg); }
+        90% { -webkit-transform: rotate(68deg); }
+        100% { -webkit-transform: rotate(70deg); }
+    }
+    @-moz-keyframes meter {
+        0% { -moz-transform: rotate(-70deg); }
+        10% { -moz-transform: rotate(-70deg); }
+        70% { -moz-transform: rotate(70deg); }
+        80% { -moz-transform: rotate(65deg); }
+        90% { -moz-transform: rotate(68deg); }
+        100% { -moz-transform: rotate(70deg); }
+    }
+    @keyframes meter {
+        0% { transform: rotate(-70deg); }
+        10% { transform: rotate(-70deg); }
+        70% { transform: rotate(70deg); }
+        80% { transform: rotate(65deg); }
+        90% { transform: rotate(68deg); }
+        100% { transform: rotate(70deg); }
+    }
     /* rev meter */
     @-webkit-keyframes rev {
         0% { -webkit-transform: rotate(-160deg); }
