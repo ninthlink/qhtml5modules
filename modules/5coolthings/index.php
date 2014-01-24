@@ -47,59 +47,108 @@
 						<img id="gear2" src="img/gear2.png" />
 					</div>
 				</div>
+        <div class="triangle"></div>
 			</header>
 			
 			<div id="content">
 
-				<?php // Slide #9 ?>
-				<section id="single-chip" class="bg-grey-grad block">
+				<?php // Slide #1 ?>
+				<section id="talking" class="bg-grey-grad block">
 					<div class="inner">
-						<div class="text-position">
-							<p class="center">Can make your phone do <br />things <span class="thick">by talking to it</span><sup class="sup">1</sup></p>
-						</div>
 						<div class="graphic-position">
-							<img id="single-phone" src="../meet-snapdragon/img/phone-simple.png" />
-							<img id="pop-power" src="../meet-snapdragon/img/pop-power.png" />
-							<img id="pop-chip" src="../meet-snapdragon/img/pop-chip.png" />
-							<img id="pop-lines" src="../meet-snapdragon/img/pop-lines.png" />
+							<div class="phone chat"></div>
+						</div>
+						<div class="text-position">
+							<h3 class="center">Can make your phone do <br />things <span class="thick">by talking to it</span> <sup class="sup">1</sup></h3>
 						</div>
 
 						<span class="stretch"></span>
 					</div>
 				</section>
 
-				<?php // Slide #8 ?>
-				<section id="mobile-power" class="bg-grey-grad block">
+				<?php // Slide #2 ?>
+				<section id="charge" class="bg-grey-grad block">
 					<div class="inner">
-						<div class="text-position">
-							<h2 class="txtr">Extraordinary <span class="thick">mobile power</span></h2>
-							<p class="txtb">Snapdragon processors pack a huge amount<br /> of mobile power into a tiny system on a chip.</p>
-						</div>
 						<div class="graphic-position">
-							<div id="meter">
-							    <div id="rev-inner">
-							        <div id="red"></div>
-							        <div id="grey"></div>
-							        <div id="pin"></div>
-							    </div>
-							    <div id="cover">
-							    	<div id="dot"></div>
-									</div>
-							</div>
-							<img id="chip3" src="../meet-snapdragon/img/chip135x132.png" />
+							<div class="battery">
+              	<div class="fill"></div>
+              </div>
 						</div>
+						<div class="text-position">
+							<h3 class="center">Can charge devices up to <span class="thick">75% faster</span> <sup class="sup">2</sup></h3>
+						</div>
+
+						<span class="stretch"></span>
+					</div>
+				</section>
+
+				<?php // Slide #3 ?>
+				<section id="satellites" class="bg-grey-grad block">
+					<div class="inner">
+						<div class="graphic-position">
+							<div class="satellite">
+              	<div class="s1"></div>
+              	<div class="s2"></div>
+              	<div class="s3"></div>
+              </div>
+						</div>
+						<div class="text-position">
+							<h3 class="center">Can access <span class="thick">50 satellites</span> <sup class="sup">3</sup></h3>
+						</div>
+
+						<span class="stretch"></span>
+					</div>
+				</section>
+
+				<?php // Slide #4 ?>
+				<section id="cool" class="bg-grey-grad block">
+					<div class="inner">
+						<div class="graphic-position">
+							<div class="snowflakes">
+              	<div class="s1"></div>
+              	<div class="s2"></div>
+              </div>
+						</div>
+						<div class="text-position">
+							<h3 class="center">Stays cool under pressure<br /><span class="thick">battery efficient</span> <sup class="sup">4</sup></h3>
+						</div>
+
+						<span class="stretch"></span>
+					</div>
+				</section>
+
+				<?php // Slide #5 ?>
+				<section id="high-performance" class="bg-grey-grad block">
+					<div class="inner">
+						<div class="graphic-position">
+							<div class="phone meter">
+							    <div class="rev-inner">
+							        <div class="pin"></div>
+							    </div>
+							</div>
+						</div>
+						<div class="text-position">
+							<h3 class="center">High performance <span class="thick">graphics</span><br />with <span class="thick">lower power</span> usage <sup class="sup">5</sup></h3>
+						</div>
+
+						<span class="stretch"></span>
 					</div>
 				</section>
         
-				<?php // Slide #16 ?>
+				<?php // Slide #6 ?>
 				<section id="legal" class="bg-red">
 					<div class="inner">
-						<div class="text-position center">
-							<p class="txtw">&copy; 2014 Qualcomm Technologies, Inc.  All rights reserved.</p>
-							<p class="txtw">Qualcomm is a trademark of QUALCOMM Incorporated, registered in the United States and other countries. Snapdragon is a trademark of Qualcomm Technologies, Inc.</p>
-						</div>
 						<div class="graphic-position center">
-							<img id="logo" src="../meet-snapdragon/img/snapdragon-logo.png" />
+							<img id="logo" src="img/snapdragon.png" />
+						</div>
+						<div class="text-position center txtw">
+							<p>&copy; 2014 Qualcomm Technologies, Inc.  All rights reserved.</p>
+              <p>1 - Nsectetur adipisicing elite sed do. Eiusmod tempor incididunt ut.<br />
+              2 - Nsectetur adipisicing elite sed do. Eiusmod tempor incididunt ut.<br />
+              3 - Nsectetur adipisicing elite sed do. Eiusmod tempor incididunt ut.<br />
+              4 - Nsectetur adipisicing elite sed do. Eiusmod tempor incididunt ut.<br />
+              5 - Nsectetur adipisicing elite sed do. Eiusmod tempor incididunt ut.</p>
+							<p>Qualcomm is a trademark of QUALCOMM Incorporated, registered in the United States and other countries. Snapdragon is a trademark of Qualcomm Technologies, Inc.</p>
 						</div>
 					</div>
 				</section>

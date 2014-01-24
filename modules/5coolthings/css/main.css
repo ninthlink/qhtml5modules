@@ -351,6 +351,10 @@ sup {
 }
 
 /* header area - responsive all sizes */
+		header {
+			position: relative;
+			z-index: 1;
+		}
     header h1 { 
         padding-top: 20%;
         width: 68%;
@@ -363,12 +367,21 @@ sup {
 			width: 125px;
 			position: relative;
 			top: 30px;
+				
+			-webkit-animation:highfive 0.5s ease-in-out 1.5s backwards;
+			-moz-animation:highfive 0.5s ease-in-out 1.5s backwards;
+			animation:highfive 0.5s ease-in-out 4s backwards;
 		}
 		header h1 .cool {
 			float: left;
 			font-family: "Qualcomm-Regular";
 			font-size: 0.6em;
 			line-height: 1em;
+			position: relative;
+				
+			-webkit-animation:headertxt 0.5s ease-in-out 2s backwards;
+			-moz-animation:headertxt 0.5s ease-in-out 2s backwards;
+			animation:headertxt 0.5s ease-in-out 2s backwards;
 		}
     header .header-graphic {
         position: absolute;
@@ -378,6 +391,10 @@ sup {
 				margin-left: 150px;
         width: 34%;
         text-align: center;
+				
+			-webkit-animation:headergraphic 0.5s ease-in-out 1s backwards;
+			-moz-animation:headergraphic 0.5s ease-in-out 1s backwards;
+			animation:headergraphic 0.5s ease-in-out 1s backwards;
     }
     #header-tablet {
         width: 100%;
@@ -400,71 +417,152 @@ sup {
         -moz-animation:spinreverse 10s linear infinite;
         animation:spinreverse 10s linear infinite;
     }
+		.triangle {
+			position: absolute;
+			bottom: -35px;
+			left: 50%;
+			width: 0;
+			height: 0;
+			margin-left: -35px;
+			border-left: 35px solid transparent;
+			border-right: 35px solid transparent;
+			border-top: 35px solid #e92628; 
+		}
 /* end header */
 
-/* mobile power */
-    #mobile-power .graphic-position {
+/*  1: talking */
+    #talking .graphic-position {
         position: relative;
-        width: 370px;
-        height: 220px;
+        width: 215px;
+        height: 176px;
         left: 50%;
-        margin-left: -185px;
-        margin-bottom: 40px;
+				margin: 130px 0 60px -107px;
     }
-    #mobile-power .graphic-position #chip3 {
-        position: absolute;
-        left: 50%;
-        margin-left: -66px;
-        bottom: 0;
-        z-index: 99;
+    .phone.chat {
+				background: url(../img/phone-chat.png) no-repeat 100% 0;
+        display: block;
+				width: 100%;
+				height: 100%;
     }
-    #meter {
-        position: absolute;
-        left: 0;
-        top: 0px;
-        width: 380px;
-        height: 380px;
-        background-color: transparent;
-    }
-    @media only screen and (min-width: 480px) {
-        #mobile-power .graphic-position #chip3 {
+		.js .phone.chat {
+			background-position: 0 0;
+		}
+		.js .phone.chat.b1 {
+			background-position: -215px 0;
+		}
+		.js .phone.chat.b2 {
+			background-position: 100% 0;
+		}
+    @media only screen and (min-width: 960px) {
+        #talking .graphic-position {
+						position: absolute;
             left: 0;
             margin-left: 0;
         }
-        #meter {
-            left: 22px;
-        }
     }
+/* end talking */
+/*  2: battery charge */
+    #charge .graphic-position {
+        position: relative;
+        width: 100px;
+        height: 162px;
+        left: 50%;
+				margin: 130px 0 60px -107px;
+    }
+    .battery {
+				background: url(../img/battery.png) no-repeat 0;
+        display: block;
+				width: 100%;
+				height: 100%;
+				position: relative;
+    }
+		.battery .fill {
+			width: 50%;
+			height: 94px;
+			position: absolute;
+			top: 43px;
+			left: 25px;
+			background: url(../img/battery.png) no-repeat 100% 0;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+		.js .battery .fill {
+			background-position: 100% -150%;
+		}
+		.js .battery.charging .fill {
+			-webkit-animation:charge 2s ease-in-out infinite alternate;
+			-moz-animation:charge 2s ease-in-out infinite alternate;
+			animation:charge 2s ease-in-out infinite alternate;
+		}
     @media only screen and (min-width: 960px) {
-        #mobile-power .graphic-position {
-            left: 580px;
+        #charge .graphic-position {
+						position: absolute;
+            left: 0;
             margin-left: 0;
-            top: -40px;
         }
     }
-
-    #red {
-        position: absolute;
-        top: 50%;
-        margin-top: -162px;
+/* end battery charge */
+/*  2: battery charge */
+    #satellites .graphic-position {
+        position: relative;
+        width: 172px;
+        height: 172px;
         left: 50%;
-        margin-left: -162px;
-        width: 324px;
-        height: 162px;
-        border-radius: 162px 162px 0 0;
-        background-color: #e12529;
+				margin: 130px 0 60px -86px;
     }
-    #grey {
-        position: absolute;
-        bottom: 50%;
-        margin-bottom: -162px;
-        left: 50%;
-        margin-left: -162px;
-        width: 324px;
-        height: 162px;
-        border-radius: 0 0 162px 162px;
-        background-color: #ccc;
+    .satellite {
+				background: url(../img/satellite.png) no-repeat 100% 0;
+        display: block;
+				width: 100%;
+				height: 100%;
+				position: relative;
     }
+		.satellite div {
+			display: block;
+			width: 59px;
+			height: 61px;
+			position: absolute;
+			top: -1px;
+			right: -1px;
+			background: url(../img/satellite.png) no-repeat -44px 0;
+		}
+		.satellite div.s1 {
+			width: 29px;
+			height: 30px;
+			top: 29px;
+			right: 30px;
+			background-position: 0 0;
+		}
+		.satellite div.s2 {
+			width: 44px;
+			height: 46px;
+			top: 14px;
+			right: 15px;
+			background-position: 0 -30px;
+		}
+		.js .satellite div {
+			display: none;
+		}
+		.js .satellite.s1 div.s1,
+		.js .satellite.s2 div.s1,
+		.js .satellite.s3 div.s1,
+		.js .satellite.s2 div.s2,
+		.js .satellite.s3 div.s2,
+		.js .satellite.s4 div.s2,
+		.js .satellite.s3 div.s3,
+		.js .satellite.s4 div.s3,
+		.js .satellite.s5 div.s3 {
+			display: block;
+		}
+    @media only screen and (min-width: 960px) {
+        #satellites .graphic-position {
+						position: absolute;
+            left: 0;
+            margin-left: 0;
+        }
+    }
+/* end satellite */
+/* mobile power? */
     #pin {
         position: absolute;
         top: 50%;
@@ -473,30 +571,6 @@ sup {
         width: 184px;
         height: 6px;
         background-color: #333;
-    }
-    #dot {
-        position: absolute;
-        margin-top: -7px;
-        left: 50%;
-        margin-left: -7px;
-        border-radius: 7px;
-        width: 14px;
-        height: 14px;
-        background-color: #333;
-        z-index: 9;
-    }
-    #cover {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 380px;
-        height:190px;
-        background-color: #fff;
-    }
-    #cover img {
-        right: 18px;
-        position: absolute;
-        width: 92%;
     }
     #rev-inner {
         position: absolute;
@@ -550,8 +624,9 @@ sup {
 /* end single chip */
 
 /* legal section */
-    #legal .text-position p { font-size: 0.7em }
-    #legal #logo { margin: 80px; }
+    #legal .text-position p { font-size: 0.8em; margin-bottom: 1em; }
+    #legal #logo { margin: 70px auto 30px; }
+		#legal .text-position.center { padding-top: 0; padding-bottom: 70px; }
 /* end legal */
 
 
@@ -605,6 +680,49 @@ sup {
 
 /* animations */
 
+		/* headergraphic movement */
+    @-moz-keyframes headergraphic {
+			0% { margin-left: -17%; }
+			100% { margin-left: 15%; }
+		}
+    @-webkit-keyframes headergraphic {
+			0% { margin-left: -17%; }
+			100% { margin-left: 15%; }
+		}
+    @keyframes headergraphic {
+			0% { margin-left: -17%; }
+			100% { margin-left: 15%; }
+		}
+
+		/* big 5 movement */
+    @-moz-keyframes highfive {
+			0% { top: -300px; }
+			100% { top: 30px; }
+		}
+    @-webkit-keyframes highfive {
+			0% { top: -300px; }
+			100% { top: 30px; }
+		}
+    @keyframes highfive {
+			0% { top: -300px; }
+			100% { top: 30px; }
+		}
+
+		/* headertxt movement */
+    @-moz-keyframes headertxt {
+			0% { opacity: 0; left: 50%; }
+			100% { opacity: 1; left: 0%; }
+		}
+    @-webkit-keyframes headertxt {
+			0% { opacity: 0; left: 50%; }
+			100% { opacity: 1; left: 0%; }
+		}
+    @keyframes headertxt {
+			0% { opacity: 0; left: 50%; }
+			100% { opacity: 1; left: 0%; }
+		}
+		
+		
     /* spinning gears */
     @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
     @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
@@ -612,7 +730,27 @@ sup {
     @-moz-keyframes spinreverse { 100% { -moz-transform: rotate(-360deg); } }
     @-webkit-keyframes spinreverse { 100% { -webkit-transform: rotate(-360deg); } }
     @keyframes spinreverse { 100% { transform: rotate(-360deg); } }
-
+		
+		/* battery fill */
+    @-moz-keyframes charge {
+			0% { background-position: 100% -150%; }
+			20% { background-position: 100% -150%; }
+			80% { background-position: 100% 0; }
+			100% { background-position: 100% 0; }
+		}
+    @-webkit-keyframes charge {
+			0% { background-position: 100% -150%; }
+			20% { background-position: 100% -150%; }
+			80% { background-position: 100% 0; }
+			100% { background-position: 100% 0; }
+		}
+    @keyframes charge {
+			0% { background-position: 100% -150%; }
+			20% { background-position: 100% -150%; }
+			80% { background-position: 100% 0; }
+			100% { background-position: 100% 0; }
+		}
+		
     /* slide left text */
     @-webkit-keyframes slide {
         0%   { left: 600; opacity: 0; }

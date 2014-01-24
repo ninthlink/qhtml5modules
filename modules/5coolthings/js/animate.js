@@ -34,7 +34,51 @@ $(document).ready(function() {
 		$(this).addClass('fade-in');
 	});
 
-	// #8 "Mobile Power" :: ??
+	// #1 "talking" :: cycle through chat bubbles
+	var phonechat = $('#talking .phone');
+	var phonebubble;
+	var phonechatbubbles = function() {
+		var tdelay = 500;
+		if ( phonechat.hasClass('b2') ) {
+			phonechat.removeClass('b2');
+		} else if ( phonechat.hasClass('b1') ) {
+			phonechat.removeClass('b1').addClass('b2');
+			tdelay = 1500;
+		} else {
+			phonechat.addClass('b1');
+		}
+		clearTimeout(phonebubble);
+		phonebubble = setTimeout(phonechatbubbles, tdelay);
+	};
+	$('#talking').waypoint(function() {
+		clearTimeout(phonebubble);
+		phonechatbubbles();
+	});
+	
+	// #2 battery charge
+	$('#charge').waypoint(function() {
+		$('#charge .battery').addClass('charging');
+	});
+	
+	// #3 satellite signal
+	var satellite = $('#satellites .satellite');
+	var satellitesignals;
+	var signalcount = 0;
+	var satellitesignal = function() {
+		var sdelay = 200;
+		signalcount++;
+		if ( signalcount > 5 ) {
+			signalcount = 0;
+		}
+		satellite.attr('class', 'satellite s'+ signalcount);
+		
+		clearTimeout(satellitesignals);
+		satellitesignals = setTimeout(satellitesignal, sdelay);
+	};
+	$('#satellites').waypoint(function() {
+		clearTimeout(satellitesignals);
+		satellitesignal();
+	});
 
 	// #9 "Single Chip" :: slide phone to side (large screen) or bottom (small screen), then pop in icons and fade in text
 	$('#single-chip').waypoint(function(){
