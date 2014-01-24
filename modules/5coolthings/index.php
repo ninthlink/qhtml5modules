@@ -3,7 +3,7 @@
  * Qualcomm HTML5 Modules
  * 5 Cool Thing
  *
- * v0.1
+ * v0.1.1
  */
 ?>
 <!doctype html>
@@ -146,7 +146,7 @@
               3 - Nsectetur adipisicing elite sed do. Eiusmod tempor incididunt ut.<br />
               4 - Nsectetur adipisicing elite sed do. Eiusmod tempor incididunt ut.<br />
               5 - Nsectetur adipisicing elite sed do. Eiusmod tempor incididunt ut.</p>
-							<p>Qualcomm is a trademark of QUALCOMM Incorporated, registered in the United States and other countries. Snapdragon is a trademark of Qualcomm Technologies, Inc.</p>
+							<p>Qualcomm is a trademark of QUALCOMM Incorporated registered in the United States and other countries. Gobi and Snapdragon are trademarks of Qualcomm Technologies, Inc.<br />Other products and brand names are property of their respective owners.</p>
 						</div>
 					</div>
 				</section>
@@ -159,6 +159,19 @@
 		</div>
 
 		<script src="js/animate.js"></script>
-
+<script type="text/javascript"> 
+//browser-update.org
+var $buoop = {vs:{i:9,f:5,o:12,s:5,n:9},reminder:0,onshow:function(infos) {
+	jQuery('#buorg > div').prepend('<strong>This module is built with the latest HTML5 + CSS3 in mind.</strong> ');
+	}}; 
+$buoop.ol = window.onload; 
+window.onload=function(){ 
+ try {if ($buoop.ol) $buoop.ol();}catch (e) {} 
+ var e = document.createElement("script"); 
+ e.setAttribute("type", "text/javascript"); 
+ e.setAttribute("src", "//browser-update.org/update.js"); 
+ document.body.appendChild(e); 
+} 
+</script>
 	</body>
 </html>
