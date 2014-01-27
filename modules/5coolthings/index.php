@@ -3,7 +3,7 @@
  * Qualcomm HTML5 Modules
  * 5 Cool Thing
  *
- * v0.1.5
+ * v0.1.6
  */
 ?>
 <!doctype html>
@@ -40,7 +40,7 @@
 			<?php // Slide #1 ?>
 			<header class="bg-red-grad">
 				<div class="inner">
-					<h1 class="txtw"><strong class="big5">5</strong><span class="cool">Super cool things<br /><span class="thin">about Qualcomm<sup>&reg;</sup><br />Snapdragon<sup>&trade;</sup> Processors</span></span></h1>
+					<h1 class="txtw"><strong>5</strong><span class="cool">Super cool things<br /><span class="thin">about Qualcomm<sup>&reg;</sup><br />Snapdragon<sup>&trade;</sup> Processors</span></span></h1>
 					<div class="header-graphic">
 						<img id="main-img" src="img/topgraphic.png" />
 						<img id="gear1" src="img/gear1.png" />
