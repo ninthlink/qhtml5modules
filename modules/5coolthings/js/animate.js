@@ -96,7 +96,7 @@ $(document).ready(function() {
 				}
 			}, {
 				offset: function() {
-					return -( $(this).height() * 0.75 );
+					return -( $(this).height() * 0.9 );
 				},
 				triggerOnce: true
 			});
