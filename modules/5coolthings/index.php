@@ -3,7 +3,7 @@
  * Qualcomm HTML5 Modules
  * 5 Cool Thing
  *
- * v0.1.1
+ * v0.1.2
  */
 ?>
 <!doctype html>
@@ -140,7 +140,7 @@
 							<img id="logo" src="img/snapdragon.png" />
 						</div>
 						<div class="text-position center txtw">
-							<p>&copy; 2014 Qualcomm Technologies, Inc.  All rights reserved.</p>
+							<p>&copy; <?php date_default_timezone_set('UTC'); echo date('Y'); ?> Qualcomm Technologies, Inc.  All rights reserved.</p>
               <p>1 - Nsectetur adipisicing elite sed do. Eiusmod tempor incididunt ut.<br />
               2 - Nsectetur adipisicing elite sed do. Eiusmod tempor incididunt ut.<br />
               3 - Nsectetur adipisicing elite sed do. Eiusmod tempor incididunt ut.<br />
