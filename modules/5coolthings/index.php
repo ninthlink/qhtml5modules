@@ -3,7 +3,7 @@
  * Qualcomm HTML5 Modules
  * 5 Cool Thing
  *
- * v0.1.2
+ * v0.1.3
  */
 ?>
 <!doctype html>
@@ -42,7 +42,7 @@
 				<div class="inner">
 					<h1 class="txtw"><strong class="big5">5</strong><span class="cool">Super cool things<br /><span class="thin">about Qualcomm<sup>&reg;</sup><br />Snapdragon<sup>&trade;</sup> Processors</span></span></h1>
 					<div class="header-graphic">
-						<img id="header-tablet" src="img/header-phone.png" />
+						<img id="main-img" src="img/topgraphic.png" />
 						<img id="gear1" src="img/gear1.png" />
 						<img id="gear2" src="img/gear2.png" />
 					</div>
