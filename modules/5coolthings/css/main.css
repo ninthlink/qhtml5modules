@@ -338,6 +338,7 @@ sup {
 		header {
 			position: relative;
 			z-index: 1;
+			overflow: hidden;
 		}
 		h1 { 
 			font-size: 22px;
@@ -377,9 +378,9 @@ sup {
 			height: auto;
 			text-align: center;
 				
-			-webkit-animation:headergraphic 0.5s ease-in-out 0.5s backwards;
-			-moz-animation:headergraphic 0.5s ease-in-out 0.5s backwards;
-			animation:headergraphic 0.5s ease-in-out 0.5s backwards;
+			-webkit-animation:headergraphicm 0.5s ease-in-out 0.5s backwards;
+			-moz-animation:headergraphicm 0.5s ease-in-out 0.5s backwards;
+			animation:headergraphicm 0.5s ease-in-out 0.5s backwards;
     }
 		#main-img {
 			width: 100%;
@@ -404,17 +405,6 @@ sup {
         -moz-animation:spinreverse 10s linear infinite;
         animation:spinreverse 10s linear infinite;
     }
-		.triangle {
-			position: absolute;
-			bottom: -35px;
-			left: 50%;
-			width: 0;
-			height: 0;
-			margin-left: -35px;
-			border-left: 35px solid transparent;
-			border-right: 35px solid transparent;
-			border-top: 35px solid #e92628; 
-		}
 @media only screen and (min-width: 480px) {
 	h1 {
 		font-size: 35px;
@@ -424,10 +414,10 @@ sup {
 		font-size: 190px;
 		margin-right: 20px;
 	}
-    .header-graphic {
-			width: 439px;
-			height: 425px;
-		}
+	.header-graphic {
+		width: 439px;
+		height: 425px;
+	}
 }
 @media only screen and (min-width: 600px) {
 	h1 {
@@ -455,11 +445,26 @@ sup {
 		margin: 0 0 0 132px;
 		width: 319px;
 		height: 306px;
+				
+		-webkit-animation:headergraphic 0.5s ease-in-out 0.5s backwards;
+		-moz-animation:headergraphic 0.5s ease-in-out 0.5s backwards;
+		animation:headergraphic 0.5s ease-in-out 0.5s backwards;
 	}
 }
 /* end header */
 
 /*  1: talking */
+		.triangle {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 0;
+			height: 0;
+			margin-left: -35px;
+			border-left: 35px solid transparent;
+			border-right: 35px solid transparent;
+			border-top: 35px solid #e92628; 
+		}
     #talking .graphic-position {
         position: relative;
         width: 215px;
@@ -495,7 +500,7 @@ sup {
         width: 100px;
         height: 162px;
         left: 50%;
-				margin: 130px 0 60px -107px;
+				margin: 130px 0 60px -50px;
     }
     .battery {
 				background: url(../img/battery.png) no-repeat 0;
@@ -609,7 +614,7 @@ sup {
         width: 280px;
         height: 350px;
         left: 50%;
-				margin: 0 0 0 -175px;
+				margin: 0 0 0 -140px;
     }
 		.snow div {
 			background: url(../img/snow.png) no-repeat 0 0;
@@ -820,17 +825,29 @@ sup {
 /* animations */
 
 		/* headergraphic movement */
+    @-moz-keyframes headergraphicm {
+			0% { margin-top: -400px; margin-bottom: 400px; }
+			100% { margin-top: 80px; margin-bottom: 0; }
+		}
+    @-webkit-keyframes headergraphicm {
+			0% { margin-top: -400px; margin-bottom: 400px; }
+			100% { margin-top: 80px; margin-bottom: 0; }
+		}
+    @keyframes headergraphicm {
+			0% { margin-top: -400px; margin-bottom: 400px; }
+			100% { margin-top: 80px; margin-bottom: 0; }
+		}
     @-moz-keyframes headergraphic {
-			0% { margin-left: -17%; }
-			100% { margin-left: 15%; }
+			0% { margin-left: -160px; }
+			100% { margin-left: 132px; }
 		}
     @-webkit-keyframes headergraphic {
-			0% { margin-left: -17%; }
-			100% { margin-left: 15%; }
+			0% { margin-left: -160px; }
+			100% { margin-left: 132px; }
 		}
     @keyframes headergraphic {
-			0% { margin-left: -17%; }
-			100% { margin-left: 15%; }
+			0% { margin-left: -160px; }
+			100% { margin-left: 132px; }
 		}
 
 		/* big 5 movement */

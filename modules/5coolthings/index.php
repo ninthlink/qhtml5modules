@@ -3,7 +3,7 @@
  * Qualcomm HTML5 Modules
  * 5 Cool Thing
  *
- * v0.1.3
+ * v0.1.5
  */
 ?>
 <!doctype html>
@@ -47,13 +47,13 @@
 						<img id="gear2" src="img/gear2.png" />
 					</div>
 				</div>
-        <div class="triangle"></div>
 			</header>
 			
 			<div id="content">
 
 				<?php // Slide #1 ?>
 				<section id="talking" class="bg-grey-grad block">
+        	<div class="triangle"></div>
 					<div class="inner">
 						<div class="graphic-position">
 							<div class="phone"></div>
