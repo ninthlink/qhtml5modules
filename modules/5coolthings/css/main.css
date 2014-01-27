@@ -270,8 +270,6 @@ sup {
 
 @media only screen and (max-width: 959px) {
     /* section heights for mobile? */
-    header { padding-bottom: 75px;  }
-
     .block,
     .block .inner { min-height: 380px; }
 }
@@ -340,13 +338,14 @@ sup {
 			position: relative;
 			z-index: 1;
 			overflow: hidden;
+			padding-bottom: 40px;
 		}
 		h1 { 
 			font-size: 23px;
 			font-weight: normal;
 			line-height: 150%;
 			letter-spacing: 0;
-			padding-top: 10.5%;
+			padding-top: 0;
 			width: 100%;
 			margin: 0 auto;
 		}
@@ -374,7 +373,7 @@ sup {
 		}
     .header-graphic {
 			display: block;
-			margin: 80px auto 0;
+			margin: 0 auto;
 			position: relative;
 			width: 100%;
 			height: auto;
@@ -408,9 +407,13 @@ sup {
         animation:spinreverse 10s linear infinite;
     }
 @media only screen and (min-width: 480px) {
+	header {
+		padding-bottom: 0;
+	}
 	h1 {
 		font-size: 35px;
 		line-height: 43px;
+		padding-top: 10.5%;
 	}
 	h1 strong {
 		font-size: 190px;
@@ -420,6 +423,11 @@ sup {
 	.header-graphic {
 		width: 439px;
 		height: 425px;
+		margin: 80px auto;
+				
+			-webkit-animation:headergraphicm 0.5s ease-in-out 0.5s backwards;
+			-moz-animation:headergraphicm 0.5s ease-in-out 0.5s backwards;
+			animation:headergraphicm 0.5s ease-in-out 0.5s backwards;
 	}
 }
 @media only screen and (min-width: 600px) {
@@ -831,15 +839,27 @@ sup {
 		/* headergraphic movement */
     @-moz-keyframes headergraphicm {
 			0% { margin-top: -400px; margin-bottom: 400px; }
-			100% { margin-top: 80px; margin-bottom: 0; }
+			100% { margin-top: 0; margin-bottom: 0; }
 		}
     @-webkit-keyframes headergraphicm {
 			0% { margin-top: -400px; margin-bottom: 400px; }
-			100% { margin-top: 80px; margin-bottom: 0; }
+			100% { margin-top: 0; margin-bottom: 0; }
 		}
     @keyframes headergraphicm {
 			0% { margin-top: -400px; margin-bottom: 400px; }
-			100% { margin-top: 80px; margin-bottom: 0; }
+			100% { margin-top: 80px; margin-bottom: 80px; }
+		}
+    @-moz-keyframes headergraphict {
+			0% { margin-top: -425px; margin-bottom: 505px; }
+			100% { margin-top: 80px; margin-bottom: 80px; }
+		}
+    @-webkit-keyframes headergraphict {
+			0% { margin-top: -425px; margin-bottom: 505px; }
+			100% { margin-top: 80px; margin-bottom: 80px; }
+		}
+    @keyframes headergraphict {
+			0% { margin-top: -425px; margin-bottom: 505px; }
+			100% { margin-top: 80px; margin-bottom: 80px; }
 		}
     @-moz-keyframes headergraphic {
 			0% { margin-left: -160px; }
