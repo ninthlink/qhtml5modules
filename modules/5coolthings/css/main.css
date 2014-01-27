@@ -853,15 +853,15 @@ sup {
 		/* big 5 movement */
     @-moz-keyframes highfive {
 			0% { opacity: 0; top: -300px; }
-			100% { opacity: 1; top: 30px; }
+			100% { opacity: 1; top: 0; }
 		}
     @-webkit-keyframes highfive {
 			0% { opacity: 0; top: -300px; }
-			100% { opacity: 1; top: 30px; }
+			100% { opacity: 1; top: 0; }
 		}
     @keyframes highfive {
 			0% { opacity: 0; top: -300px; }
-			100% { opacity: 1; top: 30px; }
+			100% { opacity: 1; top: 0; }
 		}
 
 		/* headertxt movement */
