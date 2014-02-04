@@ -51,6 +51,30 @@
 			*/ ?>
 			<div id="content">
 			
+				<?php // Slide #18 ?>
+				<section id="tap" class="bg-white block">
+					<div class="inner">
+						<div class="text-position">
+						<h2 class="center"><span class="thick">Mobile devices</span> can tap into resources<br />beyond their own capabilities</h2>
+						<div class="graphic-position">
+							<div class="globe"></div>
+							<div class="eco p1"><div class="ring"></div><div class="icn"></div></div>
+							<div class="eco p2"><div class="ring"></div><div class="icn"></div></div>
+							<div class="eco p3"><div class="ring"></div><div class="icn"></div></div>
+						</div>
+              <h4><span class="thick">Inventing technologies and tools that make mobile devices intuitive</span></h4>
+<ul>
+<li>Awareness: Reacts to events, locations, and personal behaviors</li>
+<li>Connectivity: Recognizes and connects everyday things</li>
+<li>Intelligence: Delivers timely, personalized information to the user</li>
+<li>Interaction: Enhances real-world environments with interactive elements</li>
+</ul>
+						</div>
+
+						<span class="stretch"></span>
+					</div>
+				</section>
+			
 				<?php // Slide #19 ?>
 				<section id="explore" class="bg-img block">
 					<div class="inner">

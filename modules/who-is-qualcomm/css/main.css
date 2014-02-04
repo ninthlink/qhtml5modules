@@ -287,8 +287,7 @@ sup {
 
 .text-position {
     position: relative;
-    margin-left: 8.33%;
-    padding-top: 8.96%;
+    padding-top: 6%;
 }
 .text-position.center {
     position: relative;
@@ -300,7 +299,7 @@ sup {
     width: 90%;
 }
 .text-position h2 {
-    font-size: 2.1em;
+    font-size: 1.7em;
     font-weight: 300;
     line-height: 1.1em;
 }
@@ -334,6 +333,93 @@ sup {
     position: relative;
     width: 90%;
     margin: auto 5%;
+}
+/* #18 tap */
+#tap .text-position ul li {
+	position: relative;
+}
+#tap .graphic-position {
+	display: block;
+	width: 331px;
+	height: 337px;
+	position: relative;
+	margin: 2em auto;
+}
+#tap .globe {
+	width: 203px;
+	height: 244px;
+	position: absolute;
+	top: 55px;
+	left: 98px;
+	background: url(../img/bg-tap.png) no-repeat 0 0;
+	z-index: 1;
+}
+#tap .eco {
+	width: 135px;
+	height: 135px;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 150px;
+}
+#tap .eco .ring {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/tap-ring1.png) no-repeat 0 0;
+	z-index: 2;
+}
+#tap .eco .icn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 68px;
+	height: 68px;
+	margin: -34px 0 0 -34px;
+	background: url(../img/ic-tap.png) no-repeat 0 0;
+	z-index: 3;
+	border-radius: 34px;
+}
+#tap .eco.p2  {
+	left: 203px;
+	top: 197px;
+}
+#tap .eco.p2 .ring {
+	background-image: url(../img/tap-ring2.png);
+}
+#tap .eco.p2  .icn {
+	background-position: -68px 0;
+}
+#tap .eco.p3  {
+	left: 0;
+	top: 124px;
+}
+#tap .eco.p3 .ring {
+	background-image: url(../img/tap-ring3.png);
+}
+#tap .eco.p3  .icn {
+	background-position: 100% 0;
+}
+#tap .text-position ul {
+	padding-left: 1.5em;
+	font-size: 21px;
+}
+@media only screen and (min-width: 960px) {
+	#tap .graphic-position {
+		margin: 0;
+		position: absolute;
+		top: 180px;
+		left: 0;
+	}
+	#tap h4 {
+		margin-top: 100px;
+		margin-left: 400px
+	}
+	#tap ul {
+		margin-left: 400px;
+	}
 }
 /* #19 explore */
 .block#explore {
