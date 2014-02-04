@@ -54,13 +54,10 @@
 				<?php // Slide #19 ?>
 				<section id="explore" class="bg-img block">
 					<div class="inner">
-						<div class="graphic-position">
-							<div class="phone">
-							  <div class="pin"></div>
-							</div>
-						</div>
 						<div class="text-position center txtw">
-							<h2 class="center">Explore. Learn. Live. <span class="thick">More.</span></h3>
+							<div class="eco"></div>
+							<h2 class="center">Explore. Learn. Live. <span class="thick">More.</span></h2>
+              <p>Creating mobile, computing, and connectivity technologies for your everyday.</p>
 						</div>
 
 						<span class="stretch"></span>
