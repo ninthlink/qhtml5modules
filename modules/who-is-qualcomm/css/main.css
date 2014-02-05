@@ -334,6 +334,49 @@ sup {
     width: 90%;
     margin: auto 5%;
 }
+/* #17 across4 */
+#across4 ul {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#across4 li {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#across4 img {
+	float: left;
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: 1;
+}
+#across4 .c {
+	float: left;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	font: 24px/100% "Qualcomm-Semibold", sans-serif;
+	color: #fff;
+	z-index: 2;
+	text-align: center;
+}
+@media only screen and (min-width: 600px) {
+	#across4 li {
+		width: 50%
+	}
+}
+@media only screen and (min-width: 960px) {
+	#across4 li {
+		width: 25%;
+	}
+}
 /* #18 tap */
 #tap .text-position ul li {
 	position: relative;

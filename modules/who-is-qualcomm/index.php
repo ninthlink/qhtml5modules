@@ -51,6 +51,16 @@
 			*/ ?>
 			<div id="content">
 			
+				<?php // Slide #17 ?>
+				<section id="across4" class="bg-white block">
+          	<ul>
+            	<li class="a1"><img src="img/41.jpg" width="320" height="296" alt="" /><span class="c">Knows your location</span></li>
+            	<li class="a2"><img src="img/42.jpg" width="320" height="296" alt="" /><span class="c">Senses your motion</span></li>
+            	<li class="a3"><img src="img/43.jpg" width="320" height="296" alt="" /><span class="c">Understands your environment</span></li>
+            	<li class="a4"><img src="img/44.jpg" width="320" height="296" alt="" /><span class="c">Recognizes enviornmental sound</span></li>
+            </ul>
+        </section>
+        
 				<?php // Slide #18 ?>
 				<section id="tap" class="bg-white block">
 					<div class="inner">
