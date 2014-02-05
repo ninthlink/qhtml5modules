@@ -28,6 +28,34 @@ $(document).ready(function() {
 		});
 	}).trigger('resize.qmod');
 	
+	// #12 driving : cycler
+	var arrowd = function() {
+		$('.arrowd a.next').click();
+	};
+	var arrowt = setTimeout(arrowd, 2000);
+	$('.arrowd a').click(function() {
+		clearTimeout(arrowt);
+		var onn = $('.arrowd li.onn').css('left',0).removeClass('onn');
+		var nex;
+		var dir = '-=100%';
+		if ( $(this).hasClass('prev') ) {
+			dir = '+=100%';
+			nex = onn.prev();
+			if ( nex.size() < 1 ) nex = $('.arrowd ul li:last-child');
+			nex.css('left','-100%');
+		} else {
+			nex = onn.next();
+			if ( nex.size() < 1 ) nex = $('.arrowd ul li:first-child');
+			nex.css('left','100%');
+		}
+		nex.addClass('onn').add(onn).animate({
+			left: dir
+		}, 1000);
+		arrowt = setTimeout(arrowd, 3000);
+		
+		return false;
+	});
+	
 	// #13 billion
 	$('#billion').waypoint(function() {
 		$(this).find('.number').css('left',0).animate({

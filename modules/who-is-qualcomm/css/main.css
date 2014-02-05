@@ -361,6 +361,81 @@ sup {
 	padding-top: 25%;
 	padding-bottom: 25%;
 }
+.arrowd {
+	float: left;
+	width: 87.5%;
+	position: relative;
+	margin: 6.25%;
+}
+.block#driving .text-position .arrowd ul {
+	background: #fff;
+	float: left;
+	width: 80%;
+	height: 58px;
+	margin: 0 0.5%;
+	position: relative;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	font-family: "Qualcomm-Regular", sans-serif;
+}
+.block#driving .text-position .arrowd ul li {
+	width: 100%;
+	height: 100%;
+	line-height: 58px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	list-style: none;
+	top: 0;
+	left: 100%;
+	
+	-webkit-animation:fadeout 0.3s ease-in backwards;
+	-moz-animation:fadeout 0.3s ease-in backwards;
+	animation:fadeout 0.3s ease-in backwards;
+}
+.block#driving .text-position .arrowd ul li.onn {
+	left: 0;
+	
+	-webkit-animation:fadein 0.8s ease-in backwards;
+	-moz-animation:fadein 0.8s ease-in backwards;
+	animation:fadein 0.8s ease-in backwards;
+}
+.arrowd a {
+	background: #009993;
+	float: left;
+	width: 9.5%;
+	height: 58px;
+	text-decoration: none;
+}
+.arrowd a span {
+	display: block;
+	width: 18px;
+	height: 34px;
+	margin: 12px auto;
+	background: url(../img/ic-drive-arrows.gif) no-repeat 0 0;
+	text-indent: -999em;
+}
+.arrowd a.next span { background-position: -18px 0 }
+@media only screen and (max-width: 799px) {
+	.arrowd {
+		width: 100%;
+		margin: 6.25% 0;
+	}
+}
+@media only screen and (max-width: 479px) {
+	.arrowd {
+		width: 100%;
+		margin: 6.25% 0;
+	}
+	.arrowd a {
+		width: 12%;
+	}
+	.block#driving .text-position .arrowd ul {
+		margin: 0 1.5%;
+		width: 73%;
+	}
+}
 /* #13 billion */
 #billion .number {
 	font-size: 2.6em;
@@ -852,7 +927,11 @@ sup {
     @-webkit-keyframes exploreeco { 0% { opacity: 0; width: 0; height: 0; -webkit-transform: rotate(180deg); } 100% { width: 158px; height: 148px; opacity: 1; -webkit-transform: rotate(360deg); } }
     @keyframes exploreeco { 0% { opacity: 0; width: 0; height: 0; transform: rotate(180deg); } 100% { width: 158px; height: 148px; opacity: 1; transform: rotate(360deg); } }
 		
-		/* text fade in */
-		@-moz-keyframes fadein { 0% { opacity: 0; } 100% { opacity: 1; } }
-		@-webkit-keyframes fadein { 0% { opacity: 0; } 100% { opacity: 1; } }
-		@keyframes fadein { 0% { opacity: 0; } 100% { opacity: 1; } }
+	/* text fade in */
+	@-moz-keyframes fadein { 0% { opacity: 0; } 100% { opacity: 1; } }
+	@-webkit-keyframes fadein { 0% { opacity: 0; } 100% { opacity: 1; } }
+	@keyframes fadein { 0% { opacity: 0; } 100% { opacity: 1; } }
+	
+	@-moz-keyframes fadeout { 0% { opacity: 1; } 100% { opacity: 0; } }
+	@-webkit-keyframes fadeout { 0% { opacity: 1; } 100% { opacity: 0; } }
+	@keyframes fadeout { 0% { opacity: 1; } 100% { opacity: 0; } }

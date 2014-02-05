@@ -56,6 +56,15 @@
 					<div class="inner">
 						<div class="text-position center txtw">
 							<h2>Driving the <span class="thick">mobile experience</span> everywhere</h2>
+							<div class="arrowd">
+								<a href="#prev" class="prev"><span>&lt;</span></a>
+								<ul class="txtb">
+									<li class="onn">Home gateways</li>
+									<li>Something else</li>
+									<li>Number three</li>
+								</ul>
+								<a href="#next" class="next"><span>&gt;</span></a>
+							</div>
 						</div>
 
 						<span class="stretch"></span>
@@ -66,7 +75,7 @@
         <section id="billion" class="bg-blue-grad block">
         	<div class="inner">
           	<div class="text-position center">
-            	<div class="number txtw">25,000,000,000</div>
+            	<div class="number txtw">&nbsp;</div>
               <h2><span class="thick">25 Billion</span> mobile devices connected by 2020*</h2>
               <p class="txtw"><br /><br /><br />* Source: Machina Research, 2013</p>
             </div>
