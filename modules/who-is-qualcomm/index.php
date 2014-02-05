@@ -51,34 +51,105 @@
 			*/ ?>
 			<div id="content">
 			
+				<?php // Slide #12 ?>
+				<section id="driving" class="bg-img block comeon" data-bg-height="600">
+					<div class="inner">
+						<div class="text-position center txtw">
+							<h2>Driving the <span class="thick">mobile experience</span> everywhere</h2>
+						</div>
+
+						<span class="stretch"></span>
+					</div>
+				</section>
+        
+      	<?php // Slide #13 ?>
+        <section id="billion" class="bg-blue-grad block">
+        	<div class="inner">
+          	<div class="text-position center">
+            	<div class="number txtw">25,000,000,000</div>
+              <h2><span class="thick">25 Billion</span> mobile devices connected by 2020*</h2>
+              <p class="txtw"><br /><br /><br />* Source: Machina Research, 2013</p>
+            </div>
+          </div>
+        </section>
+			
+				<?php // Slide #14 ?>
+				<section id="applying" class="bg-grey-grad block comeon">
+					<div class="inner">
+						<div class="text-position center">
+							<h2><span class="thick">Applying</span> mobile technologies to everything</h2>
+              <p>Making them more aware, connected, intelligent and interactive</p>
+						</div>
+          	<div class="graphic-position">
+							<ul class="circles"><li class="ma"><span class="i"><span></span></span><span class="c">Machines</span></li><li class="de"><span class="i"><span></span></span><span class="c">Devices</span></li><li class="pe"><span class="i"><span></span></span><span class="c">People</span></li><li class="ob"><span class="i"><span></span></span><span class="c">Objects</span></li><li class="pl"><span class="i"><span></span></span><span class="c">Places</span></li></ul>
+            </div>
+						<span class="stretch"></span>
+					</div>
+				</section>
+			
+				<?php // Slide #15 #needswork ?>
+				<section id="connecting" class="bg-white block comeon">
+					<div class="inner">
+						<div class="text-position center">
+							<h2><span class="thick">Connecting</span> everyone and everything</h2>
+              <p>Creating new ways to ensure seamless mobile access to wireless data in our hyper-connected world.</p>
+						</div>
+          	<div class="graphic-position">
+							<div class="circles">
+              	<img src="img/connect.png" alt="" />
+                <!--div class="c c1"></div>
+                <div class="c c2"></div-->
+              </div>
+            </div>
+						<span class="stretch"></span>
+					</div>
+				</section>
+			
+				<?php // Slide #16 ?>
+				<section id="digital" class="bg-img block comeon" data-bg-height="429">
+					<div class="inner">
+          	<div class="graphic-position">
+							<div class="eco d1"></div>
+							<div class="eco d2"></div>
+							<div class="eco d3"></div>
+            </div>
+						<div class="text-position txtw">
+							<h2><span class="thick">Digital 6<sup>th</sup> Sense</span></h2>
+              <p>The augmentation of human ability</p>
+						</div>
+
+						<span class="stretch"></span>
+					</div>
+				</section>
+			
 				<?php // Slide #17 ?>
 				<section id="across4" class="bg-white block">
           	<ul>
             	<li class="a1"><img src="img/41.jpg" width="320" height="296" alt="" /><span class="c">Knows your location</span></li>
             	<li class="a2"><img src="img/42.jpg" width="320" height="296" alt="" /><span class="c">Senses your motion</span></li>
-            	<li class="a3"><img src="img/43.jpg" width="320" height="296" alt="" /><span class="c">Understands your environment</span></li>
-            	<li class="a4"><img src="img/44.jpg" width="320" height="296" alt="" /><span class="c">Recognizes enviornmental sound</span></li>
+            	<li class="a3"><img src="img/43.jpg" width="320" height="296" alt="" /><span class="c">Understands your<br />environment</span></li>
+            	<li class="a4"><img src="img/44.jpg" width="320" height="296" alt="" /><span class="c">Recognizes<br />enviornmental<br />sound</span></li>
             </ul>
         </section>
         
 				<?php // Slide #18 ?>
-				<section id="tap" class="bg-white block">
+				<section id="tap" class="bg-white block comeon">
 					<div class="inner">
 						<div class="text-position">
-						<h2 class="center"><span class="thick">Mobile devices</span> can tap into resources <br class="vis960" />beyond their own capabilities</h2>
-						<div class="graphic-position">
-							<div class="globe"></div>
-							<div class="eco p1"><div class="ring"></div><div class="icn"></div></div>
-							<div class="eco p2"><div class="ring"></div><div class="icn"></div></div>
-							<div class="eco p3"><div class="ring"></div><div class="icn"></div></div>
-						</div>
+              <h2 class="center"><span class="thick">Mobile devices</span> can tap into resources <br class="vis960" />beyond their own capabilities</h2>
+              <div class="graphic-position">
+                <div class="globe"></div>
+                <div class="eco p1"><div class="ring"></div><div class="icn"></div></div>
+                <div class="eco p2"><div class="ring"></div><div class="icn"></div></div>
+                <div class="eco p3"><div class="ring"></div><div class="icn"></div></div>
+              </div>
               <h4><span class="thick">Inventing technologies and tools that make mobile devices intuitive</span></h4>
-<ul>
-<li>Awareness: Reacts to events, locations, and personal behaviors</li>
-<li>Connectivity: Recognizes and connects everyday things</li>
-<li>Intelligence: Delivers timely, personalized information to the user</li>
-<li>Interaction: Enhances real-world environments with interactive elements</li>
-</ul>
+              <ul>
+                <li>Awareness: Reacts to events, locations, and personal behaviors</li>
+                <li>Connectivity: Recognizes and connects everyday things</li>
+                <li>Intelligence: Delivers timely, personalized information to the user</li>
+                <li>Interaction: Enhances real-world environments with interactive elements</li>
+              </ul>
 						</div>
 
 						<span class="stretch"></span>
@@ -86,7 +157,7 @@
 				</section>
 			
 				<?php // Slide #19 ?>
-				<section id="explore" class="bg-img block" data-bg-height="566">
+				<section id="explore" class="bg-img block comeon" data-bg-height="566">
 					<div class="inner">
 						<div class="text-position center txtw">
 							<div class="eco"></div>
