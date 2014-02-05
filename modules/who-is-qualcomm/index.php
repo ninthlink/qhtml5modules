@@ -55,7 +55,7 @@
 				<section id="tap" class="bg-white block">
 					<div class="inner">
 						<div class="text-position">
-						<h2 class="center"><span class="thick">Mobile devices</span> can tap into resources<br />beyond their own capabilities</h2>
+						<h2 class="center"><span class="thick">Mobile devices</span> can tap into resources <br class="vis960" />beyond their own capabilities</h2>
 						<div class="graphic-position">
 							<div class="globe"></div>
 							<div class="eco p1"><div class="ring"></div><div class="icn"></div></div>
@@ -76,7 +76,7 @@
 				</section>
 			
 				<?php // Slide #19 ?>
-				<section id="explore" class="bg-img block">
+				<section id="explore" class="bg-img block" data-bg-height="566">
 					<div class="inner">
 						<div class="text-position center txtw">
 							<div class="eco"></div>
