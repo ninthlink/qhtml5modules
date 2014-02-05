@@ -59,9 +59,16 @@
 							<div class="arrowd">
 								<a href="#prev" class="prev"><span>&lt;</span></a>
 								<ul class="txtb">
-									<li class="onn">Home gateways</li>
-									<li>Something else</li>
-									<li>Number three</li>
+									<li class="onn">Small cells</li>
+									<li>CE devices</li>
+									<li>Health devices</li>
+									<li>Smart grid</li>
+									<li>Wearables</li>
+									<li>Tablets</li>
+									<li>Hybrids</li>
+									<li>Home gateways</li>
+									<li>Cars</li>
+									<li>TVs</li>
 								</ul>
 								<a href="#next" class="next"><span>&gt;</span></a>
 							</div>
