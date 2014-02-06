@@ -51,6 +51,212 @@
 			*/ ?>
 			<div id="content">
 			
+				<?php // Slide #0 ?>
+				<section id="hdr" class="bg-img block comeon" data-bg-height="709">
+					<div class="inner">
+						<div class="text-position center txtw">
+							<h1>Who is <span class="thick">Qualcomm?</span></h1>
+						</div>
+
+						<span class="stretch"></span>
+					</div>
+				</section>
+        
+				<?php // Slide #1 ?>
+				<section id="intro" class="bg-white block comeon">
+					<div class="inner">
+          	<div class="graphic-position">
+							<div class="eco"></div>
+            </div>
+						<div class="text-position">
+							<h2><span class="thick">By the end of this module, you will learn about:</span></h2>
+              <ul>
+                <li>Who Qualcomm is and what we do</li>
+                <li>How our inventions have changed how we communicate today</li>
+                <li>How our ideas will help shape the future of mobile technology</li>
+              </ul>
+						</div>
+
+						<span class="stretch"></span>
+					</div>
+				</section>
+			
+				<?php // Slide #2 ?>
+				<section id="invents" class="bg-img block comeon" data-bg-height="430">
+					<div class="inner">
+          	<div class="graphic-position">
+							<div class="eco d1"></div>
+							<div class="eco d2"></div>
+							<div class="eco d3"></div>
+            </div>
+						<div class="text-position txtw">
+							<h2>Qualcomm <span class="thick">invents</span></h2>
+              <p>mobile, computing, and connectivity technologies that<br class="vis960" /> allow people to explore more, learn more, live more, <span class="thick">everyday.</span></p>
+						</div>
+
+						<span class="stretch"></span>
+					</div>
+				</section>
+			
+				<?php // Slide #3 ?>
+				<section id="whatname" class="bg-black block">
+					<div class="inner">
+						<div class="text-position center txtw">
+							<h2><span class="thick">Qualcomm.</span> What’s in the name?<br /><br /><br /><img src="img/name-video.jpg" alt="" /><br /><br /><br /></h2>
+						</div>
+
+						<span class="stretch"></span>
+					</div>
+				</section>
+        
+				<?php // Slide #4 ?>
+				<section id="global" class="bg-blue-grad block comeon">
+					<div class="inner">
+          	<div class="text-position center txtw">
+            	<h2>We are <span class="thick">global and diverse</span></h2>
+              <p><br /><br />... map and circles here ...<br /><br /><br /><br /></p>
+              <p class="disc">* Full-time, part-time and temporary employees per FY13 Form 10-K</p>
+            </div>
+          </div>
+        </section>
+        
+				<?php // Slide #4.5 ?>
+				<section id="honors" class="bg-white block">
+					<div class="inner">
+          	<div class="text-position center">
+            	<h2 class="txtbl">Qualcomm <span class="thick">honored</span> as a company</h2>
+              <p><br /><br />... honors here ...</p>
+            </div>
+          </div>
+        </section>
+        
+				<?php // Slide #5 ?>
+				<section id="heritage" class="bg-img block comeon" data-bg-height="429">
+					<div class="inner">
+          	<div class="graphic-position">
+							<div class="eco d1"></div>
+							<div class="eco d2"></div>
+							<div class="eco d3"></div>
+            </div>
+						<div class="text-position txtw">
+							<h2>A long heritage of <span class="thick">innovation</span></h2>
+              <p>Qualcomm has been inventing and innovating mobile <br class="vis960" />technologies and experiences for <span class="thick">more than 28 years.</span></p>
+						</div>
+
+						<span class="stretch"></span>
+					</div>
+				</section>
+			
+				<?php // Slide #6 ?>
+				<section id="years" class="bg-white block comeon">
+					<div class="inner">
+						<div class="text-position center">
+							<h2><span class="txtbl">28</span> years of <span class="thick">innovation</span></h2>
+              <p> ... years slider coming soon ... </p>
+            </div>
+          </div>
+        </section>
+        
+				<?php // Slide #7 ?>
+				<section id="firsts" class="bg-img block comeon" data-bg-height="668">
+					<div class="inner">
+						<div class="text-position center txtw">
+							<h2>A company of many <span class="thick">firsts</span></h2>
+              <p>From the beginning, we’ve been dedicated to keeping people connected wherever they are.</p>
+						</div>
+          	<div class="graphic-position">
+							<div class="eco d1"></div>
+							<div class="eco d2"></div>
+							<div class="eco d3"></div>
+            </div>
+
+						<span class="stretch"></span>
+					</div>
+				</section>
+			
+				<?php // Slide #8 ?>
+				<section id="leader" class="bg-grey-grad block comeon">
+					<div class="inner">
+						<div class="text-position center">
+							<h2>Our innovations have made<br class="vis960" /> us a <span class="thick">mobile technology leader</span>*</h2>
+              <p> ... phone innovation slider here ... </p>
+						</div>
+          	<div class="graphic-position">
+            </div>
+
+						<span class="stretch"></span>
+					</div>
+				</section>
+			
+				<?php // Slide #9 ?>
+				<section id="ideas" class="bg-img block comeon" data-bg-height="429">
+					<div class="inner">
+          	<div class="graphic-position">
+							<div class="eco d1"></div>
+							<div class="eco d2"></div>
+							<div class="eco d3"></div>
+            </div>
+						<div class="text-position txtw">
+							<h2>Our ideas are <span class="thick">changing</span> the world</h2>
+              <p>Our ideas and inventions make a difference in peoples<br class="vis960" />
+lives everywhere - transforming how we live.</p>
+						</div>
+
+						<span class="stretch"></span>
+					</div>
+				</section>
+			
+				<?php // Slide #10 ?>
+				<section id="future" class="bg-white block comeon">
+					<div class="inner">
+						<div class="text-position">
+							<h2 class="center">Inventing the future of <span class="thick">mobile experiences</span></h2>
+              <div class="imageblock">
+              	<div class="icn"><img src="img/ic-future1.png" alt="" /></div>
+                <div class="txt">
+                	<h2>Enabling the devices you love</h2>
+									<p>Developing technology that brings ecosystems of smart devices together to seamlessly connect you to richer experiences.</p>
+								</div>
+							</div>
+              <div class="imageblock">
+              	<div class="icn"><img src="img/ic-future3.png" alt="" /></div>
+                <div class="txt">
+                	<h2>Connecting everyone and everything</h2>
+									<p>Creating new ways to ensure seamless mobile access to wireless data in our hyper-connected world.</p>
+								</div>
+							</div>
+              <div class="imageblock">
+              	<div class="icn"><img src="img/ic-future2.png" alt="" /></div>
+                <div class="txt">
+                	<h2>Sensing and learning your needs</h2>
+									<p>Developing technology and tools to help create apps and devices that will deliver information when and where you need it.</p>
+								</div>
+							</div>
+            </div>
+          </div>
+        </section>
+			
+				<?php // Slide #11 ?>
+				<section id="expanding" class="bg-black block comeon">
+					<div class="inner">
+						<div class="text-position txtw">
+							<h2>Expanding <span class="thick">smartphone</span> innovations</h2>
+							<ul>
+								<li>Dual ISP</li>
+								<li>GPS, Glonass, Beidou, Galileo</li>
+								<li>Ultra HD panoramic video</li>
+								<li>LTE-A</li>
+								<li>H.265 video compression</li>
+								<li>Augmented reality</li>
+								<li>5.1/7.1 surround sound</li>
+							</ul>
+						</div>
+						<div class="graphic-position">
+							<div class="eco"><img src="img/ic-expanding.png" alt="" /></div>
+						</div>
+					</div>
+				</section>
+			
 				<?php // Slide #12 ?>
 				<section id="driving" class="bg-img block comeon" data-bg-height="600">
 					<div class="inner">
