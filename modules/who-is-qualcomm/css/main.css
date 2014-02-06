@@ -352,7 +352,69 @@ sup {
 .block.bg-img .inner {
 	height: 100%;
 }
+
+/* a few reusable (ecosystem) animation ideas here */
+.js .comeon .eco {
+	display: none;
+}
+.js .comeon.onn .eco {
+	display: block;
+}
+.eco .in {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.js .comeon.onn .spinin .in {
+	-webkit-animation:spinin 1s ease-in backwards;
+	-moz-animation:spinin 1s ease-in backwards;
+	animation:spinin 1s ease-in backwards;
+}
+.js .comeon .growin .in,
+.js .comeon .spingrow .in,
+.js .comeon .fadein {
+	display:none;
+}
+.js .comeon.onn .growin .in {
+	display: block;
+	
+	-webkit-animation:growin 1s ease-in backwards;
+	-moz-animation:growin 1s ease-in backwards;
+	animation:growin 1s ease-in backwards;
+}
+.js .comeon.onn .spingrow .in {
+	display: block;
+	
+	-webkit-animation:spinin 0.6s ease-in backwards, growin 0.4s ease-in backwards;
+	-moz-animation:spinin 0.6s ease-in backwards, growin 0.4s ease-in backwards;
+	animation:spinin 0.6s ease-in backwards, growin 0.4s ease-in backwards;
+}
+.js .comeon.onn .fadein {
+	display: block;
+	
+	-webkit-animation:fadein 0.5s ease-in backwards;
+	-moz-animation:fadein 0.5s ease-in backwards;
+	animation:fadein 0.5s ease-in backwards;
+}
 /* and then... */
+
+.block.bg-img .inner {
+	height: 100%;
+}
+.block.bg-img .text-position {
+	padding-top: 0;
+	position: relative;
+	top: 50%;
+	left: 0;
+	margin-top: -40px;
+}
+.block.bg-img .graphic-position {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 
 .block#hdr {
 	background: url(../img/bg-top.jpg) no-repeat center center;
@@ -360,190 +422,224 @@ sup {
 .block#hdr .inner {
 	height: 100%;
 }
-.block#hdr .text-position {
-	padding-top: 0;
-	position: relative;
+.block.bg-img#hdr .text-position {
+	padding: 0;
 	top: 30%;
-	left: 0;
+	margin-top: 0;
 }
-.js #hdr h1 {
-	display: none;
-	font-size: 3em;
+h1 {
+	font-size: 2.5em;
+	line-height: 100%;
 	font-weight: normal;
+	letter-spacing: 2px;
+	margin: 0.6em 0;
 }
-.js #hdr.onn h1 {
-	display: block;
+.js .comeon.onn h1.fadein {
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
 	
-	-webkit-animation:fadein 2s ease-in backwards;
-	-moz-animation:fadein 2s ease-in backwards;
-	animation:fadein 2s ease-in backwards;
+	-webkit-animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+}
+
+@media only screen and (min-width: 480px) and (max-width:599px) {
+	.block#hdr .text-position { top: 10% }
 }
 /* #1 intro */
+#intro .text-position p {
+	margin-top: 0;
+}
+#intro .text-position ul {
+	max-width: none;
+	letter-spacing: 0;
+	font-size: 0.9em;
+	margin-top: 26px;
+	margin-bottom: 0;
+}
 #intro .text-position li {
 	position: relative;
+	margin-bottom: 14px;
+}
+#intro .graphic-position,
+#intro .eco {
+	width: 183px;
+	height: 197px;
+	margin: 0 auto;
+	position: relative;
+}
+#intro .eco {
+	background: url(../img/ic-intro-bg.png) no-repeat 0 0;
+}
+#intro .eco .spinner {
+	background: url(../img/ic-intro-in.png) no-repeat 0 0;
+	background-size: contain;
+	width: 53px;
+	height: 53px;
+	position: absolute;
+	top: 104px;
+	left: 16px;
+	
+	-webkit-animation:spinreverse 15s linear infinite, fadein 1s ease-in 0.6s backwards;
+	-moz-animation:spinreverse 15s linear infinite, fadein 1s ease-in 0.6s backwards;
+	animation:spinreverse 15s linear infinite, fadein 1s ease-in 0.6s backwards;
+}
+#intro .eco .spinner.s2 {
+	width: 70px;
+	height: 70px;
+	top: 42px;
+	left: 98px;
+	
+	-webkit-animation:spin 15s linear infinite, fadein 1s ease-in 0.3s backwards;
+	-moz-animation:spin 15s linear infinite, fadein 1s ease-in 0.3s backwards;
+	animation:spin 15s linear infinite, fadein 1s ease-in 0.3s backwards;
+}
+@media only screen and (max-width: 599px) {
+	#intro .eco {
+		top: 15px
+	}
+}
+@media only screen and (min-width: 600px) {	
+	#intro .graphic-position {
+		position: absolute;
+		top: 25%;
+		margin: 0;
+		left: 0;
+		width: 38.5%;
+	}
+	#intro .eco {
+		top: 7px;
+	}
+	#intro .text-position {
+		padding: 12% 0 12% 38.5%;
+	}
 }
 /* #2 invents */
 .block#invents {
 	background: url(../img/bg-invents.jpg) no-repeat center center;
 	border-bottom: 1px solid #fff;
 }
-.block#invents .inner {
-	height: 100%;
-}
-.block#invents .text-position {
-	padding-top: 0;
-	position: relative;
-	top: 50%;
-	left: 0;
-	margin-top: -40px;
-}
-.block#invents .graphic-position {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
 #invents .eco {
-	display: block;
 	width: 71px;
 	height: 71px;
-	background: url(../img/ic-invents.png) no-repeat 0 0;
-	background-size: cover;
 	margin: 0;
 	position: absolute;
-	top: 26.5%;
-	left: 61.7%;
+	top: 28%;
+	right: 27.7%;
 }
 #invents .eco.d2 {
-	top: 59%;
-	left: 85%;
+	width: 65px;
+	height: 65px;
+	top: 47.6%;
+	right: 3%;
 }
 #invents .eco.d3 {
-	top: 38.8%;
-	left: 53%;
+	width: 31px;
+	height: 31px;
+	top: 37%;
+	right: 0;
 }
-.js #invents .eco,
-.js #invents h2,
-.js #invents p {
-	display: none;
+#invents .eco .in {
+	background: url(../img/ic-invents.png) no-repeat 0 0;
+	background-size: cover;
 }
-.js #invents.onn h2 {
-	display: block;
+.js #invents.comeon.onn p,
+.js #heritage.comeon.onn p,
+.js #digital.comeon.onn p {
+	-moz-animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+}
+.js #invents.comeon.onn .spingrow .in,
+.js #digital.comeon.onn .spingrow .in {
+	-moz-animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+.js #invents.comeon.onn .spingrow .d2 .in,
+.js #digital.comeon.onn .spingrow .d2 .in {
+	-moz-animation-delay: 0.7s;
+	-webkit-animation-delay: 0.7s;
+	animation-delay: 0.7s;
+}
+.js #invents.comeon.onn .spingrow .d3 .in,
+.js #digital.comeon.onn .spingrow .d3 .in {
+	-moz-animation-delay: 0.9s;
+	-webkit-animation-delay: 0.9s;
+	animation-delay: 0.9s;
+}
+@media only screen and (max-width: 599px) {
+	.block#invents {
+		background-position: right center;
+	}
+}
+/* #3 whatname */
+#whatname img {
+	margin: 0 auto;
+}
+.js .comeon.onn#whatname img.fadein {
+	cursor: pointer;
 	
-	-webkit-animation:fadein 0.5s ease-in backwards;
-	-moz-animation:fadein 0.5s ease-in backwards;
-	animation:fadein 0.5s ease-in backwards;
+	-moz-animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+	animation-delay: 0.5s;
 }
-.js #invents.onn p {
-	display: block;
-	
-	-webkit-animation:fadein 0.5s ease-in 0.5s backwards;
-	-moz-animation:fadein 0.5s ease-in 0.5s backwards;
-	animation:fadein 0.5s ease-in 0.5s backwards;
-}
-.js #invents.onn .eco {
-	display: block;
-	
-	-webkit-animation:digitaleco1 0.4s ease-in 1s backwards;
-	-moz-animation:digitaleco1 0.4s ease-in 1s backwards;
-	animation:digitaleco1 0.4s ease-in 1s backwards;
-}
-.js #invents.onn .eco.d2 {
-	-webkit-animation:digitaleco1 0.4s ease-in 1.3s backwards;
-	-moz-animation:digitaleco1 0.4s ease-in 1.3s backwards;
-	animation:digitaleco1 0.4s ease-in 1.3s backwards;
-}
-.js #invents.onn .eco.d3 {
-	-webkit-animation:digitaleco1 0.4s ease-in 1.6s backwards;
-	-moz-animation:digitaleco1 0.4s ease-in 1.6s backwards;
-	animation:digitaleco1 0.4s ease-in 1.6s backwards;
-}
-/* #3 #4 #4.5 ... */
+/* #4 #4.5 ... */
 /* #5 heritage */
 .block#heritage {
 	background: url(../img/bg-heritage.jpg) no-repeat center center;
 }
-.block#heritage .inner {
-	height: 100%;
-}
-.block#heritage .text-position {
-	padding-top: 0;
-	position: relative;
-	top: 50%;
-	left: 0;
-	margin-top: -40px;
-}
-.block#heritage .graphic-position {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
 #heritage .eco {
-	display: block;
 	width: 147px;
 	height: 146px;
-	background: url(../img/ic-heritage1.png) no-repeat 0 0;
-	background-size: cover;
 	margin: 0;
 	position: absolute;
-	top: 26.5%;
-	left: 61.7%;
-}
-#heritage .eco.d2 {
-	top: 59%;
-	left: 85%;
+	top: 42%;
+	right: 15.4%;
 }
 #heritage .eco.d3 {
-	top: 38.8%;
-	left: 53%;
+	width: 79px;
+	height: 78px;
+	top: 70%;
+	right: 9.5%;
 }
-.js #heritage .eco,
-.js #heritage h2,
-.js #heritage p {
-	display: none;
+#heritage .eco.d2 {
+	width: 98px;
+	height: 98px;
+	top: 74%;
+	right: 27%;
 }
-.js #heritage.onn h2 {
-	display: block;
-	
-	-webkit-animation:fadein 0.5s ease-in backwards;
-	-moz-animation:fadein 0.5s ease-in backwards;
-	animation:fadein 0.5s ease-in backwards;
+#heritage .eco .in {
+	background: url(../img/ic-heritage1.png) no-repeat 0 0;
+	background-size: cover;
 }
-.js #heritage.onn p {
-	display: block;
-	
-	-webkit-animation:fadein 0.5s ease-in 0.5s backwards;
-	-moz-animation:fadein 0.5s ease-in 0.5s backwards;
-	animation:fadein 0.5s ease-in 0.5s backwards;
+#heritage .eco.d3 .in {
+	background-image: url(../img/ic-heritage2.png);
 }
-.js #heritage.onn .eco {
-	display: block;
-	
-	-webkit-animation:digitaleco1 0.4s ease-in 1s backwards;
-	-moz-animation:digitaleco1 0.4s ease-in 1s backwards;
-	animation:digitaleco1 0.4s ease-in 1s backwards;
+#heritage .eco.d2 .in {
+	background-image: url(../img/ic-heritage3.png);
 }
-.js #heritage.onn .eco.d2 {
-	-webkit-animation:digitaleco1 0.4s ease-in 1.3s backwards;
-	-moz-animation:digitaleco1 0.4s ease-in 1.3s backwards;
-	animation:digitaleco1 0.4s ease-in 1.3s backwards;
+.js #heritage.comeon.onn .growin .d2 .in {
+	-moz-animation-delay: 0.25s;
+	-webkit-animation-delay: 0.25s;
+	animation-delay: 0.25s;
 }
-.js #heritage.onn .eco.d3 {
-	-webkit-animation:digitaleco1 0.4s ease-in 1.6s backwards;
-	-moz-animation:digitaleco1 0.4s ease-in 1.6s backwards;
-	animation:digitaleco1 0.4s ease-in 1.6s backwards;
+.js #heritage.comeon.onn .growin .d3 .in {
+	-moz-animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+}
+@media only screen and (max-width: 599px) {
+	.block#heritage {
+		background-position: right center;
+	}
 }
 /* #6 years */
 
 /* #7 firsts */
 .block#firsts {
 	background: url(../img/bg-first.jpg) no-repeat center center;
-}
-.block#firsts .inner {
-	height: 100%;
 }
 #firsts .text-position.center p {
 	max-width: none;
@@ -556,77 +652,55 @@ sup {
 .block#ideas {
 	background: url(../img/bg-ideas.jpg) no-repeat center center;
 }
-.block#ideas .inner {
-	height: 100%;
-}
-.block#ideas .text-position {
-	padding-top: 0;
-	position: relative;
-	top: 50%;
-	left: 0;
-	margin-top: -40px;
-}
-.block#ideas .graphic-position {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
 #ideas .eco {
-	display: block;
 	width: 57px;
 	height: 93px;
-	background: url(../img/ic-ideas.png) no-repeat 0 0;
-	background-size: cover;
 	margin: 0;
 	position: absolute;
-	top: 26.5%;
-	left: 61.7%;
+	top: 29%;
+	right: 16.5%;
+}
+#ideas .eco .in {
+	width: 100%;
+	height: 100%;
+	background: url(../img/ic-ideas.png) no-repeat 0 0;
+	background-size: cover;
 }
 #ideas .eco.d2 {
-	top: 59%;
-	left: 85%;
+	width: 47px;
+	height: 77px;
+	top: 73%;
+	right: 15%;
 }
 #ideas .eco.d3 {
-	top: 38.8%;
-	left: 53%;
+	width: 39px;
+	height: 64px;
+	top: 58.7%;
+	right: 32%;
 }
-.js #ideas .eco,
-.js #ideas h2,
-.js #ideas p {
-	display: none;
-}
-.js #ideas.onn h2 {
-	display: block;
+.js #ideas.comeon.onn .growin .in {
+	-moz-animation-delay: 0.2s;
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
 	
-	-webkit-animation:fadein 0.5s ease-in backwards;
-	-moz-animation:fadein 0.5s ease-in backwards;
-	animation:fadein 0.5s ease-in backwards;
+	-moz-animation-duration: 0.5s;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
 }
-.js #ideas.onn p {
-	display: block;
-	
-	-webkit-animation:fadein 0.5s ease-in 0.5s backwards;
-	-moz-animation:fadein 0.5s ease-in 0.5s backwards;
-	animation:fadein 0.5s ease-in 0.5s backwards;
+.js #ideas.comeon.onn .growin .d2 .in {
+	-moz-animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
 }
-.js #ideas.onn .eco {
-	display: block;
-	
-	-webkit-animation:digitaleco1 0.4s ease-in 1s backwards;
-	-moz-animation:digitaleco1 0.4s ease-in 1s backwards;
-	animation:digitaleco1 0.4s ease-in 1s backwards;
+.js #ideas.comeon.onn .growin .d3 .in {
+	-moz-animation-delay: 0.6s;
+	-webkit-animation-delay: 0.6s;
+	animation-delay: 0.6s;
 }
-.js #ideas.onn .eco.d2 {
-	-webkit-animation:digitaleco1 0.4s ease-in 1.3s backwards;
-	-moz-animation:digitaleco1 0.4s ease-in 1.3s backwards;
-	animation:digitaleco1 0.4s ease-in 1.3s backwards;
-}
-.js #ideas.onn .eco.d3 {
-	-webkit-animation:digitaleco1 0.4s ease-in 1.6s backwards;
-	-moz-animation:digitaleco1 0.4s ease-in 1.6s backwards;
-	animation:digitaleco1 0.4s ease-in 1.6s backwards;
+.js #ideas.comeon.onn p {
+	-moz-animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
 }
 /* #10 future */
 #future .text-position h2 {
@@ -640,7 +714,8 @@ sup {
 	display: table-cell;
 	vertical-align: middle;
 	width: 25%;
-	padding: 4% 5% 4% 10%;
+	padding: 0 5% 0 10%;
+	height: 200px;
 }
 .imageblock .txt {
 	display: table-cell;
@@ -692,9 +767,11 @@ sup {
 .block#driving {
 	background: url(../img/bg-driving.jpg) no-repeat center center;
 }
-.block#driving .text-position.center {
+.block.bg-img#driving .text-position.center {
 	padding-top: 25%;
 	padding-bottom: 25%;
+	top: 0;
+	margin-top: 0;
 }
 .arrowd {
 	float: left;
@@ -861,83 +938,35 @@ sup {
 .block#digital {
 	background: url(../img/bg-digital.jpg) no-repeat center center;
 }
-.block#digital .inner {
-	height: 100%;
-}
-.block#digital .text-position {
-	padding-top: 0;
-	position: relative;
-	top: 50%;
-	left: 0;
-	margin-top: -40px;
-}
-.block#digital .graphic-position {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
 #digital .eco {
-	display: block;
 	width: 51px;
 	height: 51px;
-	background: url(../img/ic-digital1.png) no-repeat 0 0;
-	background-size: cover;
 	margin: 0;
 	position: absolute;
 	top: 26.5%;
 	left: 61.7%;
 }
+#digital .eco .in {
+	background: url(../img/ic-digital1.png) no-repeat 0 0;
+	background-size: cover;
+}
 #digital .eco.d2 {
 	width: 114px;
 	height: 112px;
-	background-image: url(../img/ic-digital2.png);
 	top: 59%;
 	left: 85%;
+}
+#digital .eco.d2 .in {
+	background-image: url(../img/ic-digital2.png);
 }
 #digital .eco.d3 {
 	width: 81px;
 	height: 80px;
-	background-image: url(../img/ic-digital3.png);
 	top: 38.8%;
 	left: 53%;
 }
-.js #digital .eco,
-.js #digital h2,
-.js #digital p {
-	display: none;
-}
-.js #digital.onn h2 {
-	display: block;
-	
-	-webkit-animation:fadein 0.5s ease-in backwards;
-	-moz-animation:fadein 0.5s ease-in backwards;
-	animation:fadein 0.5s ease-in backwards;
-}
-.js #digital.onn p {
-	display: block;
-	
-	-webkit-animation:fadein 0.5s ease-in 0.5s backwards;
-	-moz-animation:fadein 0.5s ease-in 0.5s backwards;
-	animation:fadein 0.5s ease-in 0.5s backwards;
-}
-.js #digital.onn .eco {
-	display: block;
-	
-	-webkit-animation:digitaleco1 0.4s ease-in 1s backwards;
-	-moz-animation:digitaleco1 0.4s ease-in 1s backwards;
-	animation:digitaleco1 0.4s ease-in 1s backwards;
-}
-.js #digital.onn .eco.d2 {
-	-webkit-animation:digitaleco2 0.4s ease-in 1.3s backwards;
-	-moz-animation:digitaleco2 0.4s ease-in 1.3s backwards;
-	animation:digitaleco2 0.4s ease-in 1.3s backwards;
-}
-.js #digital.onn .eco.d3 {
-	-webkit-animation:digitaleco3 0.4s ease-in 1.6s backwards;
-	-moz-animation:digitaleco3 0.4s ease-in 1.6s backwards;
-	animation:digitaleco3 0.4s ease-in 1.6s backwards;
+#digital .eco.d3 .in {
+	background-image: url(../img/ic-digital2.png);
 }
 /* #17 across4 */
 #across4 ul {
@@ -1125,12 +1154,13 @@ sup {
 .block#explore {
 	background: url(../img/bg-explore.jpg) no-repeat center center;
 }
-.block#explore .text-position.center {
+.block.bg-img#explore .text-position.center {
 	padding-top: 12%;
 	padding-bottom: 18%;
+	top: 0;
+	margin-top: 0;
 }
 #explore .eco {
-	display: block;
 	width: 158px;
 	height: 148px;
 	background: url(../img/ic-explore.png) no-repeat 0 0;
@@ -1225,13 +1255,21 @@ sup {
 
 /* animations */
 
-    /* spinning gears */
+    /* spinning */
     @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
     @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
     @keyframes spin { 100% { transform: rotate(360deg); } }
     @-moz-keyframes spinreverse { 100% { -moz-transform: rotate(-360deg); } }
     @-webkit-keyframes spinreverse { 100% { -webkit-transform: rotate(-360deg); } }
     @keyframes spinreverse { 100% { transform: rotate(-360deg); } }
+		
+    @-moz-keyframes spinin { 0% { -moz-transform: rotate(180deg); } 100% { -moz-transform: rotate(360deg); } }
+    @-webkit-keyframes spinin { 0% { -webkit-transform: rotate(180deg); } 100% { -webkit-transform: rotate(360deg); } }
+    @keyframes spinin { 0% { transform: rotate(180deg); } 100% { transform: rotate(360deg); } }
+		
+    @-moz-keyframes growin { 0% { opacity: 0; width: 0%; height: 0%; margin: 50%; } 100% { opacity: 1; width: 100%; height: 100%; margin: 0%; } }
+    @-webkit-keyframes growin { 0% { opacity: 0; width: 0%; height: 0%; margin: 50%; } 100% { opacity: 1; width: 100%; height: 100%; margin: 0%; } }
+    @keyframes growin { 0% { opacity: 0; width: 0%; height: 0%; margin: 50%; } 100% { opacity: 1; width: 100%; height: 100%; margin: 0%; } }
 		
 		/* digital ecosystems */
     @-moz-keyframes digitaleco { 0% { opacity: 0; width: 0; height: 0; -moz-transform: rotate(180deg); } 100% { width: 51px; height: 81px; opacity: 1; -moz-transform: rotate(360deg); } }

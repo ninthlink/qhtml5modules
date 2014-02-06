@@ -55,7 +55,7 @@
 				<section id="hdr" class="bg-img block comeon" data-bg-height="709">
 					<div class="inner">
 						<div class="text-position center txtw">
-							<h1>Who is <span class="thick">Qualcomm?</span></h1>
+							<h1 class="fadein">Who is <span class="thick">Qualcomm?</span></h1>
 						</div>
 
 						<span class="stretch"></span>
@@ -66,10 +66,10 @@
 				<section id="intro" class="bg-white block comeon">
 					<div class="inner">
           	<div class="graphic-position">
-							<div class="eco"></div>
+							<div class="eco fadein"><div class="spinner"></div><div class="spinner s2"></div></div>
             </div>
 						<div class="text-position">
-							<h2><span class="thick">By the end of this module, you will learn about:</span></h2>
+							<p><span class="thick">By the end of this module, you will learn about:</span></p>
               <ul>
                 <li>Who Qualcomm is and what we do</li>
                 <li>How our inventions have changed how we communicate today</li>
@@ -84,14 +84,14 @@
 				<?php // Slide #2 ?>
 				<section id="invents" class="bg-img block comeon" data-bg-height="430">
 					<div class="inner">
-          	<div class="graphic-position">
-							<div class="eco d1"></div>
-							<div class="eco d2"></div>
-							<div class="eco d3"></div>
+          	<div class="graphic-position spingrow">
+							<div class="eco d1"><div class="in"></div></div>
+							<div class="eco d2"><div class="in"></div></div>
+							<div class="eco d3"><div class="in"></div></div>
             </div>
 						<div class="text-position txtw">
-							<h2>Qualcomm <span class="thick">invents</span></h2>
-              <p>mobile, computing, and connectivity technologies that<br class="vis960" /> allow people to explore more, learn more, live more, <span class="thick">everyday.</span></p>
+							<h2 class="fadein">Qualcomm <span class="thick">invents</span></h2>
+              <p class="fadein">mobile, computing, and connectivity technologies that<br class="vis960" /> allow people to explore more, learn more, live more, <span class="thick">everyday.</span></p>
 						</div>
 
 						<span class="stretch"></span>
@@ -99,10 +99,10 @@
 				</section>
 			
 				<?php // Slide #3 ?>
-				<section id="whatname" class="bg-black block">
+				<section id="whatname" class="bg-black block comeon">
 					<div class="inner">
 						<div class="text-position center txtw">
-							<h2><span class="thick">Qualcomm.</span> What’s in the name?<br /><br /><br /><img src="img/name-video.jpg" alt="" /><br /><br /><br /></h2>
+							<h2><span class="thick">Qualcomm.</span> What’s in the name?<br /><br /><br /><img src="img/name-video.jpg" alt="" class="fadein" /><br /><br /><br /></h2>
 						</div>
 
 						<span class="stretch"></span>
@@ -133,14 +133,14 @@
 				<?php // Slide #5 ?>
 				<section id="heritage" class="bg-img block comeon" data-bg-height="429">
 					<div class="inner">
-          	<div class="graphic-position">
-							<div class="eco d1"></div>
-							<div class="eco d2"></div>
-							<div class="eco d3"></div>
+          	<div class="graphic-position growin">
+							<div class="eco d1"><div class="in"></div></div>
+							<div class="eco d2"><div class="in"></div></div>
+							<div class="eco d3"><div class="in"></div></div>
             </div>
 						<div class="text-position txtw">
-							<h2>A long heritage of <span class="thick">innovation</span></h2>
-              <p>Qualcomm has been inventing and innovating mobile <br class="vis960" />technologies and experiences for <span class="thick">more than 28 years.</span></p>
+							<h2 class="fadein">A long heritage of <span class="thick">innovation</span></h2>
+              <p class="fadein">Qualcomm has been inventing and innovating mobile <br class="vis960" />technologies and experiences for <span class="thick">more than 28 years.</span></p>
 						</div>
 
 						<span class="stretch"></span>
@@ -191,14 +191,14 @@
 				<?php // Slide #9 ?>
 				<section id="ideas" class="bg-img block comeon" data-bg-height="429">
 					<div class="inner">
-          	<div class="graphic-position">
-							<div class="eco d1"></div>
-							<div class="eco d2"></div>
-							<div class="eco d3"></div>
+          	<div class="graphic-position growin">
+							<div class="eco d1"><div class="in"></div></div>
+							<div class="eco d2"><div class="in"></div></div>
+							<div class="eco d3"><div class="in"></div></div>
             </div>
 						<div class="text-position txtw">
-							<h2>Our ideas are <span class="thick">changing</span> the world</h2>
-              <p>Our ideas and inventions make a difference in peoples<br class="vis960" />
+							<h2 class="fadein">Our ideas are <span class="thick">changing</span> the world</h2>
+              <p class="fadein">Our ideas and inventions make a difference in peoples<br class="vis960" />
 lives everywhere - transforming how we live.</p>
 						</div>
 
@@ -207,7 +207,7 @@ lives everywhere - transforming how we live.</p>
 				</section>
 			
 				<?php // Slide #10 ?>
-				<section id="future" class="bg-white block comeon">
+				<section id="future" class="bg-white block">
 					<div class="inner">
 						<div class="text-position">
 							<h2 class="center">Inventing the future of <span class="thick">mobile experiences</span></h2>
@@ -330,14 +330,14 @@ lives everywhere - transforming how we live.</p>
 				<?php // Slide #16 ?>
 				<section id="digital" class="bg-img block comeon" data-bg-height="429">
 					<div class="inner">
-          	<div class="graphic-position">
-							<div class="eco d1"></div>
-							<div class="eco d2"></div>
-							<div class="eco d3"></div>
+          	<div class="graphic-position spingrow">
+							<div class="eco d1"><div class="in"></div></div>
+							<div class="eco d2"><div class="in"></div></div>
+							<div class="eco d3"><div class="in"></div></div>
             </div>
 						<div class="text-position txtw">
-							<h2><span class="thick">Digital 6<sup>th</sup> Sense</span></h2>
-              <p>The augmentation of human ability</p>
+							<h2 class="fadein"><span class="thick">Digital 6<sup>th</sup> Sense</span></h2>
+              <p class="fadein">The augmentation of human ability</p>
 						</div>
 
 						<span class="stretch"></span>

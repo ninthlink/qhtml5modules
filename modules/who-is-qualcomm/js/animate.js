@@ -10,7 +10,7 @@ function commaSeparateNumber(val){
 	
 $(document).ready(function() {
 	// default animation offset for each section (variance from top of <section>)
-	var offsetDefault = 0;
+	var offsetDefault = 'bottom-in-view';
 	// scale full bg img slides?
 	$('.bg-img').each(function() {
 			$(this).data('og-height', $(this).height());
@@ -27,6 +27,26 @@ $(document).ready(function() {
 			});
 		});
 	}).trigger('resize.qmod');
+	
+	/* waypoints and other such mayhem */
+	$('#hdr').waypoint(function() {
+		$(this).addClass('onn');
+	}, {
+		offset: 0
+	});
+	
+	$('.comeon:not(#hdr)').waypoint(function() {
+		$(this).addClass('onn');
+	}, {
+		offset: offsetDefault
+	});
+	
+	// #10 inventing the future
+	$('#future .imageblock').waypoint(function() {
+		$(this).find('img').fadeIn(2000);
+	}, {
+		offset: '10%'
+	}).find('img').fadeOut();
 	
 	// #12 driving : cycler
 	var arrowd = function() {
@@ -68,16 +88,12 @@ $(document).ready(function() {
 			}
 		});
 	}, {
-		offset: offsetDefault
+		offset: 0
 	});
 	
 	// #16 digital 18 tap 19 explore
-	$('.comeon').waypoint(function() {
-		$(this).addClass('onn');
-	}, {
-		offset: offsetDefault
-	});
 
+/*
 	$('section').each(function(){
 		if ( $(this).attr('id') != 'legal' ) {
 			$(this).waypoint(function(direction) {
@@ -94,5 +110,5 @@ $(document).ready(function() {
 			});
 		}
 	});
-
+*/
 });
