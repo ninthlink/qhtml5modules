@@ -132,9 +132,20 @@
 				<?php // Slide #4.5 ?>
 				<section id="honors" class="bg-white block">
 					<div class="inner">
-          	<div class="text-position center">
-            	<h2 class="txtbl">Qualcomm <span class="thick">honored</span> as a company</h2>
-              <p><br /><br />... honors here ...</p>
+          	<div class="text-position">
+            	<h2 class="txtbl center">Qualcomm <span class="thick">honored</span> as a company</h2>
+				<div class="graphic-position center">
+					<img src="img/honors-bw.gif" alt="Fortune 100 Best Companies to work for : Newsweek Green Rankings" />
+				</div>
+				<ul>
+				<li><span class="thick">Fortune</span> - 100 Best Companies to work for (since 1999)<br />
+&nbsp; &nbsp; - Ranked #11 overall</li>
+<li><span class="thick">Fortune</span> - Most Admired Companies (since 2002)</li>
+<li><span class="thick">Fortune</span> - Most Diverse List</li>
+<li><span class="thick">Newsweek</span> - Green Rankings<br />
+&nbsp; &nbsp; - Ranked #42 amount U.S. Companies<br />
+&nbsp; &nbsp; - Ranked #101 among worlds top “green” organizations</li>
+				</ul>
             </div>
           </div>
         </section>

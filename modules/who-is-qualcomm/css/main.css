@@ -837,7 +837,38 @@ p.disc {
 		left: 230px;
 	}
 }
-/* #4.5 ... */
+/* #4.5 honors */
+#honors h2 {
+	margin-bottom: 2em;
+}
+#honors .text-position {
+	padding-bottom: 5%;
+	float: left;
+	width: 100%;
+}
+#honors .graphic-position.center {
+	margin-top: 36px;
+}
+#honors .text-position ul li {
+	position: relative;
+	margin-bottom: 5px;
+	font-size: 0.8em;
+}
+@media only screen and (min-width: 800px) and (max-width: 959px) {
+	#honors .text-position ul {
+		max-width: 80%;
+		margin: 36px 10%;
+	}
+}
+@media only screen and (min-width: 960px) {
+	#honors .text-position ul,
+	#honors .graphic-position.center {
+		width: 47%;
+		float: left;
+		max-width: 50%;
+		margin: 0;
+	}
+}
 /* #5 heritage */
 .block#heritage {
 	background: url(../img/bg-heritage.jpg) no-repeat center center;
