@@ -110,11 +110,20 @@
 				</section>
         
 				<?php // Slide #4 ?>
-				<section id="global" class="bg-blue-grad block comeon">
+				<section id="global" class="bg-blue block comeon">
 					<div class="inner">
           	<div class="text-position center txtw">
             	<h2>We are <span class="thick">global and diverse</span></h2>
-              <p><br /><br />... map and circles here ...<br /><br /><br /><br /></p>
+              <div class="map growin">
+              	<div class="eco bg"><div class="in"></div></div>
+                <div class="eco p1"><div class="in"></div></div>
+                <div class="eco p2"><div class="in"></div></div>
+                <div class="eco p3"><div class="in"></div></div>
+                <div class="eco p4"><div class="in"></div></div>
+                <div class="eco p5"><div class="in"></div></div>
+                <div class="eco p6"><div class="in"></div></div>
+              </div>
+              <ul class="circles"><li class="c1 fadein"><span class="txtbl">31,000</span> Approximate<br />employees*</li><li class="c2 fadein"><span class="txtbl">85</span> US locations</li><li class="c3 fadein"><span class="txtbl">191</span> Worldwide<br />locations</li></ul>
               <p class="disc">* Full-time, part-time and temporary employees per FY13 Form 10-K</p>
             </div>
           </div>
