@@ -177,22 +177,22 @@
           </div>
         </section>
         
-				<?php // Slide #7 ?>
-				<section id="firsts" class="bg-img block comeon" data-bg-height="668">
-					<div class="inner">
-						<div class="text-position center txtw">
-							<h2>A company of many <span class="thick">firsts</span></h2>
-              <p>From the beginning, we’ve been dedicated to keeping people connected wherever they are.</p>
-						</div>
-          	<div class="graphic-position">
-							<div class="eco d1"></div>
-							<div class="eco d2"></div>
-							<div class="eco d3"></div>
-            </div>
+		<?php // Slide #7 ?>
+		<section id="firsts" class="bg-img block comeon" data-bg-height="668">
+			<div class="inner">
+				<div class="text-position center txtw">
+					<h2 class="fadein">A company of many <span class="thick">firsts</span></h2>
+					<p class="fadein">From the beginning, we’ve been dedicated to keeping people connected wherever they are.</p>
+				</div>
+				<div class="graphic-position growin">
+					<div class="eco d1"><div class="in"></div></div>
+					<div class="eco d2"><div class="in"></div></div>
+					<div class="eco d3"><div class="in"></div></div>
+				</div>
 
-						<span class="stretch"></span>
-					</div>
-				</section>
+				<span class="stretch"></span>
+			</div>
+		</section>
 			
 				<?php // Slide #8 ?>
 				<section id="leader" class="bg-grey-grad block comeon">
