@@ -90,6 +90,8 @@ $(document).ready(function() {
 	}, {
 		offset: 0
 	});
+	// #14 applying
+	$('#applying').find('h2, p, .circles li').addClass('fadein');
 	
 	// #16 digital 18 tap 19 explore
 

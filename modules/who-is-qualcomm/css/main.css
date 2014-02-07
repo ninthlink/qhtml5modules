@@ -1250,6 +1250,16 @@ p.disc {
 	}
 }
 /* #14 applying */
+#applying h2 {
+	-webkit-animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+}
+#applying p {
+	-webkit-animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
 #applying ul.circles {
 	float: left;
 	width: 100%;
@@ -1263,10 +1273,32 @@ p.disc {
 	padding: 0;
 	width: 143px;
 	font-family: "Qualcomm-Regular", sans-serif;
+	
+	-webkit-animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
+	animation-delay: 1.5s;
 }
 #applying ul.circles li.de,
 #applying ul.circles li.ob {
 	padding: 0 57px;
+	-webkit-animation-delay: 1.8s;
+	-webkit-animation-delay: 1.8s;
+	animation-delay: 1.5s;
+}
+#applying ul.circles li.pe {
+	-webkit-animation-delay: 2.1s;
+	-webkit-animation-delay: 2.1s;
+	animation-delay: 2.1s;
+}
+#applying ul.circles li.ob {
+	-webkit-animation-delay: 2.4s;
+	-webkit-animation-delay: 2.4s;
+	animation-delay: 2.4s;
+}
+#applying ul.circles li.pl {
+	-webkit-animation-delay: 2.7s;
+	-webkit-animation-delay: 2.7s;
+	animation-delay: 2.7s;
 }
 #applying ul.circles .i {
 	display: block;
@@ -1275,6 +1307,9 @@ p.disc {
 	border-radius: 71px;
 	background-color: #006e7f;
 	margin: 0 0 30px;
+}
+#applying ul.circles .i:hover {
+	background-color: #00a1a8;
 }
 #applying ul.circles .i span {
 	display: block;
