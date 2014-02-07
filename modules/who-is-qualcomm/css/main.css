@@ -283,6 +283,7 @@ sup {
 .txtg { color: #969696; }
 .txtr { color: #d32431; }
 .txtbl { color: #006a81 }
+.txtlb { color: #35adbb }
 
 @media only screen and (max-width: 959px) {
     /* section heights for mobile? */
@@ -919,7 +920,76 @@ p.disc {
 	}
 }
 /* #6 years */
-
+#years .text-position {
+	padding-top: 3%;
+}
+#years h2 .txtbl {
+	display: inline;
+	font-size: 3.5em;
+	line-height: 1em;
+	vertical-align: middle;
+	position: relative;
+	top: -9px;
+}
+#years .slider {
+	display: block;
+	width: 400px;
+	height: 400px;
+	position: relative;
+	margin: 50px auto 0;
+}
+.text-position .slider ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	max-width: 100%;
+}
+.text-position .slider ul.dots {
+	position: absolute;
+	left: 0;
+	bottom: 8%;
+}
+.text-position .slider ul li {
+	display: none;
+}
+.text-position .slider ul.slides li {
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+.text-position .slider ul.slides li.onn {
+	display: block;
+}
+#years ul.slides img {
+	display: block;
+	margin: 0 auto 36px;
+}
+#years ul.slides h2 {
+	font-size: 2.2em;
+}
+#years .text-position.center ul.slides p {
+	font-size: 0.83em;
+	width: 100%;
+	max-width: none;
+	letter-spacing: 0;
+	line-height: 1em;
+}
+.text-position .slider ul.dots li {
+	display: inline-block;
+	position: relative;
+	width: 12px;
+	height: 12px;
+	line-height: 12px;
+	cursor: pointer;
+	border-radius: 6px;
+	margin: 0 5px;
+	background-color: #d0ccc7;
+}
+.text-position .slider ul.dots li.onn {
+	background-color: #343535;
+}
 /* #7 firsts */
 .block#firsts {
 	background: url(../img/bg-first.jpg) no-repeat center center;

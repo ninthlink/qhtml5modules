@@ -172,7 +172,55 @@
 					<div class="inner">
 						<div class="text-position center">
 							<h2><span class="txtbl">28</span> years of <span class="thick">innovation</span></h2>
-              <p> ... years slider coming soon ... </p>
+							<div class="slider">
+								<ul>
+									<li class="onn">
+										<img src="img/1985.jpg" alt="1985" />
+										<h2 class="txtlb">1985</h2>
+										<p>Qualcomm is founded</p>
+									</li>
+									<li>
+										<img src="img/1989.jpg" alt="1989" />
+										<h2 class="txtlb">1989</h2>
+										<p>Qualcomm makes historic first CDMA phone call</p>
+									</li>
+									<li>
+										<img src="img/1998.gif" alt="1998" />
+										<h2 class="txtlb">1998</h2>
+										<p>Qualcomm unveils the world’s first commercial CDMA smartphone.</p>
+									</li>
+									<li>
+										<img src="img/2000.gif" alt="2000" />
+										<h2 class="txtlb">2000</h2>
+										<p>Qualcomm delivers the first CDMA chipset to integrate GPS.</p>
+									</li>
+									<li>
+										<img src="img/2005.gif" alt="2005" />
+										<h2 class="txtlb">2005</h2>
+										<p>Qualcomm Scorpion processor brings consumer electronics features to mobile devices.</p>
+									</li>
+									<li>
+										<img src="img/2007.gif" alt="2007" />
+										<h2 class="txtlb">2007</h2>
+										<p>Qualcomm premieres Snapdragon processors – the first to break the GHz barrier.</p>
+									</li>
+									<li>
+										<img src="img/2008.gif" alt="2008" />
+										<h2 class="txtlb">2008</h2>
+										<p>Qualcomm Snapdragon processor powers world's first Android-based mobile device.</p>
+									</li>
+									<li>
+										<img src="img/2010.gif" alt="2010" />
+										<h2 class="txtlb">2010</h2>
+										<p>First 3G LTE Multimode chipsets</p>
+									</li>
+									<li>
+										<img src="img/2013.gif" alt="2013" />
+										<h2 class="txtlb">2013</h2>
+										<p>Qualcomm announces Snapdragon processor designed to enable Ultra-HD on smart devices.</p>
+									</li>
+								</ul>
+							</div>
             </div>
           </div>
         </section>

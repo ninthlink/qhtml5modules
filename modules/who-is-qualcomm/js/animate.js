@@ -94,7 +94,43 @@ $(document).ready(function() {
 	$('#applying').find('h2, p, .circles li').addClass('fadein');
 	
 	// #16 digital 18 tap 19 explore
-
+	
+	// sliders : "28 years" + the other one
+	$('.slider').each(function() {
+		var slides = $(this).children('ul').addClass('slides');
+		var count = slides.children().size();
+		var dots = '<ul class="dots">';
+		for ( var i = 0; i < count; i++ ) {
+			dots += '<li'+ (i==0 ? ' class="onn"' : '') + '></li>';
+		}
+		dots += '</ul>';
+		$(this).append(dots);
+		$(this).children('.dots').children().each(function(i) {
+			$(this).click(function() {
+				var slider = $(this).parents('.slider');
+				var timo = slider.data('qslidetimer');
+				clearTimeout(timo);
+				$(this).addClass('onn').siblings('.onn').removeClass();
+				var slides = $(this).parent().siblings('.slides').children();
+				slides.filter('.onn').fadeOut(300, function() { $(this).removeClass('onn'); slides.eq(i).fadeIn(300, function() { $(this).addClass('onn'); }); });
+				
+				slider.trigger('timereset');
+			});
+		});
+		$(this).bind({
+			'nextslide': function() {
+			var onn = $(this).children('.dots').children('li.onn');
+			var nex = onn.next();
+			if ( nex.size() == 0 ) nex = onn.siblings('li:first-child');
+			nex.click();
+		},
+			'timereset': function() {
+				var thisslider = $(this);
+				var timo = setTimeout( function() { thisslider.trigger('nextslide'); }, 2000);
+				$(this).data('qslidetimer', timo);
+			}
+		}).trigger('timereset');
+	});
 /*
 	$('section').each(function(){
 		if ( $(this).attr('id') != 'legal' ) {
