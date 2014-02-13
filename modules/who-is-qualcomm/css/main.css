@@ -578,15 +578,68 @@ h1 {
 	}
 }
 /* #3 whatname */
+#whatname .text-position h2 {
+	font-size: 1.8em;
+}
+#whatname .videohere {
+	display: block;
+	margin: 2.6em auto;
+}
+#whatname .videohere,
+iframe#whatvid {
+	width: 960px;
+	height: 540px;
+}
 #whatname img {
 	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.js #what-video {
+	display: none;
 }
 .js .comeon.onn#whatname img.fadein {
 	cursor: pointer;
-	
-	-moz-animation-delay: 0.5s;
-	-webkit-animation-delay: 0.5s;
-	animation-delay: 0.5s;
+	display: block;
+}
+@media only screen and (max-width: 959px) {
+	/* 720 */
+	#whatname .videohere,
+	iframe#whatvid {
+		width: 720px;
+		height: 405px;
+	}
+}
+@media only screen and (max-width: 799px) {
+	/* 540 */
+	#whatname .videohere,
+	iframe#whatvid {
+		width: 540px;
+		height: 304px;
+	}
+}
+@media only screen and (max-width: 599px) {
+	/* 440 */
+	#whatname .videohere,
+	iframe#whatvid {
+		width: 440px;
+		height: 248px;
+	}
+	#whatname .text-position h2 {
+		font-size: 1.7em;
+	}
+}
+@media only screen and (max-width: 479px) {
+	/* 300 */
+	#whatname .videohere,
+	iframe#whatvid {
+		width: 300px;
+		height: 169px;
+	}
+	#whatname .text-position h2 {
+		font-size: 1.5em;
+	}
 }
 /* #4 global */
 #global .text-position.center {
@@ -855,6 +908,20 @@ p.disc {
 	margin-bottom: 5px;
 	font-size: 0.8em;
 }
+@media only screen and (max-width: 599px) {
+	#honors h2 {
+		font-size: 1.6em;
+	}
+}
+@media only screen and (max-width: 479px) {
+	#honors h2 {
+		font-size: 1.4em;
+	}
+	#honors img {
+		width: 100%;
+		height: auto;
+	}
+}
 @media only screen and (min-width: 800px) and (max-width: 959px) {
 	#honors .text-position ul {
 		max-width: 80%;
@@ -1095,7 +1162,41 @@ p.disc {
 	}
 }
 /* #8 leader */
-
+#leader .slider {
+	display: block;
+	width: 289px;
+	height: 161px;
+	position: relative;
+	margin: 54px auto 30px;
+	padding: 16px 127px 108px 141px;
+	background: url(../img/bg-leader.png) no-repeat 0 0;
+}
+#leader .text-position .slider ul.dots {
+	bottom: 0;
+}
+#leader .text-position .slider ul.slides,
+#leader .text-position .slider ul.slides li {
+	height: 100%;
+}
+#leader .text-position .slider ul.slides li {
+	background: url(../img/ic-leader-chip.png) no-repeat 48px 38px;
+	text-align: left;
+}
+#leader .text-position .slider ul.slides li.battery {
+	background: url(../img/ic-leader-battery.png) no-repeat 61px 31px;
+}
+#leader .text-position.center .slider ul.slides h2 {
+	font-size: 30px;
+	line-height: 100%;
+	margin: 51px 0 0 157px;
+	max-width: none;
+}
+#leader .text-position.center p {
+	font-size: 0.875em;
+	line-height: 100%;
+	margin: 0 0 0 157px;
+	max-width: none;
+}
 /* #9 ideas */
 .block#ideas {
 	background: url(../img/bg-ideas.jpg) no-repeat center center;
@@ -1115,16 +1216,16 @@ p.disc {
 	background-size: cover;
 }
 #ideas .eco.d2 {
-	width: 47px;
-	height: 77px;
-	top: 73%;
-	right: 15%;
-}
-#ideas .eco.d3 {
 	width: 39px;
 	height: 64px;
 	top: 58.7%;
 	right: 32%;
+}
+#ideas .eco.d3 {
+	width: 47px;
+	height: 77px;
+	top: 73%;
+	right: 15%;
 }
 .js #ideas.comeon.onn .growin .in {
 	-moz-animation-delay: 0.2s;

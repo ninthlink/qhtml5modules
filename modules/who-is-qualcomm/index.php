@@ -52,7 +52,7 @@
 			<div id="content">
 			
 				<?php // Slide #0 ?>
-				<section id="hdr" class="bg-img block comeon" data-bg-height="709">
+				<section id="hdr" class="bg-img block comeon" data-bg-height="709" data-waypoint-offset="0">
 					<div class="inner">
 						<div class="text-position center txtw">
 							<h1 class="fadein">Who is <span class="thick">Qualcomm?</span></h1>
@@ -63,7 +63,7 @@
 				</section>
         
 				<?php // Slide #1 ?>
-				<section id="intro" class="bg-white block comeon">
+				<section id="intro" class="bg-white block comeon" data-waypoint-offset="50%">
 					<div class="inner">
           	<div class="graphic-position">
 							<div class="eco fadein"><div class="spinner"></div><div class="spinner s2"></div></div>
@@ -99,10 +99,16 @@
 				</section>
 			
 				<?php // Slide #3 ?>
-				<section id="whatname" class="bg-black block comeon">
+				<section id="whatname" class="bg-black block comeon" data-waypoint-offset="30%">
 					<div class="inner">
-						<div class="text-position center txtw">
-							<h2><span class="thick">Qualcomm.</span> What’s in the name?<br /><br /><br /><img src="img/name-video.jpg" alt="" class="fadein" /><br /><br /><br /></h2>
+						<div class="text-position">
+							<h2 class="center txtw"><span class="thick">Qualcomm.</span> What’s in the name?</h2>
+              <div class="videohere">
+              	<img src="img/name-video.jpg" alt="" class="fadein" />
+              	<div id="what-video">
+                  <iframe id="whatvid" src="//player.vimeo.com/video/86065129?title=0&amp;byline=0&amp;portrait=0&amp;color=d1252f&amp;api=1&amp;player_id=whatvid" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+              </div>
 						</div>
 
 						<span class="stretch"></span>
@@ -110,7 +116,7 @@
 				</section>
         
 				<?php // Slide #4 ?>
-				<section id="global" class="bg-blue block comeon">
+				<section id="global" class="bg-blue block comeon" data-waypoint-offset="30%">
 					<div class="inner">
           	<div class="text-position center txtw">
             	<h2>We are <span class="thick">global and diverse</span></h2>
@@ -168,11 +174,11 @@
 				</section>
 			
 				<?php // Slide #6 ?>
-				<section id="years" class="bg-white block comeon">
+				<section id="years" class="bg-white block">
 					<div class="inner">
 						<div class="text-position center">
 							<h2><span class="txtbl">28</span> years of <span class="thick">innovation</span></h2>
-							<div class="slider">
+							<div class="slider" data-slide-duration="5000" data-slide-fade="1000">
 								<ul>
 									<li class="onn">
 										<img src="img/1985.jpg" alt="1985" />
@@ -226,7 +232,7 @@
         </section>
         
 		<?php // Slide #7 ?>
-		<section id="firsts" class="bg-img block comeon" data-bg-height="668">
+		<section id="firsts" class="bg-img block comeon" data-bg-height="668" data-waypoint-offset="40%">
 			<div class="inner">
 				<div class="text-position center txtw">
 					<h2 class="fadein">A company of many <span class="thick">firsts</span></h2>
@@ -247,9 +253,30 @@
 					<div class="inner">
 						<div class="text-position center">
 							<h2>Our innovations have made<br class="vis960" /> us a <span class="thick">mobile technology leader</span>*</h2>
-              <p> ... phone innovation slider here ... </p>
-						</div>
-          	<div class="graphic-position">
+              <div class="slider txtw" data-slide-duration="3000" data-slide-fade="500">
+								<ul>
+									<li class="onn">
+										<h2><span class="thick">Mode M</span></h2>
+										<p>performance</p>
+									</li>
+									<li>
+										<h2><span class="thick">GPU</span></h2>
+										<p>performance</p>
+									</li>
+									<li>
+										<h2><span class="thick">CPU</span></h2>
+										<p>performance</p>
+									</li>
+									<li>
+										<h2><span class="thick">DSP</span></h2>
+										<p>performance</p>
+									</li>
+									<li class="battery">
+										<h2><span class="thick">#1</span></h2>
+										<p>Efficiency<br />Leadership</p>
+									</li>
+                </ul>
+              </div>
             </div>
 
 						<span class="stretch"></span>
@@ -305,7 +332,7 @@ lives everywhere - transforming how we live.</p>
         </section>
 			
 				<?php // Slide #11 ?>
-				<section id="expanding" class="bg-black block comeon">
+				<section id="expanding" class="bg-black block comeon" data-waypoint-offset="50%">
 					<div class="inner">
 						<div class="text-position txtw">
 							<h2>Expanding <span class="thick">smartphone</span> innovations</h2>
@@ -447,7 +474,7 @@ lives everywhere - transforming how we live.</p>
 				</section>
 			
 				<?php // Slide #19 ?>
-				<section id="explore" class="bg-img block comeon" data-bg-height="566">
+				<section id="explore" class="bg-img block comeon" data-bg-height="566" data-waypoint-offset="40%">
 					<div class="inner">
 						<div class="text-position center txtw">
 							<div class="eco"></div>
@@ -479,6 +506,7 @@ lives everywhere - transforming how we live.</p>
 	 
 		</div>
 
+		<script type="text/javascript" src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
 		<script src="js/animate.js"></script>
 <script type="text/javascript"> 
 //browser-update.org

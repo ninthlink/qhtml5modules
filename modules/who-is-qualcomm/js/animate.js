@@ -29,23 +29,46 @@ $(document).ready(function() {
 	}).trigger('resize.qmod');
 	
 	/* waypoints and other such mayhem */
-	$('#hdr').waypoint(function() {
-		$(this).addClass('onn');
-	}, {
-		offset: 0
-	});
+	var onoffsets = new Array();
+	$('.comeon').each(function(i) {
+		if ( $(this).is('[data-waypoint-offset]') == false ) {
+			$(this).data('waypoint-offset', offsetDefault);
+		}
+		var ofs = $(this).data('waypoint-offset');
+		$(this).bind('checkoff', function() {
+				console.log('comeon : '+ i + ' ' + $(this).attr('id') + ' :: ' + ofs );
+		}).trigger('checkoff');
+		
+		onoffsets[i] = ofs;
+		$(this).waypoint(function() {
+			$(this).addClass('onn');
+		}, {
+			offset: onoffsets[i]
+		});
 	
-	$('.comeon:not(#hdr)').waypoint(function() {
-		$(this).addClass('onn');
-	}, {
-		offset: offsetDefault
+//		console.log('comeon : '+ i + ' ' + $(this).attr('id') + ' :: ' + $(this).data('waypoint-offset') );
 	});
+	// #3 whatname video stuff
+	
+	var bready = function(player_id) {
+		var bplayer = $f(player_id);
+		
+		$('#whatname img').unbind('click').click(function() {
+			jQuery('#what-video').show().siblings().hide();
+			bplayer.api('play');
+		});
+		
+		bplayer.addEvent('finish', function(data) {
+			jQuery('#what-video').hide().siblings().show();
+		});
+	};
+	$f(document.getElementById('whatvid')).addEvent('ready', bready);
 	
 	// #10 inventing the future
 	$('#future .imageblock').waypoint(function() {
 		$(this).find('img').fadeIn(2000);
 	}, {
-		offset: '10%'
+		offset: '80%'
 	}).find('img').fadeOut();
 	
 	// #12 driving : cycler
@@ -88,7 +111,7 @@ $(document).ready(function() {
 			}
 		});
 	}, {
-		offset: 0
+		offset: '50%'
 	});
 	// #14 applying
 	$('#applying').find('h2, p, .circles li').addClass('fadein');
@@ -105,14 +128,17 @@ $(document).ready(function() {
 		}
 		dots += '</ul>';
 		$(this).append(dots);
+		
+		var slidefade = $(this).data('slide-fade');
+		var slideduration = $(this).data('slide-duration');
+		
 		$(this).children('.dots').children().each(function(i) {
 			$(this).click(function() {
 				var slider = $(this).parents('.slider');
-				var timo = slider.data('qslidetimer');
-				clearTimeout(timo);
+				slider.trigger('stopcycle');
 				$(this).addClass('onn').siblings('.onn').removeClass();
 				var slides = $(this).parent().siblings('.slides').children();
-				slides.filter('.onn').fadeOut(300, function() { $(this).removeClass('onn'); slides.eq(i).fadeIn(300, function() { $(this).addClass('onn'); }); });
+				slides.filter('.onn').fadeOut(slidefade, function() { $(this).removeClass('onn'); slides.eq(i).fadeIn(slidefade, function() { $(this).addClass('onn'); }); });
 				
 				slider.trigger('timereset');
 			});
@@ -126,8 +152,12 @@ $(document).ready(function() {
 		},
 			'timereset': function() {
 				var thisslider = $(this);
-				var timo = setTimeout( function() { thisslider.trigger('nextslide'); }, 2000);
+				var timo = setTimeout( function() { thisslider.trigger('nextslide'); }, slideduration);
 				$(this).data('qslidetimer', timo);
+			},
+			'stopcycle': function() {
+				var timo = $(this).data('qslidetimer');
+				clearTimeout(timo);
 			}
 		}).trigger('timereset');
 	});
