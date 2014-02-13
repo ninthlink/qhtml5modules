@@ -941,24 +941,29 @@ p.disc {
 .block#heritage {
 	background: url(../img/bg-heritage.jpg) no-repeat center center;
 }
+.block.bg-img#heritage .text-position {
+	width: 60%;
+	margin-top: 0;
+	top: 35%;
+}
 #heritage .eco {
 	width: 147px;
 	height: 146px;
 	margin: 0;
 	position: absolute;
-	top: 42%;
+	top: 33.3%;
 	right: 15.4%;
 }
 #heritage .eco.d3 {
 	width: 79px;
 	height: 78px;
-	top: 70%;
+	top: 61%;
 	right: 9.5%;
 }
 #heritage .eco.d2 {
 	width: 98px;
 	height: 98px;
-	top: 74%;
+	top: 65%;
 	right: 27%;
 }
 #heritage .eco .in {
@@ -981,9 +986,47 @@ p.disc {
 	-webkit-animation-delay: 0.5s;
 	animation-delay: 0.5s;
 }
+@media only screen and (max-width: 959px) {
+	.block.bg-img#heritage .text-position {
+		width: 70%;
+	}
+	#heritage .eco {
+		right: 8%
+	}
+	#heritage .eco.d3 {
+		right: 1%
+	}
+	#heritage .eco.d2 {
+		right: 24%
+	}
+}
+@media only screen and (max-width: 799px) {
+	.block#heritage {
+		background-position: 60% center;
+	}
+	.block.bg-img#heritage .text-position {
+		width: 75%;
+	}
+	#heritage .eco {
+		right: 2%
+	}
+	#heritage .eco.d3 {
+		right: -5%;
+		width: 50px;
+		height: 50px;
+	}
+	#heritage .eco.d2 {
+		right: 15%;
+		top: auto;
+		bottom: 2%;
+	}
+}
 @media only screen and (max-width: 599px) {
 	.block#heritage {
-		background-position: right center;
+		background-position: 70% center;
+	}
+	.block.bg-img#heritage .text-position {
+		width: 100%;
 	}
 }
 /* #6 years */

@@ -166,7 +166,7 @@
             </div>
 						<div class="text-position txtw">
 							<h2 class="fadein">A long heritage of <span class="thick">innovation</span></h2>
-              <p class="fadein">Qualcomm has been inventing and innovating mobile <br class="vis960" />technologies and experiences for <span class="thick">more than 28 years.</span></p>
+              <p class="fadein">Qualcomm has been inventing and innovating mobile technologies and experiences for <span class="thick">more than 28 years.</span></p>
 						</div>
 
 						<span class="stretch"></span>
