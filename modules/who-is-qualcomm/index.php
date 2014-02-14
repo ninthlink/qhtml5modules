@@ -404,8 +404,8 @@ lives everywhere - transforming how we live.</p>
 					</div>
 				</section>
 			
-				<?php // Slide #15 #needswork ?>
-				<section id="connecting" class="bg-white block comeon">
+				<?php // Slide #15 ?>
+				<section id="connect" class="bg-white block comeon" data-waypoint-offset="50%">
 					<div class="inner">
 						<div class="text-position center">
 							<h2><span class="thick">Connecting</span> everyone and everything</h2>
@@ -413,9 +413,9 @@ lives everywhere - transforming how we live.</p>
 						</div>
           	<div class="graphic-position">
 							<div class="circles">
-              	<img src="img/connect.png" alt="" />
-                <!--div class="c c1"></div>
-                <div class="c c2"></div-->
+                <div class="c left growin"><div class="in"><div class="txt fadein">Global data<br />traffic growth <span class="thick">2x</span></div></div></div>
+                <div class="o fadein"></div>
+                <div class="c right growin"><div class="in"><div class="txt fadein">Preparing for <span class="thick">1000x</span> mobile data<br />traffic growth</div></div></div>
               </div>
             </div>
 						<span class="stretch"></span>

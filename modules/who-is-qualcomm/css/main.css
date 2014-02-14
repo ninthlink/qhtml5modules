@@ -1551,15 +1551,188 @@ p.disc {
 	width: 72px;
 	background-position: -314px 0;
 }
-/* #15 connecting */
-#connecting .circles {
-	display: block;
-	width: 60%;
-	margin: 6% auto;
-}
-#connecting .circles img {
+/* #15 connect */
+#connect .text-position.center,
+#connect .text-position.center p {
+	max-width: none;
 	width: 100%;
-	height: auto;
+	padding-left: 0;
+	padding-right: 0;
+}
+#connect .text-position.center p {
+	font-size: 0.88em;
+	letter-spacing: 0;
+	line-height: 2em;
+}
+#connect .circles {
+	display: block;
+	width: 592px;
+	height: 326px;
+	margin: 6% auto;
+	position: relative;
+}
+#connect .circles .c {
+	width: 326px;
+	height: 326px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+#connect .circles .c .in {
+	width: 100%;
+	height: 100%;
+	background: url(../img/connect.png) no-repeat 0 0;
+	background-size: cover;
+}
+#connect .txt {
+	font-size: 38px;
+	line-height: 1em;
+	padding: 72px 0 0;
+	color: #fff;
+	text-align: center;
+	width: 100%;
+}
+#connect .txt .thick {
+	display: block;
+	font-size: 88px;
+	line-height: 1em;
+	margin: -7px auto -10px
+}
+#connect .left .txt .thick {
+	font-size: 100px;
+	line-height: 1em;
+}
+#connect .circles .c.right {
+	left: auto;
+	right: 0;
+	z-index: 2;
+}
+#connect .circles .c.right .in {
+	background-position: 100% 0;
+}
+#connect .circles .o {
+	background: url(../img/connect-m.png) no-repeat 0 0;
+	width: 60px;
+	height: 190px;
+	margin: -95px 0 0 -30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 3;
+	
+	-moz-animation-duration: 0.2s;
+	-webkit-animation-duration: 0.2s;
+	animation-duration: 0.2s;
+	
+	-moz-animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+}
+.js #connect.comeon.onn .c {
+	-webkit-animation:leftin 0.5s ease-in 1s backwards;
+	-moz-animation:leftin 0.5s ease-in 1s backwards;
+	animation:leftin 0.5s ease-in 1s backwards;
+}
+.js #connect.comeon.onn .c.right {
+	-webkit-animation:rightin 0.5s ease-in 1s backwards;
+	-moz-animation:rightin 0.5s ease-in 1s backwards;
+	animation:rightin 0.5s ease-in 1s backwards;
+}
+.js #connect.comeon.onn .growin .in {
+	-moz-animation-duration: 0.5s;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+}
+.js #connect.comeon.onn .growin.right .in {
+	-moz-animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+}
+.js #connect.comeon .txt.fadein {
+	-moz-animation-duration: 0.3s;
+	-webkit-animation-duration: 0.3s;
+	animation-duration: 0.3s;
+	
+	-moz-animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+}
+.js #connect.comeon .right .txt.fadein {
+	-moz-animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+	animation-delay: 2.5s;
+}
+@media only screen and (max-width: 959px) {
+	#connect .text-position.center p {
+		font-size: 0.8em;
+		line-height: 1.1em;
+		margin: 1em 0;
+	}
+}
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+	#connect .circles {
+		margin: 6% -26px;
+	}
+}
+@media only screen and (max-width: 599px) {
+	/* 440 = 75% of 592 is 444 */
+	#connect .circles {
+		margin: 6% -2px;
+		width: 444px;
+		height: 244px;
+	}
+	#connect .circles .o {
+		background-position: -60px 0;
+		width: 45px;
+		height: 142px;
+		margin: -71px 0 0 -23px;
+	}
+	#connect .circles .c {
+		width: 244px;
+		height: 244px;
+	}
+	#connect .txt {
+		font-size: 28px;
+		line-height: 1em;
+		padding: 53px 0 0;
+	}
+	#connect .txt .thick {
+		font-size: 66px;
+		margin: 0 0 -5px;
+	}
+	#connect .left .txt .thick {
+		font-size: 98px;
+	}
+}
+@media only screen and (max-width: 479px) {
+	/* 300 = abt 50% of 592 is 296 */
+	#connect .circles {
+		margin: 6% 0;
+		width: 300px;
+		height: 165px;
+	}
+	#connect .circles .o {
+		background-position: -105px 0;
+		width: 31px;
+		height: 97px;
+		margin: -48px 0 0 -16px;
+	}
+	#connect .circles .c {
+		width: 165px;
+		height: 165px;
+	}
+	#connect .txt {
+		font-size: 19px;
+		line-height: 1em;
+		padding: 36px 0 0;
+	}
+	#connect .txt .thick {
+		font-size: 44px;
+	}
+	#connect .left .txt .thick {
+		font-size: 65px;
+	}
 }
 /* #16 digital */
 .block#digital {
@@ -1926,3 +2099,12 @@ p.disc {
 	@-moz-keyframes fadeout { 0% { opacity: 1; } 100% { opacity: 0; } }
 	@-webkit-keyframes fadeout { 0% { opacity: 1; } 100% { opacity: 0; } }
 	@keyframes fadeout { 0% { opacity: 1; } 100% { opacity: 0; } }
+	
+	/* slide in */
+	@-moz-keyframes leftin { 0% { left: -20%; } 100% { left: 0; } }
+	@-webkit-keyframes leftin { 0% { left: -20%; } 100% { left: 0; } }
+	@keyframes leftin { 0% { left: -20%; } 100% { left: 0; } }
+	
+	@-moz-keyframes rightin { 0% { right: -20%; } 100% { right: 0; } }
+	@-webkit-keyframes rightin { 0% { right: -20%; } 100% { right: 0; } }
+	@keyframes rightin { 0% { right: -20%; } 100% { right: 0; } }
