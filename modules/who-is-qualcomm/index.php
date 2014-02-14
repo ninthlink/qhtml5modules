@@ -405,14 +405,14 @@ lives everywhere - transforming how we live.</p>
 				</section>
 			
 				<?php // Slide #15 ?>
-				<section id="connect" class="bg-white block comeon" data-waypoint-offset="50%">
+				<section id="connect" class="bg-white block comeon" data-waypoint-offset="30%">
 					<div class="inner">
 						<div class="text-position center">
 							<h2><span class="thick">Connecting</span> everyone and everything</h2>
               <p>Creating new ways to ensure seamless mobile access to wireless data in our hyper-connected world.</p>
 						</div>
           	<div class="graphic-position">
-							<div class="circles">
+			  <div class="circles">
                 <div class="c left growin"><div class="in"><div class="txt fadein">Global data<br />traffic growth <span class="thick">2x</span></div></div></div>
                 <div class="o fadein"></div>
                 <div class="c right growin"><div class="in"><div class="txt fadein">Preparing for <span class="thick">1000x</span> mobile data<br />traffic growth</div></div></div>

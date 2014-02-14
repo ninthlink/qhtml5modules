@@ -35,10 +35,11 @@ $(document).ready(function() {
 			$(this).data('waypoint-offset', offsetDefault);
 		}
 		var ofs = $(this).data('waypoint-offset');
+		/*
 		$(this).bind('checkoff', function() {
 				console.log('comeon : '+ i + ' ' + $(this).attr('id') + ' :: ' + ofs );
 		}).trigger('checkoff');
-		
+		*/
 		onoffsets[i] = ofs;
 		$(this).waypoint(function() {
 			$(this).addClass('onn');
@@ -48,8 +49,11 @@ $(document).ready(function() {
 	
 //		console.log('comeon : '+ i + ' ' + $(this).attr('id') + ' :: ' + $(this).data('waypoint-offset') );
 	});
+	// #1 intro
+	$('#intro li').each(function(i) {
+		$(this).addClass('fadein l'+ i); //sit
+	});
 	// #3 whatname video stuff
-	
 	var bready = function(player_id) {
 		var bplayer = $f(player_id);
 		
