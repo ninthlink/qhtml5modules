@@ -1122,6 +1122,17 @@ p.disc {
 .text-position .slider ul.dots li.onn {
 	background-color: #343535;
 }
+@media only screen and (max-width: 479px) {
+	/* 300 */
+	
+	#years .slider {
+		width: 270px;
+	}
+	#years ul.slides img {
+		max-width: 270px;
+		height: auto;
+	}
+}
 /* #7 firsts */
 .block#firsts {
 	background: url(../img/bg-first.jpg) no-repeat center center;
@@ -1261,6 +1272,16 @@ p.disc {
 	line-height: 100%;
 	margin: 0 0 0 157px;
 	max-width: none;
+}
+
+@media only screen and (max-width: 479px) {
+	/* 300 */
+	
+	#leader .slider {
+		width: 270px;
+		padding: 16px 0 108px;
+		background-position: 50% 0;
+	}
 }
 /* #9 ideas */
 .block#ideas {
