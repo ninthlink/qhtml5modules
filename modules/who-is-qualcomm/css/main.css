@@ -1311,7 +1311,7 @@ p.disc {
 		padding-right: 126px;
 	}
 }
-@media only screen and (min-width: 480px) and (max-width: 599px) {
+@media only screen and (max-width: 599px) {
 	/* 440 */
 	#leader .slider {
 		background-size: contain;
@@ -1336,6 +1336,10 @@ p.disc {
 }
 @media only screen and (max-width: 479px) {
 	/* 300 */
+	#leader .slider {
+		margin-left: -70px;
+		margin-right: -70px;
+	}
 }
 /* #9 ideas */
 .block#ideas {

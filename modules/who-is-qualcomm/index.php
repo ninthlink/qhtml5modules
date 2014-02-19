@@ -3,7 +3,7 @@
  * Qualcomm HTML5 Modules
  * Who is Qualcomm?
  *
- * v0.1
+ * v0.1.2
  */
 ?>
 <!doctype html>
