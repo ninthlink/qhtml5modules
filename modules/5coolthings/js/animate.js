@@ -3,15 +3,6 @@
 ******************************* */
 
 $(document).ready(function() {
-	// default animation offset for each section (variance from top of <section>)
-	var offsetDefault = 0;
-
-	// all <h2> could fade in???
-	/*
-	$('h2').each(function(){
-		$(this).addClass('fade-in');
-	});
-	*/
 	// #1 "talking"
 	$('#talking').each(function() {
 		$(this).waypoint(function() {
@@ -21,6 +12,8 @@ $(document).ready(function() {
 					$('#talking .phone').addClass('chat');
 				});
 			});
+		}, {
+			offset: 'bottom-in-view'
 		}).find('.graphic-position, h3, h3 .thick, h3 sup').hide();
 	});
 	
@@ -32,6 +25,8 @@ $(document).ready(function() {
 				$('#charge .battery').addClass('charging');
 			});
 		});
+	}, {
+		offset: 'bottom-in-view'
 	}).find('.graphic-position, h3, h3 > span').hide();
 	
 	// #3 satellite signal
@@ -55,6 +50,8 @@ $(document).ready(function() {
 			satellite.addClass('slidedown');
 			satellitesignals = setTimeout(satellitesignal, 800);
 		});
+	}, {
+		offset: 'bottom-in-view'
 	}).find('h3').hide();
 	
 	// #4 cool :: snow fall
@@ -63,6 +60,8 @@ $(document).ready(function() {
 		$(this).find('h3').fadeIn(1000, function() {
 			$(this).children('.thick, sup').fadeIn(500);
 		});
+	}, {
+		offset: 'bottom-in-view'
 	}).find('h3').hide().children('.thick,sup').hide();
 	
 	// #5 high performance :: text & phone slide
@@ -71,8 +70,11 @@ $(document).ready(function() {
 		$(this).find('h3').fadeIn(500, function() {
 			$(this).children('.l2').fadeIn(1000);
 		});
+	}, {
+		offset: 'bottom-in-view'
 	}).find('h3').hide().children('.l2').hide();
-
+	
+	/*
 	// ALL :: slide section to top at specific interval
 	$('header').waypoint(function(direction) {
 		if ( direction == 'down') {
@@ -102,5 +104,5 @@ $(document).ready(function() {
 			});
 		}
 	});
-
+	*/
 });
