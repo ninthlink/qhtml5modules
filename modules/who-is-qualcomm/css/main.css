@@ -1608,6 +1608,13 @@ p.disc {
 	}
 }
 @media only screen and (max-width: 479px) {
+	.block.bg-img#driving {
+		background-position: 60% 50%;
+	}
+	.block.bg-img#driving .text-position.center {
+		padding-top: 50%;
+		padding-bottom: 0;
+	}
 	.arrowd {
 		width: 100%;
 		margin: 6.25% 0;
@@ -2310,44 +2317,6 @@ p.disc {
         *zoom: 1;
     }
 /* end helpers */
-
-/* dots nav? */
-.dnav {
-	position: fixed;
-	z-index: 9;
-	top: 5px;
-	left: 5px;
-	width: 16px;
-}
-.dnav ul {
-	list-style:none;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-}
-.dnav ul li {
-	position: relative;
-	float: left;
-	width: 100%;
-	list-style: none;
-	margin: 0 0 5px;
-	padding: 0;
-}
-.dnav a {
-	float: left;
-	width: 16px;
-	height: 16px;
-	line-height: 16px;
-	border-radius: 8px;
-	background: #dedede;
-	opacity: 0.4;
-	text-indent: -999em;
-}
-.dnav a.active,
-.dnav a:hover,
-.dnav a:focus {
-	opacity: 1;
-}
 
 /* animations */
 

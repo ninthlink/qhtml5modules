@@ -27,11 +27,12 @@
 		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><?php /* load CDN or local backup */ ?>
 		<script>window.jQuery || document.write('<script src="../_common/js/jquery-1.10.1.min.js"><\/script>')</script>
-
+<!--
 		<script src="../_common/js/spin.min.js"></script>
 		<script src="../_common/js/jquery.scrollorama.js"></script>
+-->
 		<script src="../_common/js/waypoints.min.js"></script>
-		<script src="../_common/js/swiper.min.js"></script>
+		<script src="../_common/js/jquery.touchSwipe.min.js"></script>
 
 	</head>
 

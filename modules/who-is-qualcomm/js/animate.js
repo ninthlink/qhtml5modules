@@ -53,6 +53,7 @@ $(document).ready(function() {
 	$('#intro li').each(function(i) {
 		$(this).addClass('fadein l'+ i); //sit
 	});
+	
 	// #3 whatname video stuff
 	var bready = function(player_id) {
 		var bplayer = $f(player_id);
@@ -101,6 +102,14 @@ $(document).ready(function() {
 		arrowt = setTimeout(arrowd, 3000);
 		
 		return false;
+	});
+	$('#driving').swipe({
+		swipeRight: function( event, direction, distance, duration, fingerCount) {
+			$(this).find('a.prev').click();
+		},
+		swipeLeft: function( event, direction, distance, duration, fingerCount) {
+			$(this).find('a.next').click();
+		}
 	});
 	
 	// #13 billion
@@ -156,11 +165,17 @@ $(document).ready(function() {
 		});
 		$(this).bind({
 			'nextslide': function() {
-			var onn = $(this).children('.dots').children('li.onn');
-			var nex = onn.next();
-			if ( nex.size() == 0 ) nex = onn.siblings('li:first-child');
-			nex.click();
-		},
+				var onn = $(this).children('.dots').children('li.onn');
+				var nex = onn.next();
+				if ( nex.size() == 0 ) nex = onn.siblings('li:first-child');
+				nex.click();
+			},
+			'prevslide': function() {
+				var onn = $(this).children('.dots').children('li.onn');
+				var nex = onn.prev();
+				if ( nex.size() == 0 ) nex = onn.siblings('li:last');
+				nex.click();
+			},
 			'timereset': function() {
 				var thisslider = $(this);
 				var timo = setTimeout( function() { thisslider.trigger('nextslide'); }, slideduration);
@@ -171,7 +186,24 @@ $(document).ready(function() {
 				clearTimeout(timo);
 			}
 		}).trigger('timereset');
+		$(this).parents('.block').swipe({
+			swipeRight: function( event, direction, distance, duration, fingerCount) {
+				$(this).find('.slider').trigger('prevslide');
+			},
+			swipeLeft: function( event, direction, distance, duration, fingerCount) {
+				$(this).find('.slider').trigger('nextslide');
+			}
+		});
 	});
+ 
+	  // Callback function references the event target and adds the 'swipeleft' class to it
+	  function swipeleftHandler( event ){
+	  alert('swipe left');
+		$( event.target ).removeClass( "swiperight" ).addClass( "swipeleft" );
+	  }
+	  function swiperightHandler( event ) {
+		$( event.target ).removeClass( "swipeleft" ).addClass( "swiperight" );
+	  }
 	
 	$('.block').append('<a href="#" class="btn-reset"><i></i></a>').children('.btn-reset').click(function() {
 		var bpid = '#' + $(this).parent().removeClass('onn').attr('id');
@@ -202,29 +234,8 @@ $(document).ready(function() {
 		}
 	});
 */
-	/* dots nav */
-	if ( $('.dnav').size() > 0 ) {
-		$('section:not(:last)').each(function(i) {
-			var h2c = $(this).find('h1,h2').eq(0).text();
-			$('.dnav ul').append('<li><a href="#'+ $(this).attr('id') + '" title="'+ h2c +'">'+i+'</a></li>');
-			$(this).waypoint(function(direction) {
-			var $links = $('a[href="#' + this.id + '"]');
-			$links.toggleClass('active', direction === 'down');
-			}, {
-			offset: '95%'
-			})
-			.waypoint(function(direction) {
-			var $links = $('a[href="#' + this.id + '"]');
-			$links.toggleClass('active', direction === 'up');
-			}, {
-			offset: function() {
-			return -$(this).height();
-			}
-			});
-		});
-		$('.dnav a').click(function() {
-			var tar = $(this).attr('href');
-			$(tar).children('.btn-reset').click();
-		});
-	}
+	// fun with ecos
+	$('.eco').click(function() {
+		$(this).fadeOut(100,function() { $(this).fadeIn(1000) });
+	});
 });
