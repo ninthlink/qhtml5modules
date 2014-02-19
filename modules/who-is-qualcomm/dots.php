@@ -71,6 +71,7 @@
 							<div class="eco fadein"><div class="spinner"></div><div class="spinner s2"></div></div>
             </div>
 						<div class="text-position">
+							<h2>Intro</h2>
 							<p><span class="thick">By the end of this module, you will learn about:</span></p>
               <ul>
                 <li>Who Qualcomm is and what we do</li>
@@ -443,6 +444,7 @@ lives everywhere - transforming how we live.</p>
 			
 				<?php // Slide #17 ?>
 				<section id="across4" class="bg-white block">
+					<h2>Knows. Senses. Understands. Recognizes.</h2>
           	<ul>
             	<li class="a1"><img src="img/41.jpg" width="320" height="296" alt="" /><span class="c">Knows your location</span></li>
             	<li class="a2"><img src="img/42.jpg" width="320" height="296" alt="" /><span class="c">Senses your motion</span></li>
@@ -502,6 +504,8 @@ lives everywhere - transforming how we live.</p>
 				</section>
 				
 			</div>
+			
+			<div class="dnav"><ul></ul></div>
 	 
 		</div>
 

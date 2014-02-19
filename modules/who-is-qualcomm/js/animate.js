@@ -104,16 +104,23 @@ $(document).ready(function() {
 	});
 	
 	// #13 billion
-	$('#billion').waypoint(function() {
-		$(this).find('.number').css('left',0).animate({
-			left: 25000000000
-		}, {
-			duration: 1200, 
-			step: function( c ) {
-				var n = Math.round(c);
-				$(this).html(commaSeparateNumber(n));
-			}
-		});
+	$('#billion').bind({
+		'count': function() {
+			$(this).find('.number').css('left',0).animate({
+				left: 25000000000
+			}, {
+				duration: 1200, 
+				step: function( c ) {
+					var n = Math.round(c);
+					$(this).html(commaSeparateNumber(n));
+				}
+			});
+		},
+		'reset': function() {
+			$(this).trigger('count');
+		}
+	}).waypoint(function() {
+		$(this).addClass('comeon onn').trigger('reset');
 	}, {
 		offset: '50%'
 	});
@@ -142,7 +149,7 @@ $(document).ready(function() {
 				slider.trigger('stopcycle');
 				$(this).addClass('onn').siblings('.onn').removeClass();
 				var slides = $(this).parent().siblings('.slides').children();
-				slides.filter('.onn').fadeOut(slidefade, function() { $(this).removeClass('onn'); slides.eq(i).fadeIn(slidefade, function() { $(this).addClass('onn'); }); });
+				slides.filter('.onn').stop().fadeOut(slidefade, function() { $(this).removeClass('onn'); slides.eq(i).stop().fadeIn(slidefade, function() { $(this).addClass('onn'); }); });
 				
 				slider.trigger('timereset');
 			});
@@ -165,6 +172,18 @@ $(document).ready(function() {
 			}
 		}).trigger('timereset');
 	});
+	
+	$('.block').append('<a href="#" class="btn-reset"><i></i></a>').children('.btn-reset').click(function() {
+		var bpid = '#' + $(this).parent().removeClass('onn').attr('id');
+		console.log('reset '+ bpid);
+		
+		
+		setTimeout(function() {
+		$(bpid).addClass('onn').trigger('reset');
+		}, 0);
+		
+		return false;
+	});
 /*
 	$('section').each(function(){
 		if ( $(this).attr('id') != 'legal' ) {
@@ -183,4 +202,29 @@ $(document).ready(function() {
 		}
 	});
 */
+	/* dots nav */
+	if ( $('.dnav').size() > 0 ) {
+		$('section:not(:last)').each(function(i) {
+			var h2c = $(this).find('h1,h2').eq(0).text();
+			$('.dnav ul').append('<li><a href="#'+ $(this).attr('id') + '" title="'+ h2c +'">'+i+'</a></li>');
+			$(this).waypoint(function(direction) {
+			var $links = $('a[href="#' + this.id + '"]');
+			$links.toggleClass('active', direction === 'down');
+			}, {
+			offset: '95%'
+			})
+			.waypoint(function(direction) {
+			var $links = $('a[href="#' + this.id + '"]');
+			$links.toggleClass('active', direction === 'up');
+			}, {
+			offset: function() {
+			return -$(this).height();
+			}
+			});
+		});
+		$('.dnav a').click(function() {
+			var tar = $(this).attr('href');
+			$(tar).children('.btn-reset').click();
+		});
+	}
 });
