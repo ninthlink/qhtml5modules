@@ -3,7 +3,7 @@
  * Qualcomm HTML5 Modules
  * Who is Qualcomm?
  *
- * v0.1.5
+ * v0.1.6
  */
 ?>
 <!doctype html>
@@ -19,7 +19,9 @@
 		
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
-		<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/main.css">
 
