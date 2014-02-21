@@ -1,0 +1,27 @@
+/* */
+#header { display: block; width: 100%; text-align: center; color: #fff; position: relative; float: left; padding: 9% 0; margin: 0 0 80px;
+
+    background: #007681; /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(0,66,103,1) 0%, rgba(0,118,129) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,66,103,1)), color-stop(100%,rgba(0,118,129))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,66,103,1) 0%,rgba(0,118,129,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,66,103,1) 0%,rgba(0,118,129,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,66,103,1) 0%,rgba(0,118,129,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,66,103,1) 0%,rgba(0,118,129,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004267', endColorstr='#007681',GradientType=0 ); /* IE6-9 */
+}
+#header h1 { margin: 0; font: 6em/100% "Qualcomm-Semibold", sans-serif }
+#header h2 { margin: 0; font: 5em/100% "Qualcomm-Light", sans-serif }
+
+
+.triangle {
+	position: absolute;
+	bottom: -35px;
+	left: 50%;
+	width: 0;
+	height: 0;
+	margin-left: -35px;
+	border-left: 35px solid transparent;
+	border-right: 35px solid transparent;
+	border-top: 35px solid #007681; 
+}
