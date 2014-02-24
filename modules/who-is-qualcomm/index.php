@@ -32,7 +32,7 @@
 
 	</head>
 
-	<body>
+	<body class="bg-grey">
 		
 			<div id="content" class="content-container">
 			
@@ -84,7 +84,7 @@
 				</section>
 			
 				<?php // Slide #3 ?>
-				<section id="whatname" class="bg-black block comeon" data-waypoint-offset="30%">
+				<section id="whatname" class="bg-black block comeon">
 					<div class="inner">
 						<div class="text-position">
 							<h2 class="center txtw"><span class="thick">Qualcomm.</span> What’s in the name?</h2>
@@ -101,7 +101,7 @@
 				</section>
         
 				<?php // Slide #4 ?>
-				<section id="global" class="bg-blue block comeon" data-waypoint-offset="30%">
+				<section id="global" class="bg-blue block comeon" data-waypoint-offset="50%">
 					<div class="inner">
           	<div class="text-position center txtw">
             	<h2>We are <span class="thick">global and diverse</span></h2>
@@ -376,7 +376,7 @@ lives everywhere - transforming how we live.</p>
         </section>
 			
 				<?php // Slide #14 ?>
-				<section id="applying" class="bg-grey-grad block comeon">
+				<section id="applying" class="bg-grey-grad block comeon" data-waypoint-offset="50%">
 					<div class="inner">
 						<div class="text-position center">
 							<h2><span class="thick">Applying</span> mobile technologies to everything</h2>
@@ -390,7 +390,7 @@ lives everywhere - transforming how we live.</p>
 				</section>
 			
 				<?php // Slide #15 ?>
-				<section id="connect" class="bg-white block comeon" data-waypoint-offset="30%">
+				<section id="connect" class="bg-white block comeon">
 					<div class="inner">
 						<div class="text-position center">
 							<h2><span class="thick">Connecting</span> everyone and everything</h2>
@@ -435,7 +435,7 @@ lives everywhere - transforming how we live.</p>
         </section>
         
 				<?php // Slide #18 ?>
-				<section id="tap" class="bg-white block comeon" data-waypoint-offset="30%">
+				<section id="tap" class="bg-white block comeon">
 					<div class="inner">
 						<div class="text-position">
               <h2 class="center"><span class="thick">Mobile devices</span> can tap into resources <br class="vis960" />beyond their own capabilities</h2>

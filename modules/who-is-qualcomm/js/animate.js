@@ -25,10 +25,10 @@ $(document).ready(function() {
 	});
 	
 	// default animation offset for each section (variance from top of <section>)
-	var offsetDefault = 'bottom-in-view';
+	var offsetDefault = '30%';//'bottom-in-view';
 	// scale full bg img slides?
 	$('.bg-img').each(function() {
-			$(this).data('og-height', $(this).height());
+		$(this).data('og-height', $(this).height());
 	});
 	$(window).bind('resize.qmod', function() {
 		var qwh= $(this).height();
@@ -41,6 +41,7 @@ $(document).ready(function() {
 				return ( nh > ogh ) ? nh : ogh;
 			});
 		});
+		//offsetDefault = qww < 600 ? '30%' : 'bottom-in-view';
 	}).trigger('resize.qmod');
 	
 	/* waypoints and other such mayhem */
@@ -54,7 +55,7 @@ $(document).ready(function() {
 		$(this).on('qinview', function() {
 			$(this).waypoint(function() {
 				$(this).addClass('onn');
-				console.log('# ' + i +' '+ $(this).attr('id') + ' onn?? ' + onoffsets[i] );
+				//console.log('# ' + i +' '+ $(this).attr('id') + ' onn?? ' + onoffsets[i] );
 			}, {
 				offset: onoffsets[i]
 			});
@@ -141,15 +142,24 @@ $(document).ready(function() {
 	// #13 billion
 	$('#billion').bind({
 		'count': function() {
-			$(this).find('.number').css('left',0).animate({
-				left: 25000000000
-			}, {
-				duration: 1200, 
-				step: function( c ) {
-					var n = Math.round(c);
-					$(this).html(commaSeparateNumber(n));
-				}
-			});
+			$(this).find('.number').stop().html('&nbsp;');
+			var billitime = $(this).data('billitime');
+			clearTimeout(billitime);
+			billitime = setTimeout(function() {
+				var bn = jQuery('#billion .number');
+				var bt = bn.data('billitime');
+				clearTimeout(bt);
+				bn.css('left',0).animate({
+					left: 25000000000
+				}, {
+					duration: 1200, 
+					step: function( c ) {
+						var n = Math.round(c);
+						$(this).html(commaSeparateNumber(n));
+					}
+				});
+			}, 500);
+			$(this).data('billitime', billitime);
 		},
 		'reset': function() {
 			$(this).trigger('count');
@@ -224,10 +234,10 @@ $(document).ready(function() {
 			}
 		}).on('inview', function( event, isInView, visiblePartX, visiblePartY ) {
 			if ( isInView ) {
-				console.log('inview ' + $(this).parents('.block').attr('id'));
+				//console.log('inview ' + $(this).parents('.block').attr('id'));
 				$(this).trigger('slidereset');
 			} else {
-				console.log('OUT of inview ' + $(this).parents('.block').attr('id'));
+				//console.log('OUT of inview ' + $(this).parents('.block').attr('id'));
 				$(this).trigger('stopcycle');
 			}
 		});
@@ -239,7 +249,7 @@ $(document).ready(function() {
 				$(this).find('.slider').trigger('nextslide');
 			}
 		}).bind('qinview', function() {
-			console.log('slider parent #' + $(this).attr('id') + ' QINVIEW');
+			//console.log('slider parent #' + $(this).attr('id') + ' QINVIEW');
 			$(this).find('.slider').trigger('slidereset');
 		});
 	});
@@ -255,7 +265,7 @@ $(document).ready(function() {
 	
 	$('.block').append('<a href="#" class="btn-reset"><i></i></a>').children('.btn-reset').click(function() {
 		var bpid = '#' + $(this).parent().removeClass('onn').attr('id');
-		console.log('reset '+ bpid);
+		//console.log('reset '+ bpid);
 		
 		
 		setTimeout(function() {

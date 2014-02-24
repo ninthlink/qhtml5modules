@@ -456,10 +456,10 @@ sup {
 	height: 100%;
 }
 
-.block#hdr {
+.block.bg-img#hdr {
 	background: url(../img/bg-top.jpg) no-repeat center center;
 }
-.block#hdr .inner {
+.block.bg-img#hdr .inner {
 	height: 100%;
 }
 .block.bg-img#hdr .text-position {
@@ -486,6 +486,12 @@ h1 {
 
 @media only screen and (min-width: 480px) and (max-width:599px) {
 	.block#hdr .text-position { top: 10% }
+}
+@media only screen and (max-width: 479px) {
+	.block.bg-img#hdr {
+		min-height: 600px;
+		background-position: 40% 50%;
+	}
 }
 /* #1 intro */
 #intro .text-position p {
@@ -639,6 +645,10 @@ h1 {
 	}
 }
 /* #3 whatname */
+.block#whatname,
+.block#whatname .inner {
+	min-height: 0;
+}
 #whatname .text-position h2 {
 	font-size: 1.8em;
 }
@@ -1158,9 +1168,10 @@ p.disc {
 }
 @media only screen and (max-width: 479px) {
 	/* 300 */
-	
 	#years .slider {
 		width: 270px;
+		height: 325px;
+		margin-top: 25px;
 	}
 	#years ul.slides img {
 		max-width: 270px;
@@ -1433,7 +1444,7 @@ p.disc {
 		right: 7%;
 	}
 	#ideas .eco.d2 {
-		right: 41%;
+		right: 48%;
 	}
 	#ideas .eco.d3 {
 		top: 18%;
