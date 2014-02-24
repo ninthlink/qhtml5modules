@@ -9,40 +9,43 @@ function commaSeparateNumber(val){
 }
 	
 $(document).ready(function() {
-	// qualcommreveal
-	$('.content-container').qualcommreveal({
-      targets: '.block',
-	  scrollspeed: 0,
-    });
-	$.subscribe('qualcommreveal/reveal-finish', function(event, elem, counter) {
-	/*
-		console.log('qualcommreveal/reveal-finish : # ');
-		console.log(counter);
-		console.log('++');
-		console.log(elem);
-	*/
-		elem.trigger('qinview');
-	});
 	
 	// default animation offset for each section (variance from top of <section>)
-	var offsetDefault = '30%';//'bottom-in-view';
+	var qwh, qww, offsetDefault = '30%';//'bottom-in-view';
 	// scale full bg img slides?
 	$('.bg-img').each(function() {
 		$(this).data('og-height', $(this).height());
 	});
 	$(window).bind('resize.qmod', function() {
-		var qwh= $(this).height();
-		var qww = $(this).width();
+		qwh= $(this).height();
+		qww = $(this).width();
 		$('.bg-img').each(function() {
 			var ogh = $(this).data('og-height');
 			var bgh = $(this).data('bg-height');
 			$(this).height(function( index, height ) {
+				if ( $(this).hasClass('max-height') ) return qwh;
+				
 				var nh = Math.round(qww * bgh / 1280);
 				return ( nh > ogh ) ? nh : ogh;
 			});
 		});
 		//offsetDefault = qww < 600 ? '30%' : 'bottom-in-view';
 	}).trigger('resize.qmod');
+	
+	// qualcommreveal
+	$('.content-container').qualcommreveal({
+      targets: '.block',
+	  scrollspeed: 0,
+    });
+	$.subscribe('qualcommreveal/reveal-finish', function(event, elem, counter) {
+		/*
+		console.log('qualcommreveal/reveal-finish : # ');
+		console.log(counter);
+		console.log('++');
+		console.log(elem);
+		*/
+		elem.trigger('qinview');
+	});
 	
 	/* waypoints and other such mayhem */
 	var onoffsets = new Array();

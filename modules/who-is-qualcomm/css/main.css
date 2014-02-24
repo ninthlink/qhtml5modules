@@ -484,14 +484,18 @@ h1 {
 	animation-delay: 0.5s;
 }
 
-@media only screen and (min-width: 480px) and (max-width:599px) {
-	.block#hdr .text-position { top: 10% }
-}
-@media only screen and (max-width: 479px) {
+@media only screen and (min-width:800px) and (max-width: 960px) {
 	.block.bg-img#hdr {
-		min-height: 600px;
+		background-position: 70% 50%;
+	}
+}
+@media only screen and (max-width: 799px) {
+	.block.bg-img#hdr {
 		background-position: 40% 50%;
 	}
+}
+@media only screen and (min-width: 480px) and (max-width:599px) {
+	.block#hdr .text-position { top: 10% }
 }
 /* #1 intro */
 #intro .text-position p {
