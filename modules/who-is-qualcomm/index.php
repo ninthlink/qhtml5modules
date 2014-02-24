@@ -3,7 +3,7 @@
  * Qualcomm HTML5 Modules
  * Who is Qualcomm?
  *
- * v0.1.5
+ * v0.1.6
  */
 ?>
 <!doctype html>
@@ -23,38 +23,18 @@
 		<meta name="apple-touch-fullscreen" content="yes" />
 		<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
+		<link rel="stylesheet" href="../_common/css/jquery.qualcomm-reveal.css">
 		<link rel="stylesheet" href="css/main.css">
+
 
 		<script src="../_common/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><?php /* load CDN or local backup */ ?>
-		<script>window.jQuery || document.write('<script src="../_common/js/jquery-1.10.1.min.js"><\/script>')</script>
-<!--
-		<script src="../_common/js/spin.min.js"></script>
-		<script src="../_common/js/jquery.scrollorama.js"></script>
--->
-		<script src="../_common/js/waypoints.min.js"></script>
-		<script src="../_common/js/jquery.touchSwipe.min.js"></script>
 
 	</head>
 
 	<body>
 		
-		<div id="wrapper">
-
-			<?php /*// Slide #1 ?>
-			<header class="bg-red-grad">
-				<div class="inner">
-					<h1 class="txtw"><strong>5</strong><span class="cool">Super cool things<br /><span class="thin">about Qualcomm<sup>&reg;</sup><br />Snapdragon<sup>&trade;</sup> Processors</span></span></h1>
-					<div class="header-graphic">
-						<img id="main-img" src="img/topgraphic.png" />
-						<img id="gear1" src="img/gear1.png" />
-						<img id="gear2" src="img/gear2.png" />
-					</div>
-				</div>
-			</header>
-			*/ ?>
-			<div id="content">
+			<div id="content" class="content-container">
 			
 				<?php // Slide #0 ?>
 				<section id="hdr" class="bg-img block comeon" data-bg-height="709" data-waypoint-offset="0">
@@ -185,7 +165,7 @@
 							<h2><span class="txtbl">28</span> years of <span class="thick">innovation</span></h2>
 							<div class="slider" data-slide-duration="5000" data-slide-fade="1000">
 								<ul>
-									<li class="onn">
+									<li>
 										<img src="img/1985.jpg" alt="1985" />
 										<h2 class="txtlb">1985</h2>
 										<p>Qualcomm is founded</p>
@@ -260,7 +240,7 @@
 							<h2>Our innovations have made<br class="vis960" /> us a <span class="thick">mobile technology leader</span>*</h2>
               <div class="slider txtw" data-slide-duration="3000" data-slide-fade="500">
 								<ul>
-									<li class="onn">
+									<li>
 										<h2><span class="thick">Mode M</span></h2>
 										<p>performance</p>
 									</li>
@@ -492,7 +472,7 @@ lives everywhere - transforming how we live.</p>
 				</section>
         
 				<?php // Slide #20 ?>
-				<section id="legal" class="bg-6">
+				<section id="legal" class="bg-6 block">
 					<div class="inner">
 						<div class="graphic-position center">
 							<img id="logo" src="img/qualcomm.png" />
@@ -505,9 +485,19 @@ lives everywhere - transforming how we live.</p>
 				</section>
 				
 			</div>
-	 
-		</div>
 
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><?php /* load CDN or local backup */ ?>
+		<script>window.jQuery || document.write('<script src="../_common/js/jquery-1.10.1.min.js"><\/script>')</script>
+
+		<script src="../_common/js/spin.min.js"></script>
+		<script src="../_common/js/jquery.inview.min.js"></script>
+
+		<script src="../_common/js/waypoints.min.js"></script>
+		<script src="../_common/js/jquery.touchSwipe.min.js"></script>
+		
+		<script src="../_common/js/jquery.qualcomm-reveal.min-v1.0.1.js"></script>
+
+		
 		<script type="text/javascript" src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
 		<script src="js/animate.js"></script>
 <script type="text/javascript"> 

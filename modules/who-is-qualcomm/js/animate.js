@@ -9,6 +9,21 @@ function commaSeparateNumber(val){
 }
 	
 $(document).ready(function() {
+	// qualcommreveal
+	$('.content-container').qualcommreveal({
+      targets: '.block',
+	  scrollspeed: 0,
+    });
+	$.subscribe('qualcommreveal/reveal-finish', function(event, elem, counter) {
+	/*
+		console.log('qualcommreveal/reveal-finish : # ');
+		console.log(counter);
+		console.log('++');
+		console.log(elem);
+	*/
+		elem.trigger('qinview');
+	});
+	
 	// default animation offset for each section (variance from top of <section>)
 	var offsetDefault = 'bottom-in-view';
 	// scale full bg img slides?
@@ -35,20 +50,26 @@ $(document).ready(function() {
 			$(this).data('waypoint-offset', offsetDefault);
 		}
 		var ofs = $(this).data('waypoint-offset');
-		/*
-		$(this).bind('checkoff', function() {
-				console.log('comeon : '+ i + ' ' + $(this).attr('id') + ' :: ' + ofs );
-		}).trigger('checkoff');
-		*/
 		onoffsets[i] = ofs;
-		$(this).waypoint(function() {
-			$(this).addClass('onn');
-		}, {
-			offset: onoffsets[i]
+		$(this).on('qinview', function() {
+			$(this).waypoint(function() {
+				$(this).addClass('onn');
+				console.log('# ' + i +' '+ $(this).attr('id') + ' onn?? ' + onoffsets[i] );
+			}, {
+				offset: onoffsets[i]
+			});
+		}).on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+			//$(this).waypoint('destroy');
+			if(isInView) {
+				//$(this).waypoint('enable');
+				//console.log('block #'+ i + ' ' + $(this).attr('id') + ' IS inview? visiblePartY = '+ visiblePartY);
+			} else {
+				$(this).trigger('reset');//.removeClass('onn')
+				//console.log('block #'+ i + ' ' + $(this).attr('id') + ' IS NOT inview? visiblePartY = '+ visiblePartY);
+			}
 		});
-	
-//		console.log('comeon : '+ i + ' ' + $(this).attr('id') + ' :: ' + $(this).data('waypoint-offset') );
 	});
+	
 	// #1 intro
 	$('#intro li').each(function(i) {
 		$(this).addClass('fadein l'+ i); //sit
@@ -68,14 +89,19 @@ $(document).ready(function() {
 		});
 	};
 	$f(document.getElementById('whatvid')).addEvent('ready', bready);
+	// pause video when off screen
+	$('#whatname').bind('reset', function() {
+		$f('whatvid').api('pause');
+	});
 	
 	// #10 inventing the future
-	$('#future .imageblock').waypoint(function() {
-		$(this).find('img').fadeIn(2000);
-	}, {
-		offset: '80%'
-	}).find('img').fadeOut();
-	
+	$('#future').bind('qinview', function() {
+		$(this).find('.imageblock').waypoint(function() {
+			$(this).find('img').fadeIn(2000);
+		}, {
+			offset: '80%'
+		}).find('img').fadeOut();
+	});
 	// #12 driving : cycler
 	var arrowd = function() {
 		$('.arrowd a.next').click();
@@ -127,11 +153,14 @@ $(document).ready(function() {
 		},
 		'reset': function() {
 			$(this).trigger('count');
+		},
+		'qinview': function() {
+			$(this).waypoint(function() {
+				$(this).addClass('comeon onn').trigger('reset');
+			}, {
+				offset: '50%'
+			});
 		}
-	}).waypoint(function() {
-		$(this).addClass('comeon onn').trigger('reset');
-	}, {
-		offset: '50%'
 	});
 	// #14 applying
 	$('#applying').find('h2, p, .circles li').addClass('fadein');
@@ -144,7 +173,7 @@ $(document).ready(function() {
 		var count = slides.children().size();
 		var dots = '<ul class="dots">';
 		for ( var i = 0; i < count; i++ ) {
-			dots += '<li'+ (i==0 ? ' class="onn"' : '') + '></li>';
+			dots += '<li />';
 		}
 		dots += '</ul>';
 		$(this).append(dots);
@@ -184,8 +213,24 @@ $(document).ready(function() {
 			'stopcycle': function() {
 				var timo = $(this).data('qslidetimer');
 				clearTimeout(timo);
+			},
+			'slidereset': function() {
+				//if ( $(this).children('.slides').children('li:first-child').hasClass('onn') == false ) {
+					$(this).children('.slides').children().hide().removeClass().filter(':last-child').addClass('onn')
+						.parent().next().children('li:first-child').click();
+				/*} else {
+					$(this).trigger('timereset');
+				}*/
 			}
-		}).trigger('timereset');
+		}).on('inview', function( event, isInView, visiblePartX, visiblePartY ) {
+			if ( isInView ) {
+				console.log('inview ' + $(this).parents('.block').attr('id'));
+				$(this).trigger('slidereset');
+			} else {
+				console.log('OUT of inview ' + $(this).parents('.block').attr('id'));
+				$(this).trigger('stopcycle');
+			}
+		});
 		$(this).parents('.block').swipe({
 			swipeRight: function( event, direction, distance, duration, fingerCount) {
 				$(this).find('.slider').trigger('prevslide');
@@ -193,6 +238,9 @@ $(document).ready(function() {
 			swipeLeft: function( event, direction, distance, duration, fingerCount) {
 				$(this).find('.slider').trigger('nextslide');
 			}
+		}).bind('qinview', function() {
+			console.log('slider parent #' + $(this).attr('id') + ' QINVIEW');
+			$(this).find('.slider').trigger('slidereset');
 		});
 	});
  
@@ -235,7 +283,7 @@ $(document).ready(function() {
 	});
 */
 	// fun with ecos
-	$('.eco').click(function() {
+	$('.eco:not(.bg)').click(function() {
 		$(this).fadeOut(100,function() { $(this).fadeIn(1000) });
 	});
 });
