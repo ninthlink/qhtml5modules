@@ -1,16 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-    <meta name="viewport" content="initial-scale=1">
-	<title>Mobile Technology Overview</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Mobile Technology Overview</title>
+		
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-touch-fullscreen" content="yes" />
+		<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	
 	<link rel="stylesheet" href="../_common/css/jquery.qualcomm-reveal.css">
 	<link rel="stylesheet" href="../_common/fonts/stylesheet.css" type="text/css" media="screen" charset="utf-8" />
 	<link rel="stylesheet" href="edge_includes/base.css" type="text/css" media="screen" charset="utf-8" />
 <!--Adobe Edge Runtime-->
-
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="../_common/js/jquery-1.10.1.min.js"><\/script>')</script>
 	
@@ -23,77 +27,22 @@
 	<script src="edge_includes/Elite_Battery_Mobile_edgePreload.js"></script>
 	<script src="edge_includes/DVD_edgePreload.js"></script>
 	<script src="edge_includes/Cars_edgePreload.js"></script>
-	<script type="text/javascript">
-	var qedgepieces = [
-		{/*left intentionally blank*/},
-		{
-			i: '30503229',
-			j: 'SixTechnologies_Mobile_edgePreload',
-		},
-		{
-			i: '15320788',
-			j: 'Elite_spaceship_Mobile_edgePreload',
-		},
-		{
-			i: '58030357',
-			j: 'Elite_Battery_Mobile_edgePreload',
-		},
-		{
-			i: '50043193',
-			j: 'DVD_edgePreload',
-		},
-		{
-			i: '15758297',
-			j: 'Cars_edgePreload',
-		},
-	];
-	var qload = function(qsc) {
-		var script = document.createElement("script");
-        script.type = "text/javascript";
-        script.src = "edge_includes/"+ qsc +".js"; 
-        document.getElementsByTagName("head")[0].appendChild(script);
-	}
-	jQuery(function($) {
-		$(window).bind('resize.qmod', function() {
-			var qwh = $(this).height();
-			$('#header').height(qwh-200);
-		}).trigger('resize.qmod');
-		// qualcommreveal
-		$('.content-container').qualcommreveal({
-		  targets: '.stagewrapper',
-		  scrollspeed: 0,
-		});
-		$.subscribe('qualcommreveal/reveal-finish', function(event, elem, counter) {
-			/*
-			console.log('qualcommreveal/reveal-finish : # '+ counter + ' ++ ');
-			console.log(elem);
-			console.log('**');
-			console.log(qedgepieces[counter]);
-		
-			if ( counter > 0 ) {
-				elem.append('<div id="Stage'+counter+'" class="EDGE-'+ qedgepieces[counter]['i'] +'"></div>');
-				setTimeout(function() {qload(qedgepieces[counter]['j']);}, 100);
-			}
-//			elem.trigger('qinview');
-		*/
-		});
-	});
-	</script>
 <!--Adobe Edge Runtime End-->
 
 </head>
-<body style="margin:0;padding:0;">
+<body>
 <div class="content-container">
 	<div id="header" class="stagewrapper">
 	<h1>Mobile technology.</h1>
 	<h2>An amazing achievement.</h2>
 	<div class="triangle"></div>
 	</div>
-	<div id="Stage1wrap" class="stagewrapper"><div id="Stage1" class="EDGE-30503229"></div></div>
-	<div id="Stage2wrap" class="stagewrapper"><div id="Stage2" class="EDGE-15320788"></div></div>
-	<div id="Stage3wrap" class="stagewrapper"><div id="Stage3" class="EDGE-58030357"></div></div>
-	<div id="Stage4wrap" class="stagewrapper"><div id="Stage4" class="EDGE-50043193"></div></div>
-	<div id="Stage5wrap" class="stagewrapper"><div id="Stage5" class="EDGE-15758297"></div></div>
+	<div id="Stage1wrap" class="stagewrapper"><div id="Stage1" class="EDGE-30503229"></div></div><!-- six technologies -->
+	<div id="Stage2wrap" class="stagewrapper"><div id="Stage2" class="EDGE-15320788"></div></div><!-- spaceship -->
+	<div id="Stage3wrap" class="stagewrapper"><div id="Stage3" class="EDGE-58030357"></div></div><!-- battery -->
+	<div id="Stage4wrap" class="stagewrapper"><div id="Stage4" class="EDGE-50043193"></div></div><!-- dvd -->
+	<div id="Stage5wrap" class="stagewrapper"><div id="Stage5" class="EDGE-15758297"></div></div><!-- cars -->
 </div>
+<script type="text/javascript" src="edge_includes/animate.js"></script>
 </body>
 </html>

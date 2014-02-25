@@ -1,4 +1,5 @@
 /* */
+body { margin: 0; padding: 0; background: #fff }
 .content-container, .stagewrapper {
 	float: left;
 	width: 100%;
@@ -29,3 +30,5 @@
 	border-right: 35px solid transparent;
 	border-top: 35px solid #007681; 
 }
+
+.stagewrapper#Stage4wrap { padding-bottom: 60px }
