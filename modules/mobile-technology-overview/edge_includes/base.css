@@ -1,4 +1,8 @@
 /* */
+.content-container, .stagewrapper {
+	float: left;
+	width: 100%;
+}
 #header { display: block; width: 100%; text-align: center; color: #fff; position: relative; float: left; padding: 9% 0; margin: 0 0 80px;
 
     background: #007681; /* Old browsers */
