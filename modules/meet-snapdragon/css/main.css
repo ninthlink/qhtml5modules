@@ -328,7 +328,7 @@ height: 100px;
     */
 
     #every-phone,
-    #every-phone .inner { min-height: 755px; }
+    #every-phone .inner { min-height: 0; }
 
     /*
     #processes,

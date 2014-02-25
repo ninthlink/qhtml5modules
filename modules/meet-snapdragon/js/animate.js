@@ -34,6 +34,21 @@ $(document).ready(function() {
 		$(this).addClass('fade-in');
 	});
 	
+	var qmodresize = function() {
+		var qwh = $(window).height();
+		var hdr = $('header');
+		hdr.css('padding',0);
+		var hh = hdr.height();
+		var dif = qwh - hh;
+		if ( dif > 0 ) hdr.css('padding', (Math.floor(dif/2) + 'px 0'));
+	}
+	var qmodresizer;
+	$(window).bind('resize.qmod', function() {
+		//throttle
+		clearTimeout(qmodresizer);
+		qmodresizer = setTimeout(qmodresize, 100);
+	}).trigger('resize.qmod');
+	
 	// qualcommreveal
 	$('.content-container').qualcommreveal({
       targets: '.block',
@@ -51,7 +66,7 @@ $(document).ready(function() {
 				$('#loading .text-position h3').fadeIn( 500 );
 			} );
 		}, {
-			offset: offsetDefault
+			offset: '50%'
 		});
 	});
 	// #3 "Difference" :: parallax <li> text; fade in graphic
