@@ -3,7 +3,7 @@
  * Qualcomm HTML5 Modules
  * Who is Qualcomm?
  *
- * v0.1.6
+ * v0.1.7
  */
 ?>
 <!doctype html>
@@ -491,12 +491,10 @@ lives everywhere - transforming how we live.</p>
 
 		<script src="../_common/js/spin.min.js"></script>
 		<script src="../_common/js/jquery.inview.min.js"></script>
+		<script src="../_common/js/jquery.qualcomm-reveal.min.js"></script>
 
 		<script src="../_common/js/waypoints.min.js"></script>
 		<script src="../_common/js/jquery.touchSwipe.min.js"></script>
-		
-		<script src="../_common/js/jquery.qualcomm-reveal.min-v1.0.1.js"></script>
-
 		
 		<script type="text/javascript" src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
 		<script src="js/animate.js"></script>
