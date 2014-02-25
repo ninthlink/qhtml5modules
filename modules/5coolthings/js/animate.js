@@ -13,7 +13,7 @@ $(document).ready(function() {
 				});
 			});
 		}, {
-			offset: 'bottom-in-view'
+			offset: '50%'
 		}).find('.graphic-position, h3, h3 .thick, h3 sup').hide();
 	});
 	
