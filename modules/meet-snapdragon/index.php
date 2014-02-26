@@ -427,7 +427,6 @@
 		<script src="../_common/js/waypoints.min.js"></script>
 		<script src="../_common/js/swiper.min.js"></script>
 		
-		
 		<script type="text/javascript" src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
 		<script src="js/animate.js"></script>
 <script type="text/javascript"> 
