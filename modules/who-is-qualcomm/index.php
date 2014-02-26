@@ -2,7 +2,7 @@
 /*
  * Qualcomm HTML5 Modules : Who is Qualcomm?
  */
-$v = '0.2.0';
+$v = '0.2.1';
 $qv = '?v='. $v;
 ?>
 <!doctype html>
@@ -23,6 +23,7 @@ $qv = '?v='. $v;
 		
 		<script src="../_common/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		<script type="text/javascript" src="//cdn.sublimevideo.net/js/77emf89m.js"></script>
 	</head>
 	<body class="bg-grey">
 			<div id="content" class="content-container">
@@ -79,12 +80,12 @@ $qv = '?v='. $v;
 					<div class="inner">
 						<div class="text-position">
 							<h2 class="center txtw"><span class="thick">Qualcomm.</span> What’s in the name?</h2>
-              <?php /*<div class="videohere">
-              	<!--img src="img/name-video.jpg" alt="" class="fadein" /-->
-              	<div id="what-video">*/ ?>
-				  <iframe id="video" src="http://player.vimeo.com/video/86065129?title=0&amp;byline=0&amp;portrait=0" width="320" height="180" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                <?php /*</div>
-              </div>*/ ?>
+							<div class="videohere">
+							<video id="3eb3c5c9" poster="img/name-video.jpg" width="960" height="540" title="What's in a name" data-uid="3eb3c5c9" data-autoresize="fit" preload="none">
+							  <source src="video/evolution_of_a_name_cutdown_640x360.mp4" />
+							  <source src="video/evolution_of_a_name_cutdown_960x540.mp4" data-quality="hd" />
+							</video>
+							</div>
 						</div>
 
 						<span class="stretch"></span>

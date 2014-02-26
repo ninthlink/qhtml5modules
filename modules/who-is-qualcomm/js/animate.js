@@ -8,7 +8,7 @@ $(document).ready(function() {
 	$('.bg-img').each(function() {
 		$(this).data('og-height', $(this).height());
 	});
-	$(window).bind('resize.qmod', function() {
+	$(window).bind('resize', function() {
 		qwh= $(this).height();
 		qww = $(this).width();
 		$('.bg-img').each(function() {
@@ -21,7 +21,7 @@ $(document).ready(function() {
 				return ( nh > ogh ) ? nh : ogh;
 			});
 		});
-	}).trigger('resize.qmod');
+	}).trigger('resize');
 	
 	// "qualcommreveal" loader
 	$('.content-container').qualcommreveal({
@@ -55,6 +55,10 @@ $(document).ready(function() {
 	// #1 intro
 	$('#intro li').each(function(i) {
 		$(this).addClass('fadein l'+ i); //sit
+	});
+	// #3 video
+	$('#whatname').bind('qinview', function() {
+		sublime.prepare('3eb3c5c9');
 	});
 	// #10 inventing the future
 	$('#future').bind('qinview', function() {

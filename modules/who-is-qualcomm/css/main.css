@@ -667,85 +667,57 @@ h1 {
 	margin: 0 auto;
 }
 #whatname .videohere,
-iframe#whatvid {
+#whatname .videohere video {
 	width: 960px;
 	height: 540px;
 }
-#whatname img {
-	margin: 0 auto;
-	width: 100%;
-	height: 100%;
-	display: none;
-}
-iframe#video {
-	width: 960px;
-	height: 540px;
-	margin: 0 auto;
-}
-/*
-.js #what-video {
-	display: none;
-}
-.js .comeon.onn#whatname img.fadein {
-	cursor: pointer;
-	display: block;
-}
-*/
 @media only screen and (min-width: 800px) and (max-width: 959px) {
 	/* 720 */
 	#whatname .videohere,
-	iframe#whatvid {
-		width: 720px;
-		height: 405px;
-	}
-	iframe#video {
+	#whatname .videohere video {
 		width: 800px;
 		height: 450px;
+	}
+	#whatname .videohere {
 		margin: 0 -40px;
 	}
 }
 @media only screen and (min-width: 600px) and (max-width: 799px) {
 	/* 540 */
 	#whatname .videohere,
-	iframe#whatvid {
-		width: 540px;
-		height: 304px;
-	}
-	iframe#video {
+	#whatname .videohere video {
 		width: 560px;
 		height: 315px;
+	}
+	#whatname .videohere {
 		margin: 0 -10px;
 	}
 }
 @media only screen and (min-width: 480px) and (max-width: 599px) {
 	/* 440 */
-	#whatname .videohere,
-	iframe#whatvid {
-		width: 440px;
-		height: 248px;
-	}
 	#whatname .text-position h2 {
 		font-size: 1.7em;
 	}
-	iframe#video {
+	#whatname .videohere,
+	#whatname .videohere video {
 		width: 480px;
 		height: 270px;
+	}
+	#whatname .videohere {
 		margin: 0 -20px;
 	}
 }
 @media only screen and (max-width: 479px) {
 	/* 300 */
-	#whatname .videohere,
-	iframe#whatvid {
-		width: 300px;
-		height: 169px;
-	}
 	#whatname .text-position h2 {
 		font-size: 1.5em;
 	}
-	iframe#video {
+	#whatname .videohere,
+	#whatname .videohere video {
 		width: 320px;
 		height: 180px;
+	}
+	#whatname .videohere {
 		margin: 0 -10px;
 	}
 }
