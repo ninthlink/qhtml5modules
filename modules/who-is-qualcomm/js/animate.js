@@ -171,7 +171,7 @@ $(document).ready(function() {
 			$(this).waypoint(function() {
 				$(this).addClass('comeon onn').trigger('reset');
 			}, {
-				offset: '50%'
+				offset: 'bottom-in-view'
 			});
 		}
 	});
