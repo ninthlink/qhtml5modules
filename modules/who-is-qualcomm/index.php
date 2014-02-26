@@ -3,7 +3,7 @@
  * Qualcomm HTML5 Modules
  * Who is Qualcomm?
  *
- * v0.1.7
+ * v0.1.8
  */
 ?>
 <!doctype html>
@@ -109,8 +109,7 @@
                 <div class="eco p5"><div class="in"></div></div>
                 <div class="eco p6"><div class="in"></div></div>
               </div>
-              <ul class="circles"><li class="c1 fadein"><span class="txtbl">31,000</span> Approximate<br />employees*</li><li class="c2 fadein"><span class="txtbl">85</span> US locations</li><li class="c3 fadein"><span class="txtbl">191</span> Worldwide<br />locations</li></ul>
-              <p class="disc">* Full-time, part-time and temporary employees per FY13 Form 10-K</p>
+              <ul class="circles"><li class="c1 fadein"><span class="txtbl">31,000</span> Approximate<br />employees <sup>1</sup></li><li class="c2 fadein"><span class="txtbl">85</span> US locations</li><li class="c3 fadein"><span class="txtbl">191</span> Worldwide<br />locations</li></ul>
             </div>
           </div>
         </section>
@@ -124,8 +123,7 @@
 					<img src="img/honors-bw.gif" alt="Fortune 100 Best Companies to work for : Newsweek Green Rankings" />
 				</div>
 				<ul>
-				<li><span class="thick">Fortune</span> - 100 Best Companies to work for (since 1999)<br />
-&nbsp; &nbsp; - Ranked #11 overall</li>
+				<li><span class="thick">Fortune</span> - 100 Best Companies to work for (since 1999)</li>
 <li><span class="thick">Fortune</span> - Most Admired Companies (since 2002)</li>
 <li><span class="thick">Fortune</span> - Most Diverse List</li>
 <li><span class="thick">Newsweek</span> - Green Rankings<br />
@@ -158,7 +156,7 @@
 					<div class="inner">
 						<div class="text-position center">
 							<h2><span class="txtbl">28</span> years of <span class="thick">innovation</span></h2>
-							<div class="slider" data-slide-duration="5000" data-slide-fade="1000">
+							<div class="slider" data-slide-duration="3000" data-slide-fade="500">
 								<ul>
 									<li>
 										<img src="img/1985.jpg" alt="1985" />
@@ -232,11 +230,11 @@
 				<section id="leader" class="bg-grey-grad block">
 					<div class="inner">
 						<div class="text-position center">
-							<h2>Our innovations have made<br class="vis960" /> us a <span class="thick">mobile technology leader</span>*</h2>
+							<h2>Our innovations have made<br class="vis960" /> us a <span class="thick">mobile technology leader</span><!-- footnote here? --></h2>
               <div class="slider txtw" data-slide-duration="3000" data-slide-fade="500">
 								<ul>
 									<li>
-										<h2><span class="thick">Mode M</span></h2>
+										<h2><span class="thick">Modem</span></h2>
 										<p>performance</p>
 									</li>
 									<li>
@@ -364,8 +362,7 @@ lives everywhere - transforming how we live.</p>
         	<div class="inner">
           	<div class="text-position center">
             	<div class="number txtw">&nbsp;</div>
-              <h2><span class="thick">25 Billion</span> mobile devices connected by 2020*</h2>
-              <p class="txtw"><br /><br /><br />* Source: Machina Research, 2013</p>
+              <h2><span class="thick">25 Billion</span> mobile devices connected by 2020 <sup>2</sup></h2>
             </div>
           </div>
         </section>
@@ -474,6 +471,8 @@ lives everywhere - transforming how we live.</p>
 						</div>
 						<div class="text-position center txtw">
 							<p>&copy; <?php date_default_timezone_set('UTC'); echo date('Y'); ?> Qualcomm Technologies, Inc.  All rights reserved.</p>
+							<p>1 - Full-time, part-time and temporary employees per FY13 Form 10-K<br />
+							2 - Source: Machina Research, 2013</p>
 							<p>Qualcomm is a trademark of QUALCOMM Incorporated registered in the United States and other countries. Gobi and Snapdragon are trademarks of Qualcomm Technologies, Inc. Other products and brand names are property of their respective owners.</p>
 						</div>
 					</div>
