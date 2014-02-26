@@ -1,10 +1,9 @@
 <?php
 /*
- * Qualcomm HTML5 Modules
- * Who is Qualcomm?
- *
- * v0.2.0
+ * Qualcomm HTML5 Modules : Who is Qualcomm?
  */
+$v = '0.2.0';
+$qv = '?v='. $v;
 ?>
 <!doctype html>
 <html class="no-js">
@@ -20,7 +19,7 @@
 		<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="../_common/css/jquery.qualcomm-reveal.css">
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/main.css<?php echo $qv ?>">
 		
 		<script src="../_common/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -487,21 +486,6 @@ lives everywhere - transforming how we live.</p>
 		<script src="../_common/js/waypoints.min.js"></script>
 		<script src="../_common/js/jquery.touchSwipe.min.js"></script>
 		
-		<!--script type="text/javascript" src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script-->
-		<script src="js/animate.js"></script>
-<script type="text/javascript"> 
-//browser-update.org
-var $buoop = {vs:{i:9,f:5,o:12,s:5,n:9},reminder:0,onshow:function(infos) {
-	jQuery('#buorg > div').prepend('<strong>This module is built with the latest HTML5 + CSS3 in mind.</strong> ');
-	}}; 
-$buoop.ol = window.onload; 
-window.onload=function(){ 
- try {if ($buoop.ol) $buoop.ol();}catch (e) {} 
- var e = document.createElement("script"); 
- e.setAttribute("type", "text/javascript"); 
- e.setAttribute("src", "//browser-update.org/update.js"); 
- document.body.appendChild(e); 
-} 
-</script>
+		<script src="js/animate.js<?php echo $qv ?>"></script>
 	</body>
 </html>
