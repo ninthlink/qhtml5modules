@@ -82,8 +82,8 @@ $qv = '?v='. $v;
 							<h2 class="center txtw"><span class="thick">Qualcomm.</span> What’s in the name?</h2>
 							<div class="videohere">
 							<video id="3eb3c5c9" poster="img/name-video.jpg" width="960" height="540" title="What's in a name" data-uid="3eb3c5c9" data-autoresize="fit" preload="none">
-							  <source src="video/evolution_of_a_name_cutdown_640x360.mp4" />
 							  <source src="video/evolution_of_a_name_cutdown_960x540.mp4" data-quality="hd" />
+							  <source src="video/evolution_of_a_name_cutdown_640x360.mp4" />
 							</video>
 							</div>
 						</div>
