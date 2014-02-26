@@ -1,18 +1,10 @@
-/* *******************************
-	Javascript Animations
-******************************* */
-function commaSeparateNumber(val){
-	while (/(\d+)(\d{3})/.test(val.toString())){
-		val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
-	}
-	return val;
-}
-	
+/**
+ * Javascript Animations & Helpers
+**/
 $(document).ready(function() {
-	
 	// default animation offset for each section (variance from top of <section>)
-	var qwh, qww, offsetDefault = '30%';//'bottom-in-view';
-	// scale full bg img slides?
+	var qwh, qww, offsetDefault = '30%';
+	// scale full bg img slides
 	$('.bg-img').each(function() {
 		$(this).data('og-height', $(this).height());
 	});
@@ -29,25 +21,18 @@ $(document).ready(function() {
 				return ( nh > ogh ) ? nh : ogh;
 			});
 		});
-		//offsetDefault = qww < 600 ? '30%' : 'bottom-in-view';
 	}).trigger('resize.qmod');
 	
-	// qualcommreveal
+	// "qualcommreveal" loader
 	$('.content-container').qualcommreveal({
       targets: '.block',
 	  scrollspeed: 0,
     });
 	$.subscribe('qualcommreveal/reveal-finish', function(event, elem, counter) {
-		/*
-		console.log('qualcommreveal/reveal-finish : # ');
-		console.log(counter);
-		console.log('++');
-		console.log(elem);
-		*/
 		elem.trigger('qinview');
 	});
 	
-	/* waypoints and other such mayhem */
+	// waypoints & more mayhem
 	var onoffsets = new Array();
 	$('.comeon').each(function(i) {
 		if ( $(this).is('[data-waypoint-offset]') == false ) {
@@ -58,48 +43,19 @@ $(document).ready(function() {
 		$(this).on('qinview', function() {
 			$(this).waypoint(function() {
 				$(this).addClass('onn');
-				//console.log('# ' + i +' '+ $(this).attr('id') + ' onn?? ' + onoffsets[i] );
 			}, {
 				offset: onoffsets[i]
 			});
 		}).on('inview', function(event, isInView, visiblePartX, visiblePartY) {
-			//$(this).waypoint('destroy');
-			if(isInView) {
-				//$(this).waypoint('enable');
-				//console.log('block #'+ i + ' ' + $(this).attr('id') + ' IS inview? visiblePartY = '+ visiblePartY);
-			} else {
-				$(this).trigger('reset');//.removeClass('onn')
-				//console.log('block #'+ i + ' ' + $(this).attr('id') + ' IS NOT inview? visiblePartY = '+ visiblePartY);
+			if(!isInView) {
+				$(this).trigger('reset');
 			}
 		});
 	});
-	
 	// #1 intro
 	$('#intro li').each(function(i) {
 		$(this).addClass('fadein l'+ i); //sit
 	});
-	
-	// #3 whatname video stuff
-	/*
-	var bready = function(player_id) {
-		var bplayer = $f(player_id);
-		
-		$('#whatname img').unbind('click').click(function() {
-			jQuery('#what-video').show().siblings().hide();
-			bplayer.api('play');
-		});
-		
-		bplayer.addEvent('finish', function(data) {
-			jQuery('#what-video').hide().siblings().show();
-		});
-	};
-	$f(document.getElementById('whatvid')).addEvent('ready', bready);
-	// pause video when off screen
-	$('#whatname').bind('reset', function() {
-		$f('whatvid').api('pause');
-	});
-	*/
-	
 	// #10 inventing the future
 	$('#future').bind('qinview', function() {
 		$(this).find('.imageblock').waypoint(function() {
@@ -136,14 +92,13 @@ $(document).ready(function() {
 		return false;
 	});
 	$('#driving').swipe({
-		swipeRight: function( event, direction, distance, duration, fingerCount) {
+		swipeRight: function() {
 			$(this).find('a.prev').click();
 		},
-		swipeLeft: function( event, direction, distance, duration, fingerCount) {
+		swipeLeft: function() {
 			$(this).find('a.next').click();
 		}
 	});
-	
 	// #13 billion
 	$('#billion').bind({
 		'count': function() {
@@ -179,9 +134,6 @@ $(document).ready(function() {
 	});
 	// #14 applying
 	$('#applying').find('h2, p, .circles li').addClass('fadein');
-	
-	// #16 digital 18 tap 19 explore
-	
 	// sliders : "28 years" + the other one
 	$('.slider').each(function() {
 		var slides = $(this).children('ul').addClass('slides');
@@ -230,23 +182,10 @@ $(document).ready(function() {
 				clearTimeout(timo);
 			},
 			'slidereset': function() {
-				//if ( $(this).children('.slides').children('li:first-child').hasClass('onn') == false ) {
-					$(this).children('.slides').children().hide().removeClass().filter(':last-child').addClass('onn')
-						.parent().next().children('li:first-child').click();
-				/*} else {
-					$(this).trigger('timereset');
-				}*/
-			}
-		});/*.on('inview', function( event, isInView, visiblePartX, visiblePartY ) {
-			if ( isInView ) {
-				//console.log('inview ' + $(this).parents('.block').attr('id'));
-				$(this).trigger('slidereset');
-			} else {
-				//console.log('OUT of inview ' + $(this).parents('.block').attr('id'));
-				$(this).trigger('stopcycle');
+				$(this).children('.slides').children().hide().removeClass().filter(':last-child').addClass('onn')
+					.parent().next().children('li:first-child').click();
 			}
 		});
-		*/
 		$(this).parents('.block').swipe({
 			swipeRight: function( event, direction, distance, duration, fingerCount) {
 				$(this).find('.slider').trigger('prevslide');
@@ -259,47 +198,23 @@ $(document).ready(function() {
 			$(this).find('.slider').trigger('slidereset');
 		});
 	});
- 
-	  // Callback function references the event target and adds the 'swipeleft' class to it
-	  function swipeleftHandler( event ){
-	  alert('swipe left');
-		$( event.target ).removeClass( "swiperight" ).addClass( "swipeleft" );
-	  }
-	  function swiperightHandler( event ) {
-		$( event.target ).removeClass( "swipeleft" ).addClass( "swiperight" );
-	  }
-	
+	// add reset btn to each block?
 	$('.block').append('<a href="#" class="btn-reset"><i></i></a>').children('.btn-reset').click(function() {
 		var bpid = '#' + $(this).parent().removeClass('onn').attr('id');
-		//console.log('reset '+ bpid);
-		
-		
 		setTimeout(function() {
-		$(bpid).addClass('onn').trigger('reset');
+			$(bpid).addClass('onn').trigger('reset');
 		}, 0);
-		
 		return false;
 	});
-/*
-	$('section').each(function(){
-		if ( $(this).attr('id') != 'legal' ) {
-			$(this).waypoint(function(direction) {
-				if ( direction == 'down') {
-					$('html, body').animate({
-        				scrollTop: $(this).waypoint('next').offset().top + 10
-					}, 1000);
-				}
-			}, {
-				offset: function() {
-					return -( $(this).height() * 0.9 );
-				},
-				triggerOnce: true
-			});
-		}
-	});
-*/
 	// fun with ecos
 	$('.eco:not(.bg)').click(function() {
 		$(this).fadeOut(100,function() { $(this).fadeIn(1000) });
 	});
 });
+
+function commaSeparateNumber(val){
+	while (/(\d+)(\d{3})/.test(val.toString())){
+		val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+	}
+	return val;
+}

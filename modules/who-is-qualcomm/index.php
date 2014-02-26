@@ -3,14 +3,11 @@
  * Qualcomm HTML5 Modules
  * Who is Qualcomm?
  *
- * v0.1.9
+ * v0.2.0
  */
 ?>
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -24,7 +21,7 @@
 
 		<link rel="stylesheet" href="../_common/css/jquery.qualcomm-reveal.css">
 		<link rel="stylesheet" href="css/main.css">
-
+		
 		<script src="../_common/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	</head>
@@ -79,7 +76,7 @@
 				</section>
 			
 				<?php // Slide #3 ?>
-				<section id="whatname" class="bg-black block comeon">
+				<section id="whatname" class="bg-black block">
 					<div class="inner">
 						<div class="text-position">
 							<h2 class="center txtw"><span class="thick">Qualcomm.</span> What’s in the name?</h2>
@@ -480,7 +477,7 @@ lives everywhere - transforming how we live.</p>
 				
 			</div>
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><?php /* load CDN or local backup */ ?>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="../_common/js/jquery-1.10.1.min.js"><\/script>')</script>
 
 		<script src="../_common/js/spin.min.js"></script>
