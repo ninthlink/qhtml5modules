@@ -507,14 +507,15 @@ h1 {
 #intro h2, #across4 h2 { display: none }
 #intro .text-position ul {
 	max-width: none;
-	letter-spacing: 0;
 	font-size: 0.9em;
-	margin-top: 26px;
+	line-height: 1em;
+	letter-spacing: 0;
+	margin-top: 1em;
 	margin-bottom: 0;
 }
 #intro .text-position li {
 	position: relative;
-	margin-bottom: 14px;
+	margin-bottom: 1em;
 }
 #intro .graphic-position,
 #intro .eco {
@@ -571,11 +572,6 @@ h1 {
 	-moz-animation-delay: 2s;
 	animation-delay: 2s;
 }
-@media only screen and (max-width: 599px) {
-	#intro .eco {
-		top: 15px
-	}
-}
 @media only screen and (min-width: 600px) {	
 	#intro .graphic-position {
 		position: absolute;
@@ -589,6 +585,14 @@ h1 {
 	}
 	#intro .text-position {
 		padding: 12% 0 12% 38.5%;
+	}
+}
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+	#intro .eco { margin: 0 }
+}
+@media only screen and (max-width: 599px) {
+	#intro .eco {
+		top: 15px
 	}
 }
 /* #2 invents */

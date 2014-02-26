@@ -46,7 +46,7 @@ $qv = '?v='. $v;
 							<div class="eco fadein"><div class="spinner"></div><div class="spinner s2"></div></div>
             </div>
 						<div class="text-position">
-							<p><span class="thick">By the end of this module, you will learn about:</span></p>
+							<p><span class="thick">By the end of this module, you will learn:</span></p>
               <ul>
                 <li>Who Qualcomm is and what we do</li>
                 <li>How our inventions have changed how we communicate today</li>
