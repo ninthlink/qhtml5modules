@@ -673,6 +673,7 @@ iframe#whatvid {
 	height: 100%;
 	display: none;
 }
+/*
 .js #what-video {
 	display: none;
 }
@@ -680,6 +681,7 @@ iframe#whatvid {
 	cursor: pointer;
 	display: block;
 }
+*/
 @media only screen and (max-width: 959px) {
 	/* 720 */
 	#whatname .videohere,
@@ -1307,7 +1309,7 @@ p.disc {
 	background: url(../img/ic-leader-chip.png) no-repeat 48px 38px;
 	text-align: left;
 }
-#leader .text-position .slider ul.slides li.battery {
+#leader .text-position .slider ul.slides li#lbattery {
 	background: url(../img/ic-leader-battery.png) no-repeat 61px 31px;
 }
 #leader .text-position.center .slider ul.slides h2 {

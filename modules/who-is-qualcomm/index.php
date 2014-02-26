@@ -3,7 +3,7 @@
  * Qualcomm HTML5 Modules
  * Who is Qualcomm?
  *
- * v0.1.8
+ * v0.1.9
  */
 ?>
 <!doctype html>
@@ -84,7 +84,7 @@
 						<div class="text-position">
 							<h2 class="center txtw"><span class="thick">Qualcomm.</span> What’s in the name?</h2>
               <div class="videohere">
-              	<img src="img/name-video.jpg" alt="" class="fadein" />
+              	<!--img src="img/name-video.jpg" alt="" class="fadein" /-->
               	<div id="what-video">
                   <iframe id="whatvid" src="//player.vimeo.com/video/86065129?title=0&amp;byline=0&amp;portrait=0&amp;color=d1252f&amp;api=1&amp;player_id=whatvid" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                 </div>
@@ -249,7 +249,7 @@
 										<h2><span class="thick">DSP</span></h2>
 										<p>performance</p>
 									</li>
-									<li class="battery">
+									<li id="lbattery">
 										<h2><span class="thick">#1</span></h2>
 										<p>Efficiency<br />Leadership</p>
 									</li>

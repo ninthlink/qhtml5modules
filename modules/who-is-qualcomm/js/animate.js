@@ -80,6 +80,7 @@ $(document).ready(function() {
 	});
 	
 	// #3 whatname video stuff
+	/*
 	var bready = function(player_id) {
 		var bplayer = $f(player_id);
 		
@@ -93,6 +94,7 @@ $(document).ready(function() {
 		});
 	};
 	$f(document.getElementById('whatvid')).addEvent('ready', bready);
+	*/
 	// pause video when off screen
 	$('#whatname').bind('reset', function() {
 		$f('whatvid').api('pause');
@@ -235,7 +237,7 @@ $(document).ready(function() {
 					$(this).trigger('timereset');
 				}*/
 			}
-		}).on('inview', function( event, isInView, visiblePartX, visiblePartY ) {
+		});/*.on('inview', function( event, isInView, visiblePartX, visiblePartY ) {
 			if ( isInView ) {
 				//console.log('inview ' + $(this).parents('.block').attr('id'));
 				$(this).trigger('slidereset');
@@ -244,6 +246,7 @@ $(document).ready(function() {
 				$(this).trigger('stopcycle');
 			}
 		});
+		*/
 		$(this).parents('.block').swipe({
 			swipeRight: function( event, direction, distance, duration, fingerCount) {
 				$(this).find('.slider').trigger('prevslide');
