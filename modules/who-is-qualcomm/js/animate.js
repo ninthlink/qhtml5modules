@@ -94,11 +94,11 @@ $(document).ready(function() {
 		});
 	};
 	$f(document.getElementById('whatvid')).addEvent('ready', bready);
-	*/
 	// pause video when off screen
 	$('#whatname').bind('reset', function() {
 		$f('whatvid').api('pause');
 	});
+	*/
 	
 	// #10 inventing the future
 	$('#future').bind('qinview', function() {

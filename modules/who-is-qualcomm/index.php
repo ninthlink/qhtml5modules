@@ -83,12 +83,12 @@
 					<div class="inner">
 						<div class="text-position">
 							<h2 class="center txtw"><span class="thick">Qualcomm.</span> What’s in the name?</h2>
-              <div class="videohere">
+              <?php /*<div class="videohere">
               	<!--img src="img/name-video.jpg" alt="" class="fadein" /-->
-              	<div id="what-video">
-                  <iframe id="whatvid" src="//player.vimeo.com/video/86065129?title=0&amp;byline=0&amp;portrait=0&amp;color=d1252f&amp;api=1&amp;player_id=whatvid" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                </div>
-              </div>
+              	<div id="what-video">*/ ?>
+				  <iframe id="video" src="http://player.vimeo.com/video/86065129?title=0&amp;byline=0&amp;portrait=0" width="320" height="180" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <?php /*</div>
+              </div>*/ ?>
 						</div>
 
 						<span class="stretch"></span>
@@ -490,7 +490,7 @@ lives everywhere - transforming how we live.</p>
 		<script src="../_common/js/waypoints.min.js"></script>
 		<script src="../_common/js/jquery.touchSwipe.min.js"></script>
 		
-		<script type="text/javascript" src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+		<!--script type="text/javascript" src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script-->
 		<script src="js/animate.js"></script>
 <script type="text/javascript"> 
 //browser-update.org
