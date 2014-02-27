@@ -322,6 +322,9 @@ h1 strong {
 	margin: 0 0 1.5em;
 }
 @media only screen and (max-width: 834px ) {
+	.section.hdr {
+		padding-top: 41px;
+	}
 	.hdr .text-position,
 	.hdr .graphic-position {
 		width: 100%;
@@ -334,6 +337,9 @@ h1 strong {
 	.hdr img {
 		float: none;
 		margin: 0 auto;
+	}
+	.section.ftr .inner {
+		width: 90% !important;
 	}
 }
 @media only screen and (min-width: 600px) and (max-width: 834px) {
@@ -353,6 +359,12 @@ h1 strong {
 	}
 	.hdr .eco.chip {
 		left: 407px;
+	}
+	.hdr h1 {
+		padding-left: 200px;
+	}
+	.hdr h1 strong {
+		left: 100px;
 	}
 }
 @media only screen and (min-width: 540px) and (max-width: 599px) {
@@ -381,6 +393,12 @@ h1 strong {
 	.hdr .eco.chip {
 		left: 377px;
 	}
+	.hdr h1 {
+		padding-left: 160px;
+	}
+	.hdr h1 strong {
+		left: 60px;
+	}
 }
 @media only screen and (min-width: 480px) and (max-width: 539px) {
 	.section .inner {
@@ -399,6 +417,12 @@ h1 strong {
 	}
 	.hdr .eco.chip {
 		left: 347px;
+	}
+	.hdr h1 {
+		padding-left: 130px;
+	}
+	.hdr h1 strong {
+		left: 30px;
 	}
 }
 @media only screen and (max-width: 479px) {
