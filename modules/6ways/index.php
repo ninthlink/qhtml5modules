@@ -2,7 +2,7 @@
 /*
  * Qualcomm HTML5 Modules : 6 ways smartphones are changing us
  */
-$v = '0.1.4';
+$v = '0.1.5';
 $qv = '?v='. $v;
 ?>
 <!doctype html>
@@ -25,91 +25,56 @@ $qv = '?v='. $v;
 	</head>
 	<body>
 			
-				<div class="section hdr">
-					<div class="inner">
-						<div class="text-position">
-							<h1><strong>6</strong> ways smartphones<br />are changing us</h1>
-							<p>A result of immediacy, portability, and connectedness</p>
-						</div>
-						<div class="graphic-position">
-							<img src="img/phones.png" alt="phones" />
-							<div class="eco circ c1"><i></i></div>
-							<div class="eco circ c2"><i></i></div>
-							<div class="eco chip"><i></i></div>
-						</div>
-						<span class="stretch"></span>
-					</div>
+		<div class="section hdr">
+			<div class="inner">
+				<div class="text-position">
+					<h1><strong>6</strong> ways smartphones<br />are changing us</h1>
+					<p>A result of immediacy, portability, and connectedness</p>
 				</div>
-				
-				<div class="section squares">
-					<div class="inner">
-						<div class="square c1 home">
-							<div class="over">
-								<div class="txt">
-								<img src="img/home.png" alt="home" />
-								<h2>+70%</h2>
-								<p>Can't leave home without it</p>
-							</div>
-							</div>
-						</div>
-						<div class="square c2 games">
-							<div class="over">
-								<div class="txt">
-								<img src="img/games.png" alt="games" />
-								<h2>80%</h2>
-								<p>Play games on their phones</p>
-							</div>
-							</div>
-						</div>
-						<div class="square c1 nav">
-							<div class="over">
-								<div class="txt">
-								<img src="img/nav.png" alt="nav" />
-								<h2>80%</h2>
-								<p>Use phones to navigate</p>
-							</div>
-							</div>
-						</div>
-						<div class="square c2 face">
-							<div class="over">
-								<div class="txt">
-								<img src="img/face.png" alt="face" />
-								<h2>+60%</h2>
-								<p>Access their Facebook site<br />via a mobile device</p>
-							</div>
-							</div>
-						</div>
-						<div class="square c1 bill">
-							<div class="over">
-								<div class="txt">
-								<img src="img/bill.png" alt="bill" />
-								<h2>1 Billion</h2>
-								<p>Access social networks<br />via a mobile device</p>
-							</div>
-							</div>
-						</div>
-						<div class="square c2 watch">
-							<div class="over">
-								<div class="txt">
-								<img src="img/watch.png" alt="watch" />
-								<h2>1 in 3</h2>
-								<p>Watch movies on their<br />device at least monthly</p>
-							</div>
-							</div>
-						</div>
-					</div>
+				<div class="graphic-position">
+					<img src="img/phones.png" alt="phones" />
+					<div class="eco circ c1"><i></i></div>
+					<div class="eco circ c2"><i></i></div>
+					<div class="eco chip"><i></i></div>
 				</div>
-			<div class="section proceed">
-			<a href="#quiz">Proceed to quiz</a>
+				<span class="stretch"></span>
 			</div>
-			<div class="section ftr">
-				<div class="inner">
-					<p><img src="img/qualcomm.png" alt="Qualcomm" /></p>
+		</div>
+
+		<div class="section squares">
+			<div class="inner">
+				<?php
+					$squares = array(
+						array( 'home', '+70%', "Can't leave home without it" ),
+						array( 'games', '80%', "Play games on their phones" ),
+						array( 'nav', '80%', "Use phones to navigate" ),
+						array( 'face', '+60%', "Access their Facebook site<br />via a mobile device" ),
+						array( 'bill', '1 Billion', "Access social networks<br />via a mobile device" ),
+						array( 'watch', '1 in 3', "Watch movies on their<br />device at least monthly" ),
+					);
+					foreach ( $squares as $i => $s ) {
+				?>
+				<div class="square c<?php echo ($i%2 ? '2' : '1') .' '. $s[0]; ?>">
+					<div class="over">
+						<div class="txt">
+							<img src="img/<?php echo $s[0]; ?>.png" alt="<?php echo $s[0]; ?>" />
+							<h2><?php echo $s[1]; ?></h2>
+							<p><?php echo $s[2]; ?></p>
+						</div>
+					</div>
+				</div>
+				<?php } ?>
+			</div>
+		</div>
+		<div class="section proceed"><a href="#quiz">Proceed to quiz</a></div>
+		<div class="section ftr">
+			<div class="inner">
+				<p><img src="img/qualcomm.png" alt="Qualcomm" /></p>
 				<p>&copy; <?php date_default_timezone_set('UTC'); echo date('Y'); ?> Qualcomm Technologies, Inc. All rights reserved.</p>
 				<p>Sources: Facebook, Jan. '13; SA, Apr. '12; 2012 Snapdragon Consumer Survey; TIME Mobility Poll, in cooperation with QUALCOMM, Aug. '12</p>
-<p>Qualcomm is a trademark of QUALCOMM Incorporated registered in the United States and other countries. Gobi and Snapdragon are trademarks of Qualcomm Technologies, Inc. Other products and brand names are property of their respective owners.</p>
-				</div>
+				<p>Qualcomm is a trademark of QUALCOMM Incorporated registered in the United States and other countries. Gobi and Snapdragon are trademarks of Qualcomm Technologies, Inc. Other products and brand names are property of their respective owners.</p>
 			</div>
+		</div>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="../_common/js/jquery-1.10.1.min.js"><\/script>')</script>
