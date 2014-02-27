@@ -30,7 +30,6 @@ body { margin: 0; padding: 0; background: #fff }
 	border-top: 35px solid #007681; 
 }
 
-span.color { color: #ffbf60 }
 sup { opacity: 0.5; font-size: 0.7em }
 
 .stagewrapper#Stage4wrap { padding-bottom: 60px }
@@ -38,6 +37,9 @@ sup { opacity: 0.5; font-size: 0.7em }
 #Stage1 {
 	max-width: 556px !important;
 	margin: 0 auto;
+}
+span.color  {
+	font-family: "Qualcomm-Semibold", sans-serif;
 }
 .ftr {
 	background: #666;
