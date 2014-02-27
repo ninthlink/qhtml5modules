@@ -2,7 +2,7 @@
 /*
  * Qualcomm HTML5 Modules : 6 ways smartphones are changing us
  */
-$v = '0.1.2';
+$v = '0.1.3';
 $qv = '?v='. $v;
 ?>
 <!doctype html>
@@ -104,8 +104,9 @@ $qv = '?v='. $v;
 			</div>
 			<div class="section ftr">
 				<div class="inner">
-					<p>This would be legal disclaimers and data source information</p>
-					<img src="img/qualcomm.png" alt="Qualcomm" />
+					<p><img src="img/qualcomm.png" alt="Qualcomm" /></p>
+				<p>&copy; <?php date_default_timezone_set('UTC'); echo date('Y'); ?> Qualcomm Technologies, Inc. All rights reserved.</p>
+<p>Qualcomm is a trademark of QUALCOMM Incorporated registered in the United States and other countries. Gobi and Snapdragon are trademarks of Qualcomm Technologies, Inc. Other products and brand names are property of their respective owners.</p>
 				</div>
 			</div>
 
