@@ -330,7 +330,34 @@ h1 strong {
 		left: 407px;
 	}
 }
-@media only screen and (min-width: 480px) and (max-width: 599px) {
+@media only screen and (min-width: 540px) and (max-width: 599px) {
+	.section .inner {
+		width: 540px;
+	}
+	.square,
+	.square.c2 {
+		width: 270px;
+		height: 243px;
+	}
+	.js .square a {
+		top: 15px;
+		left: 15px;
+	}
+	.square .txt {
+		right: 15px;
+		bottom: 15px;
+	}
+	.hdr .eco.c1 {
+		left: 253px;
+	}
+	.hdr .eco.c2 {
+		left: 329px;
+	}
+	.hdr .eco.chip {
+		left: 377px;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 539px) {
 	.section .inner {
 		width: 480px;
 	}
