@@ -2,7 +2,7 @@
 /*
  * Qualcomm HTML5 Modules : Mobile Technology Overview
  */
-$v = '0.1.2';
+$v = '0.1.3';
 $qv = '?v='. $v;
 ?>
 <!doctype html>
@@ -61,8 +61,14 @@ $qv = '?v='. $v;
 		</div>
 		*/ ?>
 		<div class="stagewrapper ftr">
-				<p>This would be legal disclaimers and data source information</p>
-				<img src="edge_includes/qualcomm.png" alt="Qualcomm" />
+			<div class="inner">
+				<p><img src="edge_includes/qualcomm.png" alt="Qualcomm" /></p>
+				<p>&copy; <?php date_default_timezone_set('UTC'); echo date('Y'); ?> Qualcomm Technologies, Inc. All rights reserved.</p>
+<p>1 - Battery holds ~5 watt-hours of energy<br />
+2 - on network per month in 2013. Source: Cisco VNI, 2013, A.T. Kearney Analysis<br />
+3 - Source: Machina Research, Apr. '13</p>
+<p>Qualcomm is a trademark of QUALCOMM Incorporated registered in the United States and other countries. Gobi and Snapdragon are trademarks of Qualcomm Technologies, Inc. Other products and brand names are property of their respective owners.</p>
+			</div>
 		</div>
 	</div>
 	<script type="text/javascript" src="edge_includes/animate.js"></script>

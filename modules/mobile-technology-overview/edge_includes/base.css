@@ -18,7 +18,6 @@ body { margin: 0; padding: 0; background: #fff }
 #header h1 { margin: 0; font: 6em/100% "Qualcomm-Semibold", sans-serif }
 #header h2 { margin: 0; font: 5em/100% "Qualcomm-Light", sans-serif }
 
-
 .triangle {
 	position: absolute;
 	bottom: -35px;
@@ -31,8 +30,10 @@ body { margin: 0; padding: 0; background: #fff }
 	border-top: 35px solid #007681; 
 }
 
-.stagewrapper#Stage4wrap { padding-bottom: 60px }
+span.color { color: #ffbf60 }
+sup { opacity: 0.5; font-size: 0.7em }
 
+.stagewrapper#Stage4wrap { padding-bottom: 60px }
 
 #Stage1 {
 	max-width: 556px !important;
@@ -44,6 +45,11 @@ body { margin: 0; padding: 0; background: #fff }
 	padding: 41px 0;
 	text-align: center;
 }
+.ftr .inner {
+	display: block;
+	width: 800px;
+	margin: 0 auto;
+}
 .ftr p {
 	font: 16px/20px "Qualcomm-Light", sans-serif;
 	margin: 0 0 1.5em;
@@ -51,6 +57,7 @@ body { margin: 0; padding: 0; background: #fff }
 @media only screen and (max-width: 800px ) {
 	#header h1 { font-size: 4em }
 	#header h2 { font-size: 3em }
+	.ftr .inner { width: 90%; }
 }
 @media only screen and (max-width: 600px ) {
 	#Stage4_animation { width: 100% !important }
