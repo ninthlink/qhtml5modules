@@ -32,3 +32,18 @@ body { margin: 0; padding: 0; background: #fff }
 }
 
 .stagewrapper#Stage4wrap { padding-bottom: 60px }
+
+
+#Stage1 {
+	max-width: 556px !important;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 800px ) {
+	#header h1 { font-size: 4em }
+	#header h2 { font-size: 3em }
+}
+@media only screen and (max-width: 500px ) {
+	#header h1 { font-size: 2.8em }
+	#header h2 { font-size: 2em }
+}
