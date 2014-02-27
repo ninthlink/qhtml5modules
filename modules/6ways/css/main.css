@@ -155,7 +155,7 @@ h1 strong {
 .hdr .eco {
 	position: absolute;
 	top: -40px;
-	left: 45%;
+	left: 172px;
 	width: 90px;
 	height: 90px;
 	z-index: 2;
@@ -169,7 +169,7 @@ h1 strong {
 }
 .hdr .eco.c2 {
 	top: 34px;
-	left: 65%;
+	left: 248px;
 	width: 49px;
 	height: 49px;
 }
@@ -178,7 +178,7 @@ h1 strong {
 }
 .hdr .eco.chip {
 	top: 9px;
-	left: 78%;
+	left: 296px;
 	width: 31px;
 	height: 31px;
 }
@@ -237,7 +237,6 @@ h1 strong {
 	margin: 0;
 	line-height: 24px;
 }
-
 .js .square .over {
 	opacity: 0;
 	-webkit-transition: opacity 0.3s linear;
@@ -269,7 +268,6 @@ h1 strong {
 .js .square.onn a {
 	opacity: 0;
 }
-
 .proceed {
 	background: #fff;
 	height: 93px;
@@ -295,7 +293,105 @@ h1 strong {
 	text-align: center;
 }
 .ftr p {
+	font-size: 16px;
+	line-height: 20px;
 	margin: 0 0 1.5em;
+}
+@media only screen and (max-width: 834px ) {
+	.hdr .text-position,
+	.hdr .graphic-position {
+		width: 100%;
+	}
+	.hdr .graphic-position {
+		text-align: center;
+		margin-top: 3em;
+	}
+	.hdr img {
+		float: none;
+		margin: 0 auto;
+	}
+}
+@media only screen and (min-width: 600px) and (max-width: 834px) {
+	.section .inner {
+		width: 600px;
+	}
+	.square,
+	.square.c2 {
+		width: 300px;
+		height: 270px;
+	}
+	.hdr .eco.c1 {
+		left: 283px;
+	}
+	.hdr .eco.c2 {
+		left: 359px;
+	}
+	.hdr .eco.chip {
+		left: 407px;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+	.section .inner {
+		width: 480px;
+	}
+	.square,
+	.square.c2 {
+		width: 480px;
+		height: 432px;
+	}
+	.hdr .eco.c1 {
+		left: 223px;
+	}
+	.hdr .eco.c2 {
+		left: 299px;
+	}
+	.hdr .eco.chip {
+		left: 347px;
+	}
+}
+@media only screen and (max-width: 479px) {
+	.section .inner {
+		width: 320px;
+	}
+	.hdr img {
+		width: 320px;
+		height: 199px;
+	}
+	.hdr .eco.c1 {
+		top: -35px;
+		left: 149px;
+		width: 78px;
+		height: 78px;
+	}
+	.hdr .eco.c2 {
+		top: 29px;
+		left: 216px;
+		width: 43px;
+		height: 43px;
+	}
+	.hdr .eco.chip {
+		top: 8px;
+		left: 256px;
+		width: 27px;
+		height: 27px;
+	}
+	h1 {
+		font-size: 30px;
+		line-height: 42px;
+	}
+	.hdr p {
+		font-size: 16px;
+	}
+	
+	.square,
+	.square.c2 {
+		width: 320px;
+		height: 288px;
+	}
+	
+	.ftr p {
+		font-size: 13px;
+	}
 }
 
 /* animations */
