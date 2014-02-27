@@ -106,6 +106,7 @@ $qv = '?v='. $v;
 				<div class="inner">
 					<p><img src="img/qualcomm.png" alt="Qualcomm" /></p>
 				<p>&copy; <?php date_default_timezone_set('UTC'); echo date('Y'); ?> Qualcomm Technologies, Inc. All rights reserved.</p>
+				<p>Sources: Facebook, Jan. '13; SA, Apr. '12; 2012 Snapdragon Consumer Survey;<br />TIME Mobility Poll, in cooperation with QUALCOMM, Aug. '12</p>
 <p>Qualcomm is a trademark of QUALCOMM Incorporated registered in the United States and other countries. Gobi and Snapdragon are trademarks of Qualcomm Technologies, Inc. Other products and brand names are property of their respective owners.</p>
 				</div>
 			</div>

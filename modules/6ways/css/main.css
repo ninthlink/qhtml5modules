@@ -166,6 +166,10 @@ h1 strong {
 	height: 100%;
 	background: url(../img/circ.png) no-repeat 0 0;
 	background-size: contain;
+	
+	-webkit-animation:spin 20s linear infinite;
+	-moz-animation:spin 20s linear infinite;
+	animation:spin 20s linear infinite;
 }
 .hdr .eco.c2 {
 	top: 34px;
@@ -175,6 +179,10 @@ h1 strong {
 }
 .hdr .eco.c2 i {
 	background-image: url(../img/circ2.png);
+	
+	-webkit-animation:spinreverse 20s linear infinite;
+	-moz-animation:spinreverse 20s linear infinite;
+	animation:spinreverse 20s linear infinite;
 }
 .hdr .eco.chip {
 	top: 9px;
@@ -220,6 +228,7 @@ h1 strong {
 	width: 100%;
 	height: 100%;
 	z-index: 2;
+	overflow: hidden;
 }
 .square .txt {
 	float: right;
@@ -245,9 +254,9 @@ h1 strong {
 	-o-transition: opacity 0.3s linear;
 	transition: opacity 0.3s linear;
 }
-.js .square a {
+.square a {
 	background: url(../img/plus.png) no-repeat 0 0;
-	display: block;
+	display: none;
 	width: 49px;
 	height: 49px;
 	position: absolute;
@@ -262,8 +271,23 @@ h1 strong {
 	-o-transition: opacity 0.3s linear;
 	transition: opacity 0.3s linear;
 }
+.js .square a {
+	display: block;
+}
 .js .square.onn .over {
 	opacity: 1;
+}
+.js .square .txt {
+	bottom: -100%;
+	
+	-webkit-transition: bottom 0.6s;
+	-moz-transition: bottom 0.6s;
+	-ms-transition: bottom 0.6s;
+	-o-transition: bottom 0.6s;
+	transition: bottom 0.6s;
+}
+.js .square.onn .txt {
+	bottom: 30px;
 }
 .js .square.onn a {
 	opacity: 0;
@@ -302,6 +326,7 @@ h1 strong {
 	.hdr .graphic-position {
 		width: 100%;
 	}
+	.hdr p { text-align: center }
 	.hdr .graphic-position {
 		text-align: center;
 		margin-top: 3em;
@@ -433,3 +458,11 @@ h1 strong {
 @-moz-keyframes fadeout { 0% { opacity: 1; } 100% { opacity: 0; } }
 @-webkit-keyframes fadeout { 0% { opacity: 1; } 100% { opacity: 0; } }
 @keyframes fadeout { 0% { opacity: 1; } 100% { opacity: 0; } }
+
+/* spinning */
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { transform: rotate(360deg); } }
+@-moz-keyframes spinreverse { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes spinreverse { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes spinreverse { 100% { transform: rotate(-360deg); } }
