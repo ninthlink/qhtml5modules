@@ -385,6 +385,9 @@ h1 strong {
 		right: 15px;
 		bottom: 15px;
 	}
+	.js .square.onn .txt {
+		bottom: 15px;
+	}
 	.hdr .eco.c1 {
 		left: 253px;
 	}

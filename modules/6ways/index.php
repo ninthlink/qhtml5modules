@@ -2,7 +2,7 @@
 /*
  * Qualcomm HTML5 Modules : 6 ways smartphones are changing us
  */
-$v = '0.1.5';
+$v = '0.1.6';
 $qv = '?v='. $v;
 ?>
 <!doctype html>
