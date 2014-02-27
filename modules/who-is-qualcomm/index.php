@@ -2,7 +2,7 @@
 /*
  * Qualcomm HTML5 Modules : Who is Qualcomm?
  */
-$v = '0.2.2';
+$v = '0.2.3';
 $qv = '?v='. $v;
 ?>
 <!doctype html>
@@ -166,37 +166,37 @@ $qv = '?v='. $v;
 										<p>Qualcomm makes historic first CDMA phone call</p>
 									</li>
 									<li>
-										<img src="img/1998.gif" alt="1998" />
-										<h2 class="txtlb">1998</h2>
+										<!--img src="img/1998.gif" alt="1998" /-->
+										<h2 class="txtlb noimg">1998</h2>
 										<p>Qualcomm unveils the world’s first commercial CDMA smartphone.</p>
 									</li>
 									<li>
-										<img src="img/2000.gif" alt="2000" />
-										<h2 class="txtlb">2000</h2>
+										<!--img src="img/2000.gif" alt="2000" /-->
+										<h2 class="txtlb noimg">2000</h2>
 										<p>Qualcomm delivers the first CDMA chipset to integrate GPS.</p>
 									</li>
 									<li>
-										<img src="img/2005.gif" alt="2005" />
-										<h2 class="txtlb">2005</h2>
+										<!--img src="img/2005.gif" alt="2005" /-->
+										<h2 class="txtlb noimg">2005</h2>
 										<p>Qualcomm Scorpion processor brings consumer electronics features to mobile devices.</p>
 									</li>
 									<li>
-										<img src="img/2007.gif" alt="2007" />
+										<img src="img/2007.jpg" alt="2007" />
 										<h2 class="txtlb">2007</h2>
 										<p>Qualcomm premieres Snapdragon processors – the first to break the GHz barrier.</p>
 									</li>
 									<li>
-										<img src="img/2008.gif" alt="2008" />
+										<img src="img/2008.jpg" alt="2008" />
 										<h2 class="txtlb">2008</h2>
 										<p>Qualcomm Snapdragon processor powers world's first Android-based mobile device.</p>
 									</li>
 									<li>
-										<img src="img/2010.gif" alt="2010" />
-										<h2 class="txtlb">2010</h2>
+										<!--img src="img/2010.gif" alt="2010" /-->
+										<h2 class="txtlb noimg">2010</h2>
 										<p>First 3G LTE Multimode chipsets</p>
 									</li>
 									<li>
-										<img src="img/2013.gif" alt="2013" />
+										<img src="img/2013.jpg" alt="2013" />
 										<h2 class="txtlb">2013</h2>
 										<p>Qualcomm announces Snapdragon processor designed to enable Ultra-HD on smart devices.</p>
 									</li>

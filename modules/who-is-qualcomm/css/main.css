@@ -1158,6 +1158,9 @@ p.disc {
 #years ul.slides h2 {
 	font-size: 2.2em;
 }
+#years ul.slides h2.noimg {
+	margin-top: 35%;
+}
 #years .text-position.center ul.slides p {
 	font-size: 0.83em;
 	width: 100%;
