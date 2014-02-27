@@ -2,7 +2,7 @@
 /*
  * Qualcomm HTML5 Modules : Mobile Technology Overview
  */
-$v = '0.1.4';
+$v = '0.1.5';
 $qv = '?v='. $v;
 ?>
 <!doctype html>

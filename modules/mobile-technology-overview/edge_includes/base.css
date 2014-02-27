@@ -41,6 +41,9 @@ sup { opacity: 0.5; font-size: 0.7em }
 span.color  {
 	font-family: "Qualcomm-Semibold", sans-serif;
 }
+#Stage2 span.color {
+	color: #018891;
+}
 .ftr {
 	background: #666;
 	color: #fff;
