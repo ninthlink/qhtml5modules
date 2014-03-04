@@ -3,7 +3,7 @@
  * Qualcomm HTML5 Modules
  * 5 Cool Thing
  *
- * v0.1.9
+ * v0.1.10
  */
 ?>
 <!doctype html>
@@ -128,7 +128,16 @@
 						<span class="stretch"></span>
 					</div>
 				</section>
-        
+				<?php // quiz CTA ?>
+        <section id="proceed" class="bg-black block">
+        	<div class="inner">
+          	<div class="text-position center">
+            	<div class="video-button">
+								<h2><a href="assessment.html" class="txtw">Proceed to <span class="thick">Assessment</span> <span class="sprite play"></span></a></h2>
+							</div>
+            </div>
+          </div>
+        </section>
 				<?php // Slide #6 ?>
 				<section id="legal" class="bg-red block">
 					<div class="inner">
