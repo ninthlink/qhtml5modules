@@ -39,12 +39,6 @@ var qload = function(qsc) {
 	document.getElementsByTagName("head")[0].appendChild(script);
 }
 jQuery(function($) {
-	if ( $('#header').hasClass('smaller') == false ) {
-		$(window).bind('resize.qmod', function() {
-			var qwh = $(this).height();
-			$('#header').height(qwh-200);
-		}).trigger('resize.qmod');
-	}
 	// qualcommreveal
 	$('.content-container').qualcommreveal({
 	  targets: '.stagewrapper',
