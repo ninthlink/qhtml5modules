@@ -317,7 +317,7 @@ lives everywhere - transforming how we live.</p>
 							<ul>
 								<li>Dual ISP</li>
 								<li>GPS, Glonass, Beidou, Galileo</li>
-								<li>Ultra HD panoramic video</li>
+								<li>4K Ultra HD video</li>
 								<li>LTE-A</li>
 								<li>H.265 video compression</li>
 								<li>Augmented reality</li>
