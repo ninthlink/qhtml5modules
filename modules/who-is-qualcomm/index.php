@@ -29,7 +29,7 @@ $qv = '?v='. $v;
 			<div id="content" class="content-container">
 			
 				<?php // Slide #0 ?>
-				<section id="hdr" class="bg-img max-height block comeon" data-waypoint-offset="0">
+				<section id="hdr" class="bg-img max-height block comeon" data-bg-height="710" data-waypoint-offset="0">
 					<div class="inner">
 						<div class="text-position center txtw">
 							<h1 class="fadein">Who is <span class="thick">Qualcomm?</span></h1>

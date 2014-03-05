@@ -15,10 +15,15 @@ $(document).ready(function() {
 			var ogh = $(this).data('og-height');
 			var bgh = $(this).data('bg-height');
 			$(this).height(function( index, height ) {
-				if ( $(this).hasClass('max-height') ) return qwh;
+				//if ( $(this).hasClass('max-height') ) return qwh;
 				
 				var nh = Math.round(qww * bgh / 1280);
-				return ( nh > ogh ) ? nh : ogh;
+				if ( $(this).hasClass('max-height') ) {
+					if ( nh > qwh ) nh = qwh;
+				} else if ( nh > ogh ) {
+					nh = ogh;
+				}
+				return nh;
 			});
 		});
 	}).trigger('resize');
