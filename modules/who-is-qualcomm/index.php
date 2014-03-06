@@ -2,7 +2,7 @@
 /*
  * Qualcomm HTML5 Modules : Who is Qualcomm?
  */
-$v = '0.2.3';
+$v = '0.2.4';
 $qv = '?v='. $v;
 ?>
 <!doctype html>
@@ -27,7 +27,6 @@ $qv = '?v='. $v;
 	</head>
 	<body class="bg-grey">
 			<div id="content" class="content-container">
-			
 				<?php // Slide #0 ?>
 				<section id="hdr" class="bg-img max-height block comeon" data-bg-height="710" data-waypoint-offset="0">
 					<div class="inner">
@@ -46,7 +45,7 @@ $qv = '?v='. $v;
 							<div class="eco fadein"><div class="spinner"></div><div class="spinner s2"></div></div>
             </div>
 						<div class="text-position">
-							<p><span class="thick">By the end of this module, you will learn:</span></p>
+							<p><span class="thick">By the end of this module, <br class="vis320" />you will learn:</span></p>
               <ul>
                 <li>Who Qualcomm is and what we do</li>
                 <li>How our inventions have changed how we communicate today</li>
@@ -59,7 +58,7 @@ $qv = '?v='. $v;
 				</section>
 			
 				<?php // Slide #2 ?>
-				<section id="invents" class="bg-img block comeon" data-bg-height="430">
+				<section id="invents" class="bg-img block comeon" data-bg-height="430" data-min-height="380">
 					<div class="inner">
           	<div class="graphic-position spingrow">
 							<div class="eco d1"><div class="in"></div></div>
@@ -68,7 +67,7 @@ $qv = '?v='. $v;
             </div>
 						<div class="text-position txtw">
 							<h2 class="fadein">Qualcomm <span class="thick">invents</span></h2>
-              <p class="fadein">mobile, computing, and connectivity technologies that<br class="vis960" /> allow people to explore more, learn more, live more, <span class="thick">everyday.</span></p>
+              <p class="fadein">mobile, computing, and connectivity technologies that<br /> allow people to explore more, learn more, live more, <span class="thick">everyday.</span></p>
 						</div>
 
 						<span class="stretch"></span>
@@ -115,24 +114,23 @@ $qv = '?v='. $v;
 				<section id="honors" class="bg-white block">
 					<div class="inner">
           	<div class="text-position">
-            	<h2 class="txtbl center">Qualcomm <span class="thick">honored</span> as a company</h2>
+            	<h2 class="txtbl center">Qualcomm <span class="thick">honored</span> <br />as a company</h2>
 				<div class="graphic-position center">
 					<img src="img/honors-bw.gif" alt="Fortune 100 Best Companies to work for : Newsweek Green Rankings" />
 				</div>
 				<ul>
 				<li><span class="thick">Fortune</span> - 100 Best Companies to work for (since 1999)</li>
-<li><span class="thick">Fortune</span> - Most Admired Companies (since 2002)</li>
+<li><span class="thick">Fortune</span> - Most Admired Companies (since&nbsp;2002)</li>
 <li><span class="thick">Fortune</span> - Most Diverse List</li>
 <li><span class="thick">Newsweek</span> - Green Rankings<br />
 &nbsp; &nbsp; - Ranked #42 amount U.S. Companies<br />
-&nbsp; &nbsp; - Ranked #101 among worlds top “green” organizations</li>
+&nbsp; &nbsp; - Ranked #101 among worlds top <span class="bmob"><span class="space">&nbsp; &nbsp; &nbsp; &nbsp; </span>"green" organizations</span></li>
 				</ul>
             </div>
           </div>
         </section>
-        
 				<?php // Slide #5 ?>
-				<section id="heritage" class="bg-img block comeon" data-bg-height="429">
+				<section id="heritage" class="bg-img block comeon" data-bg-height="429" data-min-height="380">
 					<div class="inner">
           	<div class="graphic-position growin">
 							<div class="eco d1"><div class="in"></div></div>
@@ -207,7 +205,7 @@ $qv = '?v='. $v;
         </section>
         
 		<?php // Slide #7 ?>
-		<section id="firsts" class="bg-img block comeon" data-bg-height="668" data-waypoint-offset="40%">
+		<section id="firsts" class="bg-img block comeon" data-bg-height="668" data-min-height="380" data-waypoint-offset="40%">
 			<div class="inner">
 				<div class="text-position center txtw">
 					<h2 class="fadein">A company of many <span class="thick">firsts</span></h2>
@@ -222,7 +220,7 @@ $qv = '?v='. $v;
 				<span class="stretch"></span>
 			</div>
 		</section>
-			
+		
 				<?php // Slide #8 ?>
 				<section id="leader" class="bg-grey-grad block">
 					<div class="inner">
@@ -232,7 +230,7 @@ $qv = '?v='. $v;
 								<ul>
 									<li>
 										<h2><span class="thick">Modem</span></h2>
-										<p>performance</p>
+										<p>performance <!--sup>3</sup--></p>
 									</li>
 									<li>
 										<h2><span class="thick">GPU</span></h2>
@@ -259,7 +257,7 @@ $qv = '?v='. $v;
 				</section>
 			
 				<?php // Slide #9 ?>
-				<section id="ideas" class="bg-img block comeon" data-bg-height="429">
+				<section id="ideas" class="bg-img block comeon" data-bg-height="429" data-min-height="380">
 					<div class="inner">
           	<div class="graphic-position growin">
 							<div class="eco d1"><div class="in"></div></div>
@@ -284,21 +282,21 @@ lives everywhere - transforming how we live.</p>
               <div class="imageblock">
               	<div class="icn"><img src="img/ic-future1.png" alt="" /></div>
                 <div class="txt">
-                	<h2>Enabling the devices you love</h2>
+                	<h2>Enabling the devices you&nbsp;love</h2>
 									<p>Developing technology that brings ecosystems of smart devices together to seamlessly connect you to richer experiences.</p>
-								</div>
-							</div>
-              <div class="imageblock">
-              	<div class="icn"><img src="img/ic-future3.png" alt="" /></div>
-                <div class="txt">
-                	<h2>Connecting everyone and everything</h2>
-									<p>Creating new ways to ensure seamless mobile access to wireless data in our hyper-connected world.</p>
 								</div>
 							</div>
               <div class="imageblock">
               	<div class="icn"><img src="img/ic-future2.png" alt="" /></div>
                 <div class="txt">
-                	<h2>Sensing and learning your needs</h2>
+                	<h2>Connecting everyone and&nbsp;everything</h2>
+									<p>Creating new ways to ensure seamless mobile access to wireless data in our hyper-connected world.</p>
+								</div>
+							</div>
+              <div class="imageblock">
+              	<div class="icn"><img src="img/ic-future3.png" alt="" /></div>
+                <div class="txt">
+                	<h2>Sensing and learning your&nbsp;needs</h2>
 									<p>Developing technology and tools to help create apps and devices that will deliver information when and where you need it.</p>
 								</div>
 							</div>
@@ -397,7 +395,7 @@ lives everywhere - transforming how we live.</p>
 				</section>
 			
 				<?php // Slide #16 ?>
-				<section id="digital" class="bg-img block comeon" data-bg-height="429">
+				<section id="digital" class="bg-img block comeon" data-bg-height="429" data-min-height="380">
 					<div class="inner">
           	<div class="graphic-position spingrow">
 							<div class="eco d1"><div class="in"></div></div>

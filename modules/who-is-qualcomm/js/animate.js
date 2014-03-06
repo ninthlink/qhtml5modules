@@ -6,7 +6,10 @@ $(document).ready(function() {
 	var qwh, qww, offsetDefault = '30%';
 	// scale full bg img slides
 	$('.bg-img').each(function() {
-		$(this).data('og-height', $(this).height());
+		var th = $(this).height();
+		var mh = $(this).data('min-height');
+		if ( mh ) th = mh;
+		$(this).data('og-height', th);
 	});
 	$(window).bind('resize', function() {
 		qwh= $(this).height();
@@ -20,7 +23,7 @@ $(document).ready(function() {
 				var nh = Math.round(qww * bgh / 1280);
 				if ( $(this).hasClass('max-height') ) {
 					if ( nh > qwh ) nh = qwh;
-				} else if ( nh > ogh ) {
+				} else if ( nh < ogh ) {
 					nh = ogh;
 				}
 				return nh;
@@ -66,12 +69,13 @@ $(document).ready(function() {
 		sublime.prepare('3eb3c5c9');
 	});
 	// #10 inventing the future
+	$('#future').find('img').fadeOut();
 	$('#future').bind('qinview', function() {
 		$(this).find('.imageblock').waypoint(function() {
-			$(this).find('img').fadeIn(2000);
+			$(this).find('img').stop().fadeIn(2000);
 		}, {
 			offset: '80%'
-		}).find('img').fadeOut();
+		});
 	});
 	// #12 driving : cycler
 	var arrowd = function() {
@@ -118,12 +122,12 @@ $(document).ready(function() {
 				var bn = jQuery('#billion .number');
 				var bt = bn.data('billitime');
 				clearTimeout(bt);
-				bn.css('left',0).animate({
-					left: 25000000000
+				bn.css('left','24000px').animate({
+					left: '+=1000'
 				}, {
-					duration: 1200, 
+					duration: 2000, 
 					step: function( c ) {
-						var n = Math.round(c);
+						var n = Math.round(c*1000000);
 						$(this).html(commaSeparateNumber(n));
 					}
 				});
@@ -142,7 +146,7 @@ $(document).ready(function() {
 		}
 	});
 	// #14 applying
-	$('#applying').find('h2, p, .circles li').addClass('fadein');
+	$('#applying li').addClass('fadein');
 	// sliders : "28 years" + the other one
 	$('.slider').each(function() {
 		var slides = $(this).children('ul').addClass('slides');
