@@ -2,7 +2,7 @@
 /*
  * Qualcomm HTML5 Modules : 6 ways smartphones are changing us
  */
-$v = '0.1.6';
+$v = '0.1.7';
 $qv = '?v='. $v;
 ?>
 <!doctype html>
@@ -57,7 +57,7 @@ $qv = '?v='. $v;
 				<div class="square c<?php echo ($i%2 ? '2' : '1') .' '. $s[0]; ?>">
 					<div class="over">
 						<div class="txt">
-							<img src="img/<?php echo $s[0]; ?>.png" alt="<?php echo $s[0]; ?>" />
+							<img src="img/<?php echo $s[0] .( $s[0]=='face' ? '2' : '' ); ?>.png" alt="<?php echo $s[0]; ?>" />
 							<h2><?php echo $s[1]; ?></h2>
 							<p><?php echo $s[2]; ?></p>
 						</div>
@@ -69,9 +69,9 @@ $qv = '?v='. $v;
 		<div class="section proceed"><a href="#quiz">Proceed to quiz</a></div>
 		<div class="section ftr">
 			<div class="inner">
-				<p><img src="img/qualcomm.png" alt="Qualcomm" /></p>
-				<p>&copy; <?php date_default_timezone_set('UTC'); echo date('Y'); ?> Qualcomm Technologies, Inc. All rights reserved.</p>
+				<!--p><img src="img/qualcomm.png" alt="Qualcomm" /></p-->
 				<p>Sources: Facebook, Jan. '13; SA, Apr. '12; 2012 Snapdragon Consumer Survey; TIME Mobility Poll, in cooperation with QUALCOMM, Aug. '12</p>
+				<p>&copy; <?php date_default_timezone_set('UTC'); echo date('Y'); ?> Qualcomm Technologies, Inc. All rights reserved.</p>
 				<p>Qualcomm is a trademark of QUALCOMM Incorporated registered in the United States and other countries. Gobi and Snapdragon are trademarks of Qualcomm Technologies, Inc. Other products and brand names are property of their respective owners.</p>
 			</div>
 		</div>
