@@ -15,8 +15,8 @@
 //=========================================================
 
 //Edge symbol: 'spaceshipFlickr'
-(function(symbolName){Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",2008,function(sym,e){sym.play("flickr");});
+//(function(symbolName){Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",2008,function(sym,e){sym.play("flickr");});
 //Edge binding end
-})("spaceshipFlickr");
+//})("spaceshipFlickr");
 //Edge symbol end:'spaceshipFlickr'
 })(jQuery,AdobeEdge,"EDGE-15320788");
