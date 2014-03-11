@@ -2,7 +2,7 @@
 /*
  * Qualcomm HTML5 Modules : Who is Qualcomm?
  */
-$v = '0.2.4';
+$v = '0.2.5';
 $qv = '?v='. $v;
 ?>
 <!doctype html>
@@ -151,7 +151,7 @@ $qv = '?v='. $v;
 					<div class="inner">
 						<div class="text-position center">
 							<h2><span class="txtbl">28</span> years of <span class="thick">innovation</span></h2>
-							<div class="slider" data-slide-duration="3000" data-slide-fade="500">
+							<div class="slider" data-slide-duration="3600" data-slide-fade="500">
 								<ul>
 									<li>
 										<img src="img/1985.jpg" alt="1985" />
@@ -164,8 +164,8 @@ $qv = '?v='. $v;
 										<p>Qualcomm makes historic first CDMA phone call</p>
 									</li>
 									<li>
-										<!--img src="img/1998.gif" alt="1998" /-->
-										<h2 class="txtlb noimg">1998</h2>
+										<img src="img/1998.jpg" alt="1998" />
+										<h2 class="txtlb">1998</h2>
 										<p>Qualcomm unveils the world’s first commercial CDMA smartphone.</p>
 									</li>
 									<li>
@@ -174,8 +174,8 @@ $qv = '?v='. $v;
 										<p>Qualcomm delivers the first CDMA chipset to integrate GPS.</p>
 									</li>
 									<li>
-										<!--img src="img/2005.gif" alt="2005" /-->
-										<h2 class="txtlb noimg">2005</h2>
+										<img src="img/2005.jpg" alt="2005" />
+										<h2 class="txtlb">2005</h2>
 										<p>Qualcomm Scorpion processor brings consumer electronics features to mobile devices.</p>
 									</li>
 									<li>
@@ -189,8 +189,8 @@ $qv = '?v='. $v;
 										<p>Qualcomm Snapdragon processor powers world's first Android-based mobile device.</p>
 									</li>
 									<li>
-										<!--img src="img/2010.gif" alt="2010" /-->
-										<h2 class="txtlb noimg">2010</h2>
+										<img src="img/2010.jpg" alt="2010" />
+										<h2 class="txtlb">2010</h2>
 										<p>First 3G LTE Multimode chipsets</p>
 									</li>
 									<li>
