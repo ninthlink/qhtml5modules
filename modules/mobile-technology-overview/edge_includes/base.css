@@ -41,6 +41,13 @@ sup { opacity: 0.5; font-size: 0.7em }
 span.color  {
 	font-family: "Qualcomm-Semibold", sans-serif;
 }
+#Stage2 {
+	background: #000 url(stars26.jpg) repeat 50% 0 !important;
+}
+#Stage2_spaceship2_Rectangle2Copy,
+#Stage2_spaceship2_LineCopy {
+	display: none;
+}
 #Stage2 span.color {
 	color: #018891;
 }
