@@ -2,7 +2,7 @@
 /*
  * Qualcomm HTML5 Modules : Mobile Technology Overview
  */
-$v = '0.1.8';
+$v = '0.1.10';
 $qv = '?v='. $v;
 ?>
 <!doctype html>
@@ -22,12 +22,11 @@ $qv = '?v='. $v;
 	<link rel="stylesheet" href="../_common/fonts/stylesheet.css">
 	<link rel="stylesheet" href="edge_includes/base.css<?php echo $qv ?>">
 <!--Adobe Edge Runtime-->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="../_common/js/jquery-1.10.1.min.js"><\/script>')</script>
+	<script src="edge_includes/jquery.min.js"></script>
 	
 	<script src="../_common/js/spin.min.js"></script>
 	<script src="../_common/js/jquery.inview.min.js"></script>
-	<script src="../_common/js/jquery.qualcomm-reveal.min.js"></script>
+	<script src="../_common/js/jquery.qualcomm-reveal.min.js?v=1.0.3"></script>
 
 <?php
 	$edgejs = array('','SixTechnologies_Mobile','Elite_spaceship_Mobile','Elite_Battery_Mobile','DVD','Cars');
@@ -38,7 +37,7 @@ $qv = '?v='. $v;
 ?>
 <!--Adobe Edge Runtime End-->
 </head>
-<body
+<body>
 	<div class="content-container">
 		<div id="header" class="stagewrapper">
 			<h1>Mobile technology.</h1>
