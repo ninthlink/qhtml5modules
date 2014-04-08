@@ -285,6 +285,7 @@ sup {
 .txtw { color: #fff; }
 .txtb { color: #363636; }
 .txtg { color: #969696; }
+.txtg6 { color: #666; }
 .txtr { color: #e4322d; }
 .txtbl { color: #006a81 }
 .txtlb { color: #35adbb }
@@ -437,7 +438,47 @@ sup {
 /* #3 faster : ic-bars */
 /* #4 global : plusses : 43, 51, 33 (ic-plus) */
 /* #5 connec : ic-connec... */
-/* #6 modem : ic-modem */
+
+/* #6 modem */
+#modem .graphic-position {
+	height: 450px;
+	padding: 92px 0 0;
+}
+#modem .eco {
+	width: 360px;
+	height: 450px;
+	position: relative;
+	margin: 0 auto;
+}
+#modem .eco .in {
+	background: url(../img/ic-modem.png) no-repeat 0 0;
+}
+@media only screen and (min-width: 960px) {
+	#modem .inner {
+		width: 820px;
+	}
+}
+@media only screen and (min-width: 800px) {
+	#modem .graphic-position {
+		padding-left: 50%;
+		width: 50%;
+	}
+	#modem .text-position {
+		width: 50%;
+		position: absolute;
+		top: 200px;
+		left: 0;
+		padding-top: 0;
+	}
+}
+@media only screen and (max-width: 479px) {
+	#modem .eco {
+		width: 300px;
+	}
+	#modem .eco .in {
+		background-position: -78px 0;
+	}
+}
 /* #7 check */
 #check {
 	background: url(../img/bg-check.jpg) no-repeat 0 0;
@@ -547,11 +588,90 @@ sup {
 	-webkit-animation-delay: 1.5s;
 	animation-delay: 1.5s;
 }
-.js #super a.btn.next {
+.js #super.onn a.btn.next {
 	background-position: -63px 0;
 	margin-left: 162px;
 }
-@media only screen and (max-width: 449px) {
+#super .slide {
+	width: 130px;
+	position: absolute;
+	top: 116px;
+	left: 72px;
+	opacity: 0;
+	-webkit-transition: opacity 0.6s ease-in-out;
+	-moz-transition: opacity 0.6s ease-in-out;
+	-o-transition: opacity 0.6s ease-in-out;
+	transition: opacity 0.6s ease-in-out;
+}
+#super .slide.onn {
+	opacity: 1;
+}
+#super .slide .i {
+	display: block;
+	width: 130px;
+	height: 107px;
+	background: url(../img/ic-super.png) no-repeat 0 0;
+	margin-bottom: 10px;
+}
+#super .slide .i.shop {
+	background-position: -130px 0;
+}
+#super .slide .i.watch {
+	background-position: -260px 0;
+}
+#super .slide .i.photo {
+	background-position: -390px 0;
+}
+#super .slide .i.stock {
+	background-position: -520px 0;
+}
+#super .slide .i.msgs {
+	background-position: -650px 0;
+}
+#super .slide .i.soc {
+	background-position: -780px 0;
+}
+#super .slide .i.nav {
+	background-position: -910px 0;
+}
+#super .slide .i.int {
+	background-position: -1040px 0;
+}
+#super .slide .i.weather {
+	background-position: -1170px 0;
+}
+#super .slide .i.multi {
+	background-position: -1300px 0;
+}
+#super .slide .i.game {
+	background-position: -1430px 0;
+}
+#super .slide .i.music {
+	background-position: -1560px 0;
+}
+#super .slide .i.voice {
+	background-position: -1690px 0;
+}
+#super .slide .i.news {
+	background-position: -1820px 0;
+}
+#super .slide .i.email {
+	background-position: -1950px 0;
+}
+#super .slide .t {
+	color: #fff;
+	font: 20px/1 "Qualcomm-Regular", sans-serif;
+	text-align: center;
+}
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+	.js #super.onn a.btn {
+		margin-left: -220px
+	}
+	.js #super.onn a.btn.next {
+		margin-left: 157px
+	}
+}
+@media only screen and (max-width: 479px) {
 	.js #super.onn a.btn {
 		display: none
 	}
@@ -970,6 +1090,16 @@ sup {
 }
 .block#warrowd {
 	background: url(../img/bg-warrowd.jpg) no-repeat center center;
+}
+@media only screen and (max-width: 799px) {
+	.block#couple {
+		background-position: 32% 50%;
+	}
+}
+@media only screen and (max-width: 479px) {
+	.block#warrowd {
+		background-position: 56% 50%;
+	}
 }
 /* proceed section */
 #proceed .text-position {

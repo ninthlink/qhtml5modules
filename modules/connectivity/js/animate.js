@@ -60,6 +60,51 @@ $(document).ready(function() {
 			}
 		});
 	});
+	// #9 super
+	q_supertime = function() {
+		jQuery('#super a.next').click();
+	};
+	
+	var q_supertimer;
+	$('#super').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+		if ( isInView ) {
+			clearTimeout(q_supertimer);
+			q_supertimer = setTimeout(q_supertime, 3000);
+		}
+	}).on('reset', function() {
+		clearTimeout(q_supertimer);
+		var qsfs = $('#super .slide:first');
+		if ( qsfs.hasClass('onn') == false ) {
+			qsfs.add(qsfs.siblings('.onn')).toggleClass('onn');
+		}
+	});
+	$('#super .btn').click(function() {
+		clearTimeout(q_supertimer);
+		var onn = $('#super .slide.onn');
+		var nex = onn.next();
+		if ( $(this).hasClass('prev') ) {
+			nex = onn.prev();
+			if ( nex.size() == 0 ) {
+				nex = onn.parent().children(':last');
+			}
+		} else {
+			if ( nex.size() == 0 ) {
+				nex = onn.parent().children(':first');
+			}
+		}
+		onn.add(nex).toggleClass('onn');
+		q_supertimer = setTimeout(q_supertime, 3000);
+		return false;
+	});
+	// add swipe too
+	$('#super').swipe({
+		swipeRight: function() {
+			$(this).find('a.prev').click();
+		},
+		swipeLeft: function() {
+			q_supertime();
+		}
+	});
 	// #10 benies
 	$('#benies .bk').children().addClass('fadein');
 	// #11 delivr

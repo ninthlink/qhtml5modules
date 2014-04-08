@@ -28,6 +28,75 @@ $qv = '?v='. $v;
 	<body class="bg-grey">
 			<div id="content" class="content-container">
 				
+				
+				<?php // Slide #5 ?>
+				<section id="connec" class="bg-white block comeon">
+					<div class="inner">
+						<div class="text-position">
+							<h2 class="center">Great <span class="thick">connectivity</span> equals great mobile</h2>
+							<!--
+							<div class="cb g1">
+								<div class="eco fadein"><div class="i"></div></div>
+								<div class="txt">
+									<h3>1G Phone / <small>Voice</small></h3>
+									<p>First generation cell phone technology was <br class="vis960" />for&nbsp;calls only, with no data capabilites.</p>
+									<div class="icns"><div class="c"></div></div>
+								</div>
+							</div>
+							<div class="cb g2">
+								<div class="eco fadein"><div class="i"></div></div>
+								<div class="txt">
+									<h3>2G Phone / <small>Voice + Simple Data</small></h3>
+									<p>The second generation of cell phone transmissions <br class="vis960" />allowed for some data, such as simple text messaging.</p>
+									<div class="icns"><div class="c"></div><div class="d"></div></div>
+								</div>
+							</div>
+							<div class="cb g3">
+								<div class="eco fadein"><div class="i"></div></div>
+								<div class="txt">
+									<h3>3G Phone / <small>Mobile Broadband</small></h3>
+									<p>3G was introduced in 2000. A 3G connected phone makes possible:</p>
+									<ul>
+									<li>Web browsing and mobile video</li>
+									<li>GPS and location-based services</li>
+									<li>Social sharing</li>
+									<li>Other connectivity-based mobile activities</li>
+									</ul>
+									<div class="icns"><div class="c"></div><div class="d"></div><div class="n"></div><div class="l"></div><div class="v"></div><div class="s"></div></div>
+								</div>
+							</div>
+							<div class="cb g4">
+								<div class="eco fadein"><div class="i"></div></div>
+								<div class="txt">
+									<h3>4G LTE* Phones / <small>Advanced Mobile Broadband</small></h3>
+									<p>4G was introduced in 2009 and creates the opportunity for data speeds <br class="vis960" />of up to 150 Mbps peak download, now supported by Snapdragon 800. <br class="vis960" />4G is also much faster than most home cable/DSI  connections.</p>
+									<ul>
+									<li>Makes web browsing significantly faster</li>
+									<li>Opens up capabilities for streaming and sharing videos</li>
+									<li>Access to bandwidth intensive data apps and services</li>
+									</ul>
+									<div class="icns"><div class="c"></div><div class="d"></div><div class="n"></div><div class="l"></div><div class="v"></div><div class="s"></div><div class="e"></div><div class="r"></div></div>
+								</div>
+							</div>
+							-->
+						</div>
+						<span class="stretch"></span>
+					</div>
+				</section>
+				
+				<?php // Slide #6 ?>
+				<section id="modem" class="bg-red-grad-lt block comeon" data-waypoint-offset="30%">
+					<div class="inner">
+						<div class="text-position txtw">
+							<h2>What is the <span class="thick">modem</span>?</h2>
+							<p>It is the component in your device that connects to the mobile&nbsp;network.</p>
+						</div>
+						<div class="graphic-position">
+							<div class="eco fadein"><div class="in"></div></div>
+						</div>
+					</div>
+				</section>
+				
 				<?php // Slide #7 ?>
 				<section id="check" class="bg-img block comeon noscale">
 					<div class="inner">
@@ -57,11 +126,76 @@ $qv = '?v='. $v;
 				<?php // Slide #9 ?>
 				<section id="super" class="bg-white block comeon">
 					<div class="inner">
-						<div class="text-position center">
+						<div class="text-position center txtg6">
 							<h2>A modem that offers a <span class="thick">superior user experience</span></h2>
 						</div>
 						<div class="graphic-position">
-							<div class="phone"></div>
+							<div class="phone">
+								<div class="slide onn">
+									<div class="i video"></div>
+									<div class="t">Video Calls</div>
+								</div>
+								<div class="slide">
+									<div class="i shop"></div>
+									<div class="t">Shopping</div>
+								</div>
+								<div class="slide">
+									<div class="i watch"></div>
+									<div class="t">Watch Videos</div>
+								</div>
+								<div class="slide">
+									<div class="i photo"></div>
+									<div class="t">Photos</div>
+								</div>
+								<div class="slide">
+									<div class="i stock"></div>
+									<div class="t">Check Stocks</div>
+								</div>
+								<div class="slide">
+									<div class="i msgs"></div>
+									<div class="t">Text Messages</div>
+								</div>
+								<div class="slide">
+									<div class="i soc"></div>
+									<div class="t">Social Media</div>
+								</div>
+								<div class="slide">
+									<div class="i nav"></div>
+									<div class="t">Navigation</div>
+								</div>
+								<div class="slide">
+									<div class="i int"></div>
+									<div class="t">Internet<br />Browsing</div>
+								</div>
+								<div class="slide">
+									<div class="i weather"></div>
+									<div class="t">Weather</div>
+								</div>
+								<div class="slide">
+									<div class="i multi"></div>
+									<div class="t">Multi-media<br />Content</div>
+								</div>
+								<div class="slide">
+									<div class="i game"></div>
+									<div class="t">Multi-player<br />Gaming</div>
+								</div>
+								<div class="slide">
+									<div class="i music"></div>
+									<div class="t">Download<br />Music</div>
+								</div>
+								<div class="slide">
+									<div class="i voice"></div>
+									<div class="t">Voice Calls</div>
+								</div>
+								<div class="slide">
+									<div class="i news"></div>
+									<div class="t">Discover News</div>
+								</div>
+								<div class="slide">
+									<div class="i email"></div>
+									<div class="t">Email</div>
+								</div>
+							</div>
 							<a href="#prev" class="btn prev fadein"></a>
 							<a href="#prev" class="btn next fadein"></a>
 						</div>
@@ -137,8 +271,8 @@ $qv = '?v='. $v;
 						<div class="text-position">
 							<h2 class="center txtw">3G vs. 3G</h2>
 							<div class="videohere">
-							<video id="v3gvs" poster="img/vid-placeholder.png" width="600" height="338" title="3G vs. 3G" data-uid="v3gvs" data-autoresize="fit" preload="none">
-							  <source src="video/evolution_of_a_name_cutdown_640x360.mp4" />
+							<video id="v3gvs" poster="img/vid-3g.jpg" width="600" height="338" title="3G vs. 3G" data-uid="v3gvs" data-autoresize="fit" preload="none">
+							  <source src="video/3G-SD.mp4" />
 							</video>
 							</div>
 						</div>
@@ -180,8 +314,9 @@ $qv = '?v='. $v;
 						<div class="text-position">
 							<h2 class="center txtw">4G vs. 4G</h2>
 							<div class="videohere">
-							<video id="v4gvs" poster="img/vid-placeholder.png" width="600" height="338" title="4G vs. 4G" data-uid="v4gvs" data-autoresize="fit" preload="none">
-							  <source src="video/evolution_of_a_name_cutdown_640x360.mp4" />
+							<video id="v4gvs" poster="img/vid-4g.jpg" width="600" height="338" title="4G vs. 4G" data-uid="v4gvs" data-autoresize="fit" preload="none">
+							  <source src="video/4G-SD.mp4" />
+							  <source src="video/4G-HD.mp4" data-quality="hd" />
 							</video>
 							</div>
 						</div>
@@ -230,8 +365,8 @@ $qv = '?v='. $v;
 						<div class="text-position txtw">
 							<h3>Footnotes</h3>
 							<ol>
-							<li>lorem ipsum dolor</li>
-							<li>Source: lorem ipsum, 2013</li>
+							<li>GSMA Intelligence, Nov. '13</li>
+							<li>2013: Qualcomm estimates. 2017: Handsets: avg. IDC, Aug.&nbsp;'13, and SA, Sept.&nbsp;'13, Non-handsets: ABI Nov.&nbsp;'13, Gartner, Sept.&nbsp;'13, IDC, Aug,&nbsp;'13, Strategy Analytics, Sept.&nbsp;'13, IMS, Nov.&nbsp;'13</li>
 							</ol>
 							<hr />
 							<p>&copy;<?php date_default_timezone_set('UTC'); echo date('Y'); ?> Qualcomm Incorporated and/or its subsidiaries. All Rights Reserved.</p>
