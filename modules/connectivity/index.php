@@ -27,6 +27,41 @@ $qv = '?v='. $v;
 	</head>
 	<body class="bg-grey">
 			<div id="content" class="content-container">
+				<?php // Slide #0 ?>
+				<section id="hdr" class="bg-img noscale block comeon" data-bg-height="693">
+					<div class="inner">
+						<div class="text-position center txtw">
+							<h1 class="fadein"><span class="thick">Doing more with Qualcomm</span><sup>&reg;</sup><br />
+<span class="thick">Snapdragon</span><sup>&trade;</sup> <span class="thick">Modem Technology</span></h1>
+						</div>
+						<div class="graphic-position">
+							<div class="eco e1 growin"><div class="in"></div></div>
+							<div class="eco e2 growin"><div class="in"></div></div>
+							<div class="eco e3 growin"><div class="in"></div></div>
+						</div>
+						<span class="stretch"></span>
+					</div>
+				</section>
+				
+				<?php // Slide #1 ?>
+				<section id="learn" class="bg-white block comeon">
+					<div class="inner">
+						<div class="graphic-position">
+							<div class="eco spingrow"><div class="in"></div></div>
+						</div>
+						<div class="text-position">
+							<p>In today's fast-paced life, you need a mobile device that lets you talk to your friends, update your social networking status, find a coffee shop, use GPS to find directions and read your emails at the same time.</p>
+							<p>The Snapdragon processor has a powerful Modem capable of connecting to all major 2G, 3G and 4G LTE cellular technologies and is designed to intelligently connect to the best available network to ensure a rich user experience and anytime, anywhere connection.</p>
+							<h3><span class="thick">By the end of this module, you'll understand:</span></h3>
+							<ul>
+							<li>Mobile Broadband</li>
+							<li>What is a modem?</li>
+							<li>What is a Snapdragon modem and why is it better?</li>
+							</ul>
+							<p class="center"><small>Qualcomm Snapdragon is a product of Qualcomm Technologies, Inc.</small</p>
+						</div>
+					</div>
+				</section>
 				
 				<?php // Slide #2 ?>
 				<section id="mbroad" class="bg-img block comeon" data-bg-height="605" data-min-height="380">
@@ -168,7 +203,7 @@ $qv = '?v='. $v;
 							<p>Provides a complete solution including modem and RF for optimized performance</p>
 						</div>
 						<div class="graphic-position">
-							<div class="eco chip growin"><div class="in"></div></div>
+							<div class="eco chip fadein"><div class="in"></div></div>
 						</div>
 					</div>
 				</section>
