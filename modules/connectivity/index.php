@@ -28,32 +28,55 @@ $qv = '?v='. $v;
 	<body class="bg-grey">
 			<div id="content" class="content-container">
 				
+				<?php // Slide #4 ?>
+				<section id="global" class="bg-grey-grad block comeon">
+					<div class="inner">
+						<div class="text-position">
+							<h2 class="center">Mobile broadband is <span class="thick">global and growing</span></h2>
+							<div class="graphic-position">
+							<div class="eco fadein"><div class="in"></div><div class="p p1"></div><div class="p p2"></div><div class="p p1"></div></div>
+							</div>
+							<div class="text">
+								<h3>2014</h3>
+								<ul>
+									<li>There are 2.3 billion mobile broadband connections worldwide (Q3 2013) <sup>1</sup></li>
+									<li>~113 million new 3G/4G connections were added during Q3 '13 <sup>1</sup></li>
+									<li>3G/4G devices shipment estimated to cross 1 billion in 2013 <sup>2</sup></li>
+								</ul>
+								<h3>2017</h3>
+								<ul>
+									<li>~4.5 billion estimated 3G/4G connections by 2017</li>
+									<li>3G/4G devices shipment estimated to, reach ~2 billion in 2017 <sup>2</sup></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
 				
 				<?php // Slide #5 ?>
 				<section id="connec" class="bg-white block comeon">
 					<div class="inner">
 						<div class="text-position">
 							<h2 class="center">Great <span class="thick">connectivity</span> equals great mobile</h2>
-							<!--
 							<div class="cb g1">
-								<div class="eco fadein"><div class="i"></div></div>
-								<div class="txt">
+								<div class="eco growin"><div class="in"></div></div>
+								<div class="txt fadein">
 									<h3>1G Phone / <small>Voice</small></h3>
 									<p>First generation cell phone technology was <br class="vis960" />for&nbsp;calls only, with no data capabilites.</p>
-									<div class="icns"><div class="c"></div></div>
+									<div class="icns fadein"><div class="i c"></div></div>
 								</div>
 							</div>
 							<div class="cb g2">
-								<div class="eco fadein"><div class="i"></div></div>
-								<div class="txt">
+								<div class="eco growin"><div class="in"></div></div>
+								<div class="txt fadein">
 									<h3>2G Phone / <small>Voice + Simple Data</small></h3>
 									<p>The second generation of cell phone transmissions <br class="vis960" />allowed for some data, such as simple text messaging.</p>
-									<div class="icns"><div class="c"></div><div class="d"></div></div>
+									<div class="icns fadein"><div class="i c"></div><div class="i d"></div></div>
 								</div>
 							</div>
 							<div class="cb g3">
-								<div class="eco fadein"><div class="i"></div></div>
-								<div class="txt">
+								<div class="eco growin"><div class="in"></div></div>
+								<div class="txt fadein">
 									<h3>3G Phone / <small>Mobile Broadband</small></h3>
 									<p>3G was introduced in 2000. A 3G connected phone makes possible:</p>
 									<ul>
@@ -62,12 +85,12 @@ $qv = '?v='. $v;
 									<li>Social sharing</li>
 									<li>Other connectivity-based mobile activities</li>
 									</ul>
-									<div class="icns"><div class="c"></div><div class="d"></div><div class="n"></div><div class="l"></div><div class="v"></div><div class="s"></div></div>
+									<div class="icns fadein"><div class="i c"></div><div class="i d"></div><div class="i n"></div><div class="i l"></div><div class="i v"></div><div class="i s"></div></div>
 								</div>
 							</div>
 							<div class="cb g4">
-								<div class="eco fadein"><div class="i"></div></div>
-								<div class="txt">
+								<div class="eco growin"><div class="in"></div></div>
+								<div class="txt fadein">
 									<h3>4G LTE* Phones / <small>Advanced Mobile Broadband</small></h3>
 									<p>4G was introduced in 2009 and creates the opportunity for data speeds <br class="vis960" />of up to 150 Mbps peak download, now supported by Snapdragon 800. <br class="vis960" />4G is also much faster than most home cable/DSI  connections.</p>
 									<ul>
@@ -75,10 +98,9 @@ $qv = '?v='. $v;
 									<li>Opens up capabilities for streaming and sharing videos</li>
 									<li>Access to bandwidth intensive data apps and services</li>
 									</ul>
-									<div class="icns"><div class="c"></div><div class="d"></div><div class="n"></div><div class="l"></div><div class="v"></div><div class="s"></div><div class="e"></div><div class="r"></div></div>
+									<div class="icns fadein"><div class="i c"></div><div class="i d"></div><div class="i n"></div><div class="i l"></div><div class="i v"></div><div class="i s"></div><div class="i e"></div><div class="i r"></div></div>
 								</div>
 							</div>
-							-->
 						</div>
 						<span class="stretch"></span>
 					</div>

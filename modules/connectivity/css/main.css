@@ -437,8 +437,168 @@ sup {
 /* #2 mbroad : bg-mbroad + ic-mbroad? */
 /* #3 faster : ic-bars */
 /* #4 global : plusses : 43, 51, 33 (ic-plus) */
+#global .text-position h3 {
+	color: #d11f2b;
+	font-size: 4em;
+	line-height: 1;
+}
+#global .text-position ul {
+	margin-top: 0;
+}
+#global .text-position ul li {
+	font-family: "Qualcomm-Regular", sans-serif;
+	position: relative;
+}
+#global .graphic-position {
+	height: 223px;
+	padding: 20px 0 50px;
+}
+#global .eco {
+	width: 100%;
+	height: 223px;
+}
+#global .eco .in {
+	width: 223px;
+	height: 223px;
+	margin: 0 auto;
+	background: url(../img/bg-global.jpg) no-repeat 0 0;
+	border-radius: 111px;
+}
 /* #5 connec : ic-connec... */
-
+#connec h2 {
+	margin-bottom: 1.5em;
+}
+#connec h3 {
+	font-family: "Qualcomm-Regular", sans-serif;
+	line-height: 1;
+}
+#connec h3 small {
+	color: #d11f2b;
+	font-size: 72%;
+}
+#connec .text-position p {
+	line-height: 1.2;
+}
+#connec .text-position ul li {
+	position: relative;
+}
+#connec .eco {
+	width: 234px;
+	height: 229px;
+	margin: 0 auto;
+}
+#connec .eco .in {
+	background: url(../img/ic-connec1.jpg) no-repeat 0 0;
+	background-size: cover;
+}
+#connec .g2 .eco {
+	height: 281px;
+}
+#connec .g2 .eco .in {
+	background-image: url(../img/ic-connec2.jpg);
+	/*background-position: 0 -229px;*/
+}
+#connec .g3 .eco {
+	height: 312px;
+}
+#connec .g3 .eco .in {
+	background-image: url(../img/ic-connec3.jpg);
+	/*background-position: 0 -510px;*/
+}
+#connec .g4 .eco {
+	height: 313px;
+}
+#connec .g4 .eco .in {
+	background-image: url(../img/ic-connec4.jpg);
+	/*background-position: 0 -822px;*/
+}
+.js #connec.comeon.onn .txt.fadein {
+	display: block;
+	
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+}
+.js #connec.comeon.onn .eco.growin .in {
+	-webkit-animation-duration: 0.5s;
+	-moz-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+}
+.js #connec.comeon.onn .g2 .eco.growin .in {
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.js #connec.comeon.onn .g2 .txt.fadein {
+	-webkit-animation-delay: 1.5s;
+	-moz-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+}
+.js #connec.comeon.onn .g3 .eco.growin .in {
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	animation-delay: 2s;
+}
+.js #connec.comeon.onn .g3 .txt.fadein {
+	-webkit-animation-delay: 2.5s;
+	-moz-animation-delay: 2.5s;
+	animation-delay: 2.5s;
+}
+.js #connec.comeon.onn .g4 .eco.growin .in {
+	-webkit-animation-delay: 3s;
+	-moz-animation-delay: 3s;
+	animation-delay: 3s;
+}
+.js #connec.comeon.onn .g4 .txt.fadein {
+	-webkit-animation-delay: 3.5s;
+	-moz-animation-delay: 3.5s;
+	animation-delay: 3.5s;
+}
+#connec .icns {
+	margin: 36px 0;
+}
+#connec .icns .i {
+	display: inline-block;
+	width: 51px;
+	height: 51px;
+	background: url(../img/ic-connec.png) no-repeat 0 0;
+	margin: 0 8px 8px 0;
+}
+#connec .icns .i.d {
+	background-position: -51px 0;
+}
+#connec .icns .i.n {
+	background-position: -102px 0;
+}
+#connec .icns .i.l {
+	background-position: -153px 0;
+}
+#connec .icns .i.v {
+	background-position: -204px 0;
+}
+#connec .icns .i.s {
+	background-position: -255px 0;
+}
+#connec .icns .i.e {
+	background-position: -306px 0;
+}
+#connec .icns .i.r {
+	background-position: -357px 0;
+}
+@media only screen and (min-width: 800px) {
+	#connec .cb {
+		position: relative;
+		padding: 70px 0 0 300px;
+	}
+	#connec .cb.g1 {
+		padding-top: 35px;
+	}
+	#connec .cb .eco {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
 /* #6 modem */
 #modem .graphic-position {
 	height: 450px;
