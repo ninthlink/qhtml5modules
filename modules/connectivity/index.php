@@ -28,15 +28,43 @@ $qv = '?v='. $v;
 	<body class="bg-grey">
 			<div id="content" class="content-container">
 				
+				<?php // Slide #2 ?>
+				<section id="mbroad" class="bg-img block comeon" data-bg-height="605" data-min-height="380">
+					<div class="inner">
+						<div class="graphic-position">
+							<div class="eco growin"><div class="in"></div></div>
+						</div>
+						<div class="text-position center txtw">
+							<h2 class="fadein"><span class="thick">Mobile broadband</span></h2>
+						</div>
+					</div>
+				</section>
+				
+				<?php // Slide #3 ?>
+				<section id="bars" class="bg-red-grad-lt block comeon">
+					<div class="inner">
+						<div class="text-position">
+							<h2 class="txtw">Mobile internet connectivity <br class="vis960" />is getting faster</h2>
+							<h3 class="txtbk"><span class="thick">4G</span> is over 160 times faster than&nbsp;<span class="thick">1G</span></h3>
+						</div>
+						<div class="graphic-position">
+							<div class="bars"><div class="c"><div class="b b1"><div class="in"></div></div></div><div class="c"><div class="b b2"><div class="in"></div></div></div><div class="c"><div class="b b3"><div class="in"></div></div></div><div class="c"><div class="b b4"><div class="in"></div></div></div><div class="c"><div class="b b5"><div class="in"></div></div></div></div>
+						</div>
+					</div>
+				</section>
+				
 				<?php // Slide #4 ?>
 				<section id="global" class="bg-grey-grad block comeon">
 					<div class="inner">
 						<div class="text-position">
 							<h2 class="center">Mobile broadband is <span class="thick">global and growing</span></h2>
 							<div class="graphic-position">
-							<div class="eco fadein"><div class="in"></div><div class="p p1"></div><div class="p p2"></div><div class="p p1"></div></div>
+								<div class="eco fadein"><div class="in"></div></div>
+								<div class="p p1 growin"><div class="in"></div></div>
+								<div class="p p2 growin"><div class="in"></div></div>
+								<div class="p p3 growin"><div class="in"></div></div>
 							</div>
-							<div class="text">
+							<div class="text fadein">
 								<h3>2014</h3>
 								<ul>
 									<li>There are 2.3 billion mobile broadband connections worldwide (Q3 2013) <sup>1</sup></li>
