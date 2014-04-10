@@ -1052,25 +1052,534 @@ h1 {
 }
 /* #8 chipd */
 #chipd .graphic-position {
-	height: 316px;
-	margin: 3em 0;
+	width: 300px;
+	height: 180px;
+	margin: 3em auto;
+	padding: 0;
+	position: relative;
 }
-#chipd .eco.chip {
-	width: 467px;
-	height: 316px;
-	margin: 0 auto;
+#chipd .eco {
+	width: 133px;
+	height: 127px;
+	margin: 0;
+	position: absolute;
+	top: 35px;
+	left: 77px;
+	z-index: 1;
 }
-#chipd .chip .in {
-	background: url(../img/ic-chipd-f.png) no-repeat 0 0;
-	background-size: cover;
+#chipd .in,
+#chipd .ln {
+	background: url(../img/ic-chipd.png) no-repeat 0 0;
 }
-@media only screen and (max-width: 479px) {
+#chipd .ln {
+	position: absolute;
+	top: 83px;
+	left: 55px;
+	width: 41px;
+	height: 63px;
+	z-index: 2;
+	background-position: -117px -127px;
+
+	-moz-animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+#chipd .n {
+	color: #333;
+	font: 0.75em/1 "Qualcomm-Regular", sans-serif;
+	text-align: center;
+	position: absolute;
+	top: 65px;
+	left: -12px;
+}
+#chipd .n.thick {
+	font-family: "Qualcomm-Semibold", sans-serif;
+}
+#chipd .ln.gpu {
+	top: 23px;
+	left: 38px;
+	width: 74px;
+	height: 49px;
+	background-position: -133px -7px;
+
+	-moz-animation-delay: 1.4s;
+	-webkit-animation-delay: 1.4s;
+	animation-delay: 1.4s;
+}
+#chipd .ln.gpu .n {
+	top: -9px;
+	left: -32px;
+}
+#chipd .ln.cpu {
+	top: 47px;
+	left: 57px;
+	width: 46px;
+	height: 7px;
+	background-position: -133px 0;
+
+	-moz-animation-delay: 1.8s;
+	-webkit-animation-delay: 1.8s;
+	animation-delay: 1.8s;
+}
+#chipd .ln.cpu .n {
+	top: -6px;
+	left: -30px;
+}
+#chipd .ln.hd {
+	top: 17px;
+	left: 170px;
+	width: 7px;
+	height: 43px;
+	background-position: -133px -56px;
+
+	-moz-animation-delay: 2.2s;
+	-webkit-animation-delay: 2.2s;
+	animation-delay: 2.2s;
+}
+#chipd .ln.hd .n {
+	top: -18px;
+	left: -57px;
+}
+#chipd .ln.mus {
+	top: 83px;
+	left: 160px;
+	width: 85px;
+	height: 7px;
+	background-position: -117px -197px;
+
+	-moz-animation-delay: 2.6s;
+	-webkit-animation-delay: 2.6s;
+	animation-delay: 2.6s;
+}
+#chipd .ln.mus .n {
+	top: -6px;
+	left: 89px;
+}
+#chipd .ln.cam {
+	top: 53px;
+	left: 184px;
+	width: 73px;
+	height: 56px;
+	background-position: -140px -56px;
+
+	-moz-animation-delay: 3s;
+	-webkit-animation-delay: 3s;
+	animation-delay: 3s;
+}
+#chipd .ln.cam .n {
+	top: -9px;
+	left: 77px;
+}
+#chipd .ln.lcd {
+	top: 122px;
+	left: 168px;
+	width: 65px;
+	height: 7px;
+	background-position: -117px -197px;
+
+	-moz-animation-delay: 3.4s;
+	-webkit-animation-delay: 3.4s;
+	animation-delay: 3.4s;
+}
+#chipd .ln.lcd .n {
+	top: -7px;
+	left: 70px;
+}
+#chipd .ln.gps {
+	top: 145px;
+	left: 181px;
+	width: 51px;
+	height: 30px;
+	background-position: -158px -112px;
+
+	-moz-animation-delay: 3.8s;
+	-webkit-animation-delay: 3.8s;
+	animation-delay: 3.8s;
+}
+#chipd .ln.gps .n {
+	top: 21px;
+	left: 58px;
+}
+#chipd .ln.con {
+	top: 78px;
+	left: 24px;
+	width: 117px;
+	height: 77px;
+	background-position: 0 -127px;
+
+	-moz-animation-delay: 4.2s;
+	-webkit-animation-delay: 4.2s;
+	animation-delay: 4.2s;
+}
+#chipd .ln.con .n {
+	top: -18px;
+	left: -33px;
+}
+#chipd .ln.con .n.m {
+	color: #fff;
+	font-size: 0.65em;
+	top: 40px;
+	left: 70px;
+}
+@media only screen and (min-width: 480px) and (max-width: 599px) {
 	#chipd .graphic-position {
-		height: 203px;
+		width: 440px;
+		height: 240px;
 	}
-	#chipd .chip {
-		width: 300px;
-		height: 203px;
+	#chipd .eco {
+		width: 177px;
+		height: 170px;
+		top: 47px;
+		left: 122px;
+	}
+	#chipd .in {
+		background-position: -213px 0;
+	}
+	#chipd .ln {
+		top: 110px;
+		left: 93px;
+		width: 55px;
+		height: 84px;
+		background-position: -369px -170px;
+	}
+	#chipd .n {
+		font-size: 1em;
+		top: 86px;
+		left: -17px;
+	}
+	#chipd .ln.gpu {
+		top: 30px;
+		left: 70px;
+		width: 98px;
+		height: 66px;
+		background-position: -390px -10px;
+	}
+	#chipd .ln.gpu .n {
+		top: -11px;
+		left: -42px;
+	}
+	#chipd .ln.cpu {
+		top: 62px;
+		left: 95px;
+		width: 62px;
+		height: 10px;
+		background-position: -390px 0;
+	}
+	#chipd .ln.cpu .n {
+		top: -8px;
+		left: -40px;
+	}
+	#chipd .ln.hd {
+		top: 22px;
+		left: 246px;
+		width: 9px;
+		height: 58px;
+		background-position: -390px -76px;
+	}
+	#chipd .ln.hd .n {
+		top: -26px;
+		left: -74px;
+	}
+	#chipd .ln.mus {
+		top: 110px;
+		left: 233px;
+		width: 113px;
+		height: 10px;
+		background-position: -369px -263px;
+	}
+	#chipd .ln.mus .n {
+		top: -9px;
+		left: 118px;
+	}
+	#chipd .ln.cam {
+		top: 71px;
+		left: 265px;
+		width: 98px;
+		height: 74px;
+		background-position: -399px -76px;
+	}
+	#chipd .ln.cam .n {
+		top: -13px;
+		left: 103px;
+	}
+	#chipd .ln.lcd {
+		top: 163px;
+		left: 244px;
+		width: 98px;
+		height: 10px;
+		background-position: -369px -263px;
+	}
+	#chipd .ln.lcd .n {
+		top: -8px;
+		left: 103px;
+	}
+	#chipd .ln.gps {
+		top: 193px;
+		left: 261px;
+		width: 68px;
+		height: 40px;
+		background-position: -424px -150px;
+	}
+	#chipd .ln.gps .n {
+		top: 26px;
+		left: 76px;
+	}
+	#chipd .ln.con {
+		top: 103px;
+		left: 51px;
+		width: 156px;
+		height: 103px;
+		background-position: -213px -170px;
+	}
+	#chipd .ln.con .n {
+		top: -25px;
+		left: -57px;
+	}
+	#chipd .ln.con .n.m {
+		font-size: 0.9em;
+		top: 54px;
+		left: 90px;
+	}
+}
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+	#chipd .graphic-position {
+		width: 540px;
+		height: 288px;
+	}
+	#chipd .eco {
+		width: 212px;
+		height: 204px;
+		top: 56px;
+		left: 152px;
+	}
+	#chipd .in {
+		background-position: -497px 0;
+	}
+	#chipd .ln {
+		top: 132px;
+		left: 117px;
+		width: 66px;
+		height: 101px;
+		background-position: -685px -204px;
+	}
+	#chipd .n {
+		font-size: 1.25em;
+		top: 103px;
+		left: -20px;
+	}
+	#chipd .ln.gpu {
+		top: 36px;
+		left: 90px;
+		width: 118px;
+		height: 79px;
+		background-position: -709px -12px;
+	}
+	#chipd .ln.gpu .n {
+		top: -13px;
+		left: -50px;
+	}
+	#chipd .ln.cpu {
+		top: 74px;
+		left: 120px;
+		width: 74px;
+		height: 12px;
+		background-position: -709px 0;
+	}
+	#chipd .ln.cpu .n {
+		top: -9px;
+		left: -48px;
+	}
+	#chipd .ln.hd {
+		top: 26px;
+		left: 301px;
+		width: 11px;
+		height: 69px;
+		background-position: -709px -91px;
+	}
+	#chipd .ln.hd .n {
+		top: -31px;
+		left: -93px;
+	}
+	#chipd .ln.mus {
+		top: 132px;
+		left: 285px;
+		width: 136px;
+		height: 12px;
+		background-position: -685px -316px;
+	}
+	#chipd .ln.mus .n {
+		top: -11px;
+		left: 142px;
+	}
+	#chipd .ln.cam {
+		top: 85px;
+		left: 324px;
+		width: 117px;
+		height: 89px;
+		background-position: -720px -91px;
+	}
+	#chipd .ln.cam .n {
+		top: -15px;
+		left: 124px;
+	}
+	#chipd .ln.lcd {
+		top: 195px;
+		left: 299px;
+		width: 118px;
+		height: 12px;
+		background-position: -685px -316px;
+	}
+	#chipd .ln.lcd .n {
+		top: -9px;
+		left: 124px;
+	}
+	#chipd .ln.gps {
+		top: 231px;
+		left: 319px;
+		width: 82px;
+		height: 48px;
+		background-position: -751px -180px;
+	}
+	#chipd .ln.gps .n {
+		top: 32px;
+		left: 91px;
+	}
+	#chipd .ln.con {
+		top: 124px;
+		left: 68px;
+		width: 188px;
+		height: 124px;
+		background-position: -497px -204px;
+	}
+	#chipd .ln.con .n {
+		top: -30px;
+		left: -78px;
+	}
+	#chipd .ln.con .n.m {
+		font-size: 1.1em;
+		top: 65px;
+		left: 106px;
+	}
+}
+@media only screen and (min-width: 800px) {
+	#chipd .graphic-position {
+		width: 660px;
+		height: 360px;
+	}
+	#chipd .eco {
+		width: 265px;
+		height: 254px;
+		top: 70px;
+		left: 183px;
+	}
+	#chipd .in {
+		background-position: -837px 0;
+	}
+	#chipd .ln {
+		top: 165px;
+		left: 139px;
+		width: 82px;
+		height: 126px;
+		z-index: 2;
+		background-position: -1071px -254px;
+	}
+	#chipd .n {
+		font-size: 1.5em;
+		top: 129px;
+		left: -25px;
+	}
+	#chipd .ln.gpu {
+		top: 45px;
+		left: 105px;
+		width: 147px;
+		height: 98px;
+		background-position: -1102px -14px;
+	}
+	#chipd .ln.gpu .n {
+		top: -16px;
+		left: -63px;
+	}
+	#chipd .ln.cpu {
+		top: 93px;
+		left: 143px;
+		width: 92px;
+		height: 14px;
+		background-position: -1102px 0;
+	}
+	#chipd .ln.cpu .n {
+		top: -12px;
+		left: -60px;
+	}
+	#chipd .ln.hd {
+		top: 33px;
+		left: 369px;
+		width: 13px;
+		height: 86px;
+		background-position: -1102px -112px;
+	}
+	#chipd .ln.hd .n {
+		top: -39px;
+		left: -111px;
+	}
+	#chipd .ln.mus {
+		top: 165px;
+		left: 349px;
+		width: 169px;
+		height: 14px;
+		background-position: -1071px -394px;
+	}
+	#chipd .ln.mus .n {
+		top: -14px;
+		left: 177px;
+	}
+	#chipd .ln.cam {
+		top: 106px;
+		left: 398px;
+		width: 146px;
+		height: 111px;
+		background-position: -1115px -112px;
+	}
+	#chipd .ln.cam .n {
+		top: -19px;
+		left: 154px;
+	}
+	#chipd .ln.lcd {
+		top: 244px;
+		left: 366px;
+		width: 147px;
+		height: 14px;
+		background-position: -1071px -394px;
+	}
+	#chipd .ln.lcd .n {
+		top: -12px;
+		left: 155px;
+	}
+	#chipd .ln.gps {
+		top: 289px;
+		left: 391px;
+		width: 102px;
+		height: 60px;
+		background-position: -1153px -223px;
+	}
+	#chipd .ln.gps .n {
+		top: 40px;
+		left: 114px;
+	}
+	#chipd .ln.con {
+		top: 155px;
+		left: 77px;
+		width: 234px;
+		height: 154px;
+		background-position: -837px -254px;
+	}
+	#chipd .ln.con .n {
+		top: -38px;
+		left: -83px;
+	}
+	#chipd .ln.con .n.m {
+		font-size: 1.3em;
+		top: 81px;
+		left: 134px;
 	}
 }
 /* #9 super */

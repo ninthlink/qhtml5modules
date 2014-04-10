@@ -2,7 +2,7 @@
 /*
  * Qualcomm HTML5 Modules : Connectivity
  */
-$v = '0.1.0';
+$v = '0.1.1';
 $qv = '?v='. $v;
 ?>
 <!doctype html>
@@ -23,7 +23,7 @@ $qv = '?v='. $v;
 		
 		<script src="../_common/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-		<script type="text/javascript" src="//cdn.sublimevideo.net/js/brxysbmu.js"></script>
+		<script type="text/javascript" src="//cdn.sublimevideo.net/js/77emf89m.js"></script>
 	</head>
 	<body class="bg-grey">
 			<div id="content" class="content-container">
@@ -203,7 +203,16 @@ $qv = '?v='. $v;
 							<p>Provides a complete solution including modem and RF for optimized performance</p>
 						</div>
 						<div class="graphic-position">
-							<div class="eco chip fadein"><div class="in"></div></div>
+							<div class="eco"><div class="in"></div></div>
+							<div class="ln dsp"><div class="n">DSP</div></div>
+							<div class="ln gpu"><div class="n">GPU</div></div>
+							<div class="ln cpu"><div class="n">CPU</div></div>
+							<div class="ln hd"><div class="n thick">Ultra&nbsp;HD&nbsp;Capture</div></div>
+							<div class="ln mus"><div class="n thick">Music</div></div>
+							<div class="ln cam"><div class="n">Camera</div></div>
+							<div class="ln lcd"><div class="n">Display/LCD</div></div>
+							<div class="ln gps"><div class="n thick">GPS</div></div>
+							<div class="ln con"><div class="n thick">Connectivity</div><div class="n m thick">Modem</div></div>
 						</div>
 					</div>
 				</section>

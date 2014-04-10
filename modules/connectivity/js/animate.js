@@ -60,6 +60,9 @@ $(document).ready(function() {
 			}
 		});
 	});
+	// #8 chipd
+	$('#chipd .graphic-position').children().addClass('fadein');
+	
 	// #9 super
 	q_supertime = function() {
 		jQuery('#super a.next').click();
