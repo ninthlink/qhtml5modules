@@ -556,6 +556,10 @@ h1 {
 	width: 109px;
 	height: 109px;
 	margin: 0 auto;
+	
+	-webkit-animation:spin 11s linear infinite;
+	-moz-animation:spin 11s linear infinite;
+	animation:spin 11s linear infinite;
 }
 #learn .eco.spingrow .in {
 	background: url(../img/ic-learn.png) no-repeat 50% 50%;
@@ -1637,7 +1641,7 @@ h1 {
 	vertical-align: middle;
 }
 /* legal section */
-	#legal .text-position { padding: 70px 0; margin: 0; font-size: 0.7em }
+	#legal .text-position { padding: 70px 0; margin: 0; }
     #legal .text-position p { margin: 0 0 1.5em; }
 	#legal hr { margin: 3em 0 }
 	#legal h3 { font-family: "Qualcomm-Semibold", sans-serif }
