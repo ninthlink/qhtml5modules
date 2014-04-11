@@ -72,7 +72,7 @@ $(document).ready(function() {
 	$('#super').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
 		if ( isInView ) {
 			clearTimeout(q_supertimer);
-			q_supertimer = setTimeout(q_supertime, 3000);
+			q_supertimer = setTimeout(q_supertime, 2400);
 		}
 	}).on('reset', function() {
 		clearTimeout(q_supertimer);
@@ -96,7 +96,7 @@ $(document).ready(function() {
 			}
 		}
 		onn.add(nex).toggleClass('onn');
-		q_supertimer = setTimeout(q_supertime, 3000);
+		q_supertimer = setTimeout(q_supertime, 2400);
 		return false;
 	});
 	// add swipe too

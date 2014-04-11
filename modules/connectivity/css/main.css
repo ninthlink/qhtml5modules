@@ -829,6 +829,11 @@ h1 {
 		width: 640px;
 	}
 }
+@media only screen and (max-width: 479px) {
+	#global .text-position ul {
+		max-width: 80%;
+	}
+}
 /* #5 connec : ic-connec... */
 #connec h2 {
 	margin-bottom: 1.5em;
@@ -949,6 +954,29 @@ h1 {
 }
 #connec .icns .i.r {
 	background-position: -357px 0;
+}
+#connec .inner {
+	min-height: 2460px;
+}
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+	#connec .inner {
+		min-height: 2366px;
+	}
+}
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+	#connec .inner {
+		min-height: 2304px;
+	}
+}
+@media only screen and (min-width: 800px) and (max-width: 959px) {
+	#connec .inner {
+		min-height: 1583px;
+	}
+}
+@media only screen and (min-width: 960px) {
+	#connec .inner {
+		min-height: 1460px;
+	}
 }
 @media only screen and (min-width: 800px) {
 	#connec .cb {
@@ -1840,6 +1868,9 @@ h1 {
 	-webkit-animation-delay: 1.5s;
 	animation-delay: 1.5s;
 }
+#delivr .inner {
+	min-height: 746px;
+}
 @media only screen and (min-width: 800px) {
 	/* go horizontal instead... */
 	#delivr .graphic-position {
@@ -1882,9 +1913,39 @@ h1 {
 	#delivr .graphic-position {
 		width: 720px;
 	}
+	#delivr .inner {
+		min-height: 523px;
+	}
 }
 @media only screen and (max-width: 959px) {
 	.vis960 { display: none }
+}
+@media only screen and (max-width: 479px) {
+	#delivr .eco.video {
+		width: 300px;
+		height: 159px;
+	}
+	#delivr .eco.video .in {
+		background-size: cover;
+	}
+	#delivr .eco.video .lbl {
+		left: 69px;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+	#delivr .inner {
+		min-height: 795px;
+	}
+}
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+	#delivr .inner {
+		min-height: 833px;
+	}
+}
+@media only screen and (min-width: 800px) and (max-width: 959px) {
+	#delivr .inner {
+		min-height: 509px;
+	}
 }
 /* #12 & 14 movies : 3gvs3g + 4gvs4g */
 .block.vid .text-position h2 {
@@ -2000,6 +2061,9 @@ h1 {
 	-webkit-animation-delay: 1.5s;
 	animation-delay: 1.5s;
 }
+#adv4g .inner {
+	min-height: 817px;
+}
 @media only screen and (min-width: 800px) {
 	/* go horizontal instead... */
 	#adv4g .graphic-position {
@@ -2038,10 +2102,27 @@ h1 {
 	#adv4g .eco.cooler .lbl {
 		bottom: -2em;
 	}
+	#adv4g .inner {
+		min-height: 511px;
+	}
 }
 @media only screen and (min-width: 960px) {
 	#adv4g .graphic-position {
 		width: 720px;
+	}
+	#adv4g .inner {
+		min-height: 525px;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+	#adv4g .inner {
+		min-height: 839px;
+	}
+}
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+	#adv4g .inner {
+		min-height: 877px;
 	}
 }
 /* #15 leader */

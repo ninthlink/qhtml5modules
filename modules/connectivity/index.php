@@ -2,7 +2,7 @@
 /*
  * Qualcomm HTML5 Modules : Connectivity
  */
-$v = '0.1.1';
+$v = '0.1.2';
 $qv = '?v='. $v;
 ?>
 <!doctype html>
