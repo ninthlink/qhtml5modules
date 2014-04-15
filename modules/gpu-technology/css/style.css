@@ -1857,6 +1857,10 @@ video {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.scene--11 .vidhere {
+	max-width: 960px;
+	margin: 41px auto;
+}
 
 .scene--12 {
   padding-top: 60px;

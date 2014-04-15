@@ -391,7 +391,15 @@ var scenes = {
 
     },
     scene11 : function(){
-        // nothing
+	
+        // video
+		//var $scene = $('.scene--11');
+		
+		//$scene.waypoint(function() {
+			sublime.prepare('magevid');
+		//}, {
+		//	offset: '30%'
+		//});
     },
     //
     // 12
