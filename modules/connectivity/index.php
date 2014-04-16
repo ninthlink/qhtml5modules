@@ -2,7 +2,7 @@
 /*
  * Qualcomm HTML5 Modules : Connectivity
  */
-$v = '0.1.2';
+$v = '0.1.3';
 $qv = '?v='. $v;
 ?>
 <!doctype html>
@@ -155,13 +155,14 @@ $qv = '?v='. $v;
 								<div class="eco growin"><div class="in"></div></div>
 								<div class="txt fadein">
 									<h3>4G LTE* Phones / <small>Advanced Mobile Broadband</small></h3>
-									<p>4G was introduced in 2009 and creates the opportunity for data speeds <br class="vis960" />of up to 150 Mbps peak download, now supported by Snapdragon 800. <br class="vis960" />4G is also much faster than most home cable/DSI  connections.</p>
+									<p>4G was introduced in 2009 and is also much faster than most home cable/DSL connections.</p>
 									<ul>
 									<li>Makes web browsing significantly faster</li>
 									<li>Opens up capabilities for streaming and sharing videos</li>
 									<li>Access to bandwidth intensive data apps and services</li>
 									</ul>
 									<div class="icns fadein"><div class="i c"></div><div class="i d"></div><div class="i n"></div><div class="i l"></div><div class="i v"></div><div class="i s"></div><div class="i e"></div><div class="i r"></div></div>
+									<p>*LTE: Long Term Evolution</p>
 								</div>
 							</div>
 						</div>
